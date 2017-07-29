@@ -1,0 +1,43 @@
+{
+  "env": {
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "indent": [
+      "error",
+      2
+    ],
+    "new-cap": "off",
+    "newline-after-var": "off",
+    "no-invalid-this": "off",
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "guard-for-in": "off",
+    "no-console": "off",
+    "no-undefined": "off",
+    "array-bracket-spacing": "off",
+    "no-unused-expressions": "off",
+    "func-style": [
+      "error",
+      "expression"
+    ],
+    "comma-dangle": [
+      "error",
+      "never"
+    ]
+  },
+  "plugins": [
+    "react"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "name": "egg-react-webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "基于easywebpack-react和egg-view-react插件工程骨架项目",
+  "scripts": {
+    "build": "cross-env easywebpack build prod",
+    "client": "cross-env easywebpack server dev",
+    "start": "node index.js",
+    "start-test": "EGG_SERVER_ENV=test node index.js",
+    "kill-port": "kill -9 $(lsof -i:8888 |grep 'node'|aw '{print $2}') ",
+    "lint": "eslint .",
+    "fix": "eslint --fix ."
+  },
+  "dependencies": {
+    "axios": "^0.15.3",
+    "co": "^4.6.0",
+    "co-wait": "^0.0.0",
+    "core-js": "^2.4.0",
+    "egg": "^1.4.0",
+    "egg-logger": "^1.5.0",
+    "egg-validate": "^1.0.0",
+    "extend": "~3.0.0",
+    "lodash": "^4.17.4",
+    "mockjs": "^1.0.1-beta3",
+    "moment": "^2.17.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "serialize-javascript": "^1.4.0"
+  },
+  "devDependencies": {
+    "autod-egg": "^1.0.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "cross-env": "^5.0.0",
+    "easywebpack-react": "0.2.0",
+    "egg-cors": "^1.1.0",
+    "egg-webpack": "^2.1.1",
+    "eslint": "^3.18.0",
+    "eslint-config-egg": "^3.2.0",
+    "eslint-plugin-react": "^7.1.0",
+    "ip": "^1.1.5",
+    "vconsole": "^2.5.2"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "ci": {
+    "version": "6, 7, 8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hubcarl/egg-react-webpack-boilerplate.git"
+  },
+  "author": "hubcarl@126.com",
+  "license": "MIT",
+  "homepage": "https://github.com/hubcarl/egg-react-webpack-boilerplate"
+}
