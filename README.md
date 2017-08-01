@@ -1,6 +1,6 @@
 # egg-react-webpack-boilerplate
 
-基于React多页面和单页面服务器渲染同构工程骨架项目
+基于React多页面和单页面服务器渲染同构工程骨架项目, 文档请见: [Egg+React解决方案](http://hubcarl.github.io/easywebpack/react/dev/)
 
 ## 特性
 
