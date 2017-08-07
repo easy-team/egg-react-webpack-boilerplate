@@ -3,6 +3,7 @@ module.exports = app => {
   app.get('/', app.controller.home.home.index);
   app.get('/client', app.controller.home.home.client);
   app.get('/hello', app.controller.hello.hello.index);
+  app.get('/css/module', app.controller.css.css.cssModule);
   app.get('/element', app.controller.home.home.element);
   app.get('/pager', app.controller.home.home.pager);
   app.get('/about', app.controller.about.about.index);
