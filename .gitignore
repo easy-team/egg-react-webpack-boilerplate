@@ -5,7 +5,7 @@ npm-debug.log
 .idea/
 dist
 static
-public
+public/
 private
 run
 *.iml

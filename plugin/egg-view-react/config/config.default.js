@@ -7,11 +7,8 @@ module.exports = () => {
     defaultViewEngine: 'react',
     mapping: {
       '.js': 'react',
+      '.jsx': 'react',
     },
-  };
-
-  config.react = {
-    cache: true,
   };
 
   return config;

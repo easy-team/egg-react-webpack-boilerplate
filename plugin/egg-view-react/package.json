@@ -13,7 +13,10 @@
     "eggPlugin",
     "egg-plugin"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
   "devDependencies": {
     "autod": "^2.8.0",
     "autod-egg": "^1.0.0",
@@ -39,9 +42,11 @@
     "autod": "autod"
   },
   "files": [
-    "app.js",
+    "app",
+    "lib",
+    "config",
     "agent.js",
-    "config"
+    "app.js"
   ],
   "ci": {
     "version": "6, 8"

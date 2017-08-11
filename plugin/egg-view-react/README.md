@@ -20,9 +20,7 @@
 [download-image]: https://img.shields.io/npm/dm/egg-view-react.svg?style=flat-square
 [download-url]: https://npmjs.org/package/egg-view-react
 
-<!--
-Description here.
--->
+egg view plugin for react
 
 ## Install
 
@@ -42,17 +40,11 @@ exports.react = {
 
 ## Configuration
 
-```js
-// {app_root}/config/config.default.js
-exports.react = {
-};
-```
-
 see [config/config.default.js](config/config.default.js) for more detail.
 
 ## Example
 
-<!-- example here -->
+React server side render example, please see [egg-react-webpack-boilerplate](https://github.com/hubcarl/egg-react-webpack-boilerplate)
 
 ## Questions & Suggestions
 

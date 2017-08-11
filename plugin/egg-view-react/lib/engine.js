@@ -10,12 +10,12 @@ class Engine {
 
   render(name, locals) {
     const reactClass = require(name);
-    return this.renderToString(reactClass, locals);
+    return Promise.resolve(this.renderToString(reactClass, locals));
   }
 
   renderMarkup(name, locals) {
     const reactClass = require(name);
-    return this.renderToStaticMarkup(reactClass, locals);
+    return Promise.resolve(this.renderToStaticMarkup(reactClass, locals));
   }
 
   renderToString(reactClass, locals) {

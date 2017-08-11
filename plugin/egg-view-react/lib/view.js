@@ -7,7 +7,7 @@ class View {
   }
 
   render(name, locals, options) {
-    return Promise.resolve(this.app.react.renderToString(name, locals, options));
+    return this.app.react.render(name, locals, options);
   }
 
   renderString() {
