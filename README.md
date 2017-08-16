@@ -18,12 +18,12 @@
 ## 依赖
 
 - [easywebpack](https://github.com/hubcarl/easywebpack) programming instead of configuration, webpack is no longer complex.
-- [egg-view-react](plugin/egg-view-react) egg view plugin for react.
-- [egg-view-react-ssr](plugin/egg-view-react-ssr) react server side render solution for egg-view-react.
+- [egg-view-react](https://github.com/eggjs/egg-view-react) egg view plugin for react.
+- [egg-view-react-ssr](https://github.com/hubcarl/egg-view-react-ssr) react server side render solution for egg-view-react.
 - [egg-webpack](https://github.com/hubcarl/egg-webpack) webpack dev server plugin for egg, support read file in memory and hot reload.
-- [egg-webpack-react](plugin/egg-webpack-react) egg webpack building solution for react.
+- [egg-webpack-react](https://github.com/hubcarl/egg-webpack-react) egg webpack building solution for react.
 
-![工程化](https://github.com/hubcarl/egg-react-webpack-boilerplate/blob/master/doc/images/egg-webpack.png)
+![工程化](http://hubcarl.github.io/img/webpack/egg-webpack-react-ssr.png)
 
 
 

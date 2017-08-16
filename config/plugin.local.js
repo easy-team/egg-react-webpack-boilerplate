@@ -1,5 +1,4 @@
 const path = require('path');
-const pluginDir = path.join(__dirname, '../plugin');
 exports.cors = {
   enable: true,
   package: 'egg-cors'
@@ -12,5 +11,5 @@ exports.webpack = {
 
 exports.webpackreact = {
   enable: true,
-  path: path.join(pluginDir, 'egg-webpack-react')
+  package: 'egg-webpack-react'
 };

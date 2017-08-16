@@ -1,1 +1,0 @@
-## egg specification view directory to ensure that view folder exists, otherwise app.config.view.root is empty, compile the server file will be stored in the directory.
