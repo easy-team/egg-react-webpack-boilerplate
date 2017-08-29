@@ -3,7 +3,7 @@ module.exports = function(source) {
   return `
     import React from 'react';
     import ReactDom from 'react-dom';
-    import Hello from '${resourcePath}';
+    import Hello from '${this.resourcePath.replace(/\\/g, '\\\\')}';
     const state = window.__INITIAL_STATE__;
     ReactDom.render(<Hello {...state} />, document.getElementById('app'));
   `;

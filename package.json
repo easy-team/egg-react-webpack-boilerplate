@@ -35,7 +35,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "cross-env": "^5.0.0",
-    "easywebpack-react": "^1.0.0",
+    "easywebpack-react": "^1.0.1",
     "egg-cors": "^1.1.0",
     "egg-webpack-react": "^1.0.0",
     "egg-webpack": "^2.1.1",
