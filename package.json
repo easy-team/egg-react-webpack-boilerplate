@@ -1,13 +1,13 @@
 {
   "name": "egg-react-webpack-boilerplate",
-  "version": "1.0.2",
+  "version": "3.0.0",
   "description": "基于easywebpack-react和egg-view-react插件工程骨架项目",
   "scripts": {
     "build": "cross-env easywebpack build prod",
     "build-test": "cross-env easywebpack build test",
     "client": "cross-env easywebpack server dev",
     "start": "node index.js",
-    "start-test": "EGG_SERVER_ENV=test node index.js",
+    "start-test": "cross-env EGG_SERVER_ENV=test node index.js",
     "kill-port": "kill -9 $(lsof -i:8888 |grep 'node'|aw '{print $2}') ",
     "lint": "eslint .",
     "fix": "eslint --fix ."
@@ -36,7 +36,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "cross-env": "^5.0.0",
-    "easywebpack-react": "^3.0.0-rc3",
+    "easywebpack-react": "^3.0.0",
     "egg-cors": "^1.1.0",
     "egg-webpack": "^3.0.0",
     "egg-webpack-react": "^1.0.0",

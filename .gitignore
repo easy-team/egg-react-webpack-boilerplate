@@ -10,6 +10,7 @@ private
 run
 *.iml
 artifacts.json
+tmp/
 *tmp
 _site
 logs
