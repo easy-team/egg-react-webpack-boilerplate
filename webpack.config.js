@@ -5,6 +5,7 @@ module.exports = {
   entry: {
     include: 'app/web/page',
     exclude: ['app/web/page/test'],
+    extMatch: '.jsx',
     loader: {
       client: 'app/web/framework/entry/loader.js'
     }
@@ -19,7 +20,13 @@ module.exports = {
     include: 'app/web/page/css/module'
   },
   cssExtract: true,
-  loaders: {},
+  loaders: {
+    eslint: {
+      options: {
+        fix: true
+      }
+    }
+  },
   create(){
     if (this.ssr) {
       this.addEntry('layout', path.join(this.config.baseDir, 'app/web/view/layout.jsx'));
