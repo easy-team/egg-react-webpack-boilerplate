@@ -1,6 +1,12 @@
 # egg-react-webpack-boilerplate
 
-基于React多页面和单页面服务器渲染同构工程骨架项目, 文档请见: [Egg+React解决方案](http://hubcarl.github.io/easywebpack/react/dev/)
+基于Egg + React + Webpack3 多页面和单页面服务器渲染同构工程骨架项目, 文档请见: [Egg+React解决方案](http://hubcarl.github.io/easywebpack/react/dev/)
+
+
+- Node 版本: Node 4.x.x+,  服务端支持 Node.js 8 await 和 async 特性, 客户端请修改.babelrc配置
+- Webpack 版本: ^3.5.5, 对应 `easywebpack-react` 版本为 3.0.0,  Webpack2 版本项目骨架请见 `feature/webpack2` 分支, 对应 `easywebpack-react` 版本为 1.0.0
+- React 版本: ^15.6.1
+
 
 ## 特性
 
@@ -12,12 +18,17 @@
 
 - 支持服务端渲染`render`和纯前端渲染`renderClient`
 
-- 支持自动根据jsx文件构建入口文件
+- 支持自动根据jsx文件构建Webpack entry入口文件
+
+- 支持css, sass, scss, less, stylus
+
+- 支持css module , 且同时支持css和css module 共存的情况
 
 
 ## 依赖
 
 - [easywebpack](https://github.com/hubcarl/easywebpack) programming instead of configuration, webpack is no longer complex.
+- [easywebpack-react](https://github.com/hubcarl/easywebpack-react) Webpack build plugin for React.
 - [egg-view-react](https://github.com/eggjs/egg-view-react) egg view plugin for react.
 - [egg-view-react-ssr](https://github.com/hubcarl/egg-view-react-ssr) react server side render solution for egg-view-react.
 - [egg-webpack](https://github.com/hubcarl/egg-webpack) webpack dev server plugin for egg, support read file in memory and hot reload.
