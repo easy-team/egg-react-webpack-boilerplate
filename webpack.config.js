@@ -2,7 +2,6 @@ const path = require('path');
 module.exports = {
   egg: true,
   framework: 'react',
-  commonsChunk: ['vendor'],
   entry: {
     include: 'app/web/page',
     exclude: ['app/web/page/test'],
@@ -16,8 +15,13 @@ module.exports = {
     framework: 'app/web/framework',
     store: 'app/web/store'
   },
+  cssModule: {
+    include: 'app/web/page/css/module'
+  },
+  cssExtract: true,
+  loaders: {},
   create(){
-    if (this.type === 'server') {
+    if (this.ssr) {
       this.addEntry('layout', path.join(this.config.baseDir, 'app/web/view/layout.jsx'));
     }
   }
