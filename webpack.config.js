@@ -25,6 +25,9 @@ module.exports = {
       options: {
         fix: true
       }
+    },
+    css: {
+      exclude: []
     }
   },
   create(){
