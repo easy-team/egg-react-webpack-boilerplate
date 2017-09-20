@@ -3,9 +3,8 @@ module.exports = {
   egg: true,
   framework: 'react',
   entry: {
-    include: 'app/web/page',
+    include: ['app/web/page', { layout: 'app/web/view/layout.jsx?loader=false' }],
     exclude: ['app/web/page/test'],
-    extMatch: '.jsx',
     loader: {
       client: 'app/web/framework/entry/loader.js'
     }
@@ -21,18 +20,18 @@ module.exports = {
   },
   cssExtract: true,
   loaders: {
-    eslint: {
-      options: {
-        fix: true
-      }
-    },
+    eslint: false,
     css: {
       exclude: []
     }
   },
-  create(){
-    if (this.ssr) {
-      this.addEntry('layout', path.join(this.config.baseDir, 'app/web/view/layout.jsx'));
-    }
+  onClient(){
+
+  },
+  onServer(){
+
+  },
+  done(){
+    console.log('---webpack compile finish---');
   }
 };
