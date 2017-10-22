@@ -5,6 +5,8 @@
   ],
   "plugins": [
     "transform-object-assign",
+     "syntax-dynamic-import",
+    "transform-object-rest-spread",
     'add-module-exports',
     ["import", { libraryName: "antd", style: "css" }]],
   "comments": false

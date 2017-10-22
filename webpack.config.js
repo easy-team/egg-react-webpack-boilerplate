@@ -3,7 +3,12 @@ module.exports = {
   egg: true,
   framework: 'react',
   entry: {
-    include: ['app/web/page', { layout: 'app/web/view/layout.jsx?loader=false' }],
+    include: ['app/web/page',
+      { layout: 'app/web/view/layout.jsx?loader=false' },
+      { 'spa/redux': 'app/web/page/spa/redux.jsx?loader=false' },
+      { 'spa/client': 'app/web/page/spa/client.jsx?loader=false' },
+      { 'spa/ssr': 'app/web/page/spa/ssr.jsx?loader=false' }
+    ],
     exclude: ['app/web/page/test'],
     loader: {
       client: 'app/web/framework/entry/loader.js'
@@ -21,9 +26,11 @@ module.exports = {
   cssExtract: true,
   loaders: {
     eslint: false,
-    css: {
-      exclude: []
-    }
+    less: false,
+    stylus: false
+  },
+  plugins: {
+    imagemini: false
   },
   onClient(){
 

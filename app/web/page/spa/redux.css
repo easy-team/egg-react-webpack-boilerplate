@@ -1,0 +1,11 @@
+.redux-nav{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.redux-nav-item{
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    border: 1px solid #cecece;
+}
