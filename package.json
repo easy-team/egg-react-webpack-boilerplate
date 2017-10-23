@@ -13,7 +13,6 @@
     "fix": "eslint --fix ."
   },
   "dependencies": {
-    "antd": "^2.13.2",
     "co": "^4.6.0",
     "co-wait": "^0.0.0",
     "core-js": "^2.4.0",
@@ -30,6 +29,7 @@
     "react-dom": "^15.6.1"
   },
   "devDependencies": {
+    "antd": "^2.13.2",
     "autod-egg": "^1.0.0",
     "autoprefixer": "^7.1.4",
     "babel-core": "^6.26.0",
