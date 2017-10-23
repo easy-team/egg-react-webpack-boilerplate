@@ -13,7 +13,8 @@ export default class Header extends Component {
         <li className="nav-item"><a href="/">Server-Render</a></li>
         <li className="nav-item"><a href="/client">Client-Render</a></li>
         <li className="nav-item"><a href="/css/module">Css-Module</a></li>
-        <li className="nav-item"><a href="/spa/redux">SPA</a></li>
+        <li className="nav-item"><a href="/spa/redux">SPA-CSR</a></li>
+        <li className="nav-item"><a href="/spa/ssr">SPA-SSR</a></li>
       </ul>
       </div>
     </header>;

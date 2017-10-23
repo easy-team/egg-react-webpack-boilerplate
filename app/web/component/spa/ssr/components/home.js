@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { add, del } from 'component/spa/redux/actions';
+import { add, del } from 'component/spa/ssr/actions';
 
 class Home extends Component {
   render() {
@@ -14,7 +14,7 @@ class Home extends Component {
       url: 'https://github.com/hubcarl/egg-react-webpack-boilerplate'
     };
     return <div className="redux-nav-item">
-      <h3>SPA Client Side</h3>
+      <h3>SPA Server Side</h3>
       <div className="container">
         <div className="row row-offcanvas row-offcanvas-right">
           <div className="col-xs-12 col-sm-9">

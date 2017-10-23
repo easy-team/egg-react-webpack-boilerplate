@@ -1,5 +1,4 @@
 .redux-nav{
-    margin-top: 40px;
     margin-left: 40px;
 }
 
@@ -14,7 +13,6 @@
 }
 
 .redux-nav-item{
-    padding-top: 40px;
     padding-left: 40px;
     padding-bottom: 40px;
 }
@@ -36,5 +34,10 @@
     line-height: 30px;
     height: 30px;
     vertical-align: middle;
+    text-align: center;
+}
+
+.spa-title{
+    margin-top: 40px;
     text-align: center;
 }
