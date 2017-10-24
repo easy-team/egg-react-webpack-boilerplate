@@ -1,6 +1,6 @@
 {
   "name": "egg-react-webpack-boilerplate",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "基于easywebpack-react和egg-view-react插件工程骨架项目",
   "scripts": {
     "build": "cross-env easywebpack build prod",
