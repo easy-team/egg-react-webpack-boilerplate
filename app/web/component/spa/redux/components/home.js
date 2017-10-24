@@ -8,7 +8,7 @@ class Home extends Component {
     const id = list.length + 1;
     const item = {
       id,
-      title: `Egg+Vue服务端渲染骨架-${id}`,
+      title: `Egg+React 服务端渲染骨架-${id}`,
       summary: '基于Egg + React + Webpack3/Webpack2 服务端渲染骨架项目',
       hits: 550 + id,
       url: 'https://github.com/hubcarl/egg-react-webpack-boilerplate'

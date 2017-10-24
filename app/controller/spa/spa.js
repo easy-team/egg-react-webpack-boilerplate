@@ -9,6 +9,6 @@ exports.redux = function* (ctx) {
 };
 
 exports.ssr = function* (ctx) {
-  yield ctx.render('spa/ssr.js', {});
+  yield ctx.render('spa/ssr.js', { url: ctx.url });
 };
 

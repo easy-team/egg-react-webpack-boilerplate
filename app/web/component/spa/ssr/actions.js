@@ -1,4 +1,4 @@
-import { ADD, DEL } from './constant'
+import { LIST,ADD, DEL } from './constant'
 
 export function add(item) {
   console.log('item', item);
