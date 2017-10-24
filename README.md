@@ -10,20 +10,21 @@
 
 ## 特性
 
-- 基于React多页面服务端客户端同构实现
+- 基于React多页面/单页面服务端客户端同构实现
 
-- 基于easywebpack基础配置, 使用es6 class 继承方式编写webpack配置
+- 基于 easywebpack 基础配置, 使用es6 class 继承方式编写webpack配置
 
-- 支持server和client端代码修改, webpack时时编译和热更新, `npm start` 一键启动应用
+- 支持 server和client 端代码修改, webpack时时编译和热更新, `npm start` 一键启动应用
 
-- 支持服务端渲染`render`和纯前端渲染`renderClient`
+- 支持服务端渲染 `render` 和纯前端渲染 `renderClient`
 
 - 支持自动根据jsx文件构建Webpack entry入口文件
 
-- 支持css, sass, scss, less, stylus
+- 支持 css, sass, scss, less, stylus
 
-- 支持css module , 且同时支持css和css module 共存的情况
+- 支持 css module , 且同时支持css和css module 共存的情况
 
+- 支持 react-router, react-redux 服务端/客户端单页面渲染
 
 ## 依赖
 
