@@ -16,7 +16,7 @@
     "egg": "^1.4.0",
     "egg-logger": "^1.5.0",
     "egg-validate": "^1.0.0",
-    "egg-view-react-ssr": "^2.0.0-beta.2",
+    "egg-view-react-ssr": "^2.0.0-beta.3",
     "extend": "~3.0.0",
     "history": "^4.7.2",
     "lodash": "^4.17.4",
@@ -55,7 +55,7 @@
     "ip": "^1.1.5",
     "less": "^2.7.2",
     "less-loader": "^4.0.5",
-    "node-sass": "^4.5.3",
+    "node-sass": "^4.6.0",
     "postcss-loader": "^2.0.8",
     "progress-bar-webpack-plugin": "^1.10.0",
     "react-redux": "^5.0.6",
@@ -67,7 +67,7 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
     "vconsole": "^2.5.2",
-    "webpack-manifest-resource-plugin": "0.0.2"
+    "webpack-manifest-resource-plugin": "0.0.4"
   },
   "engines": {
     "node": ">=6.0.0"

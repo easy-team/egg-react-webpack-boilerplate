@@ -30,7 +30,10 @@ module.exports = {
     stylus: false
   },
   plugins: {
-    imagemini: false
+    imagemini: false,
+    buildfile: false,
+    manifest: false,  // old manifest feature
+    manifestDeps: true // new manifest feature, not need buildfile
   },
   onClient(){
 
