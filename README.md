@@ -5,8 +5,8 @@
 
 - Node 版本: Node 4.x.x+,  服务端支持 Node.js 8 await 和 async 特性, 客户端请修改.babelrc配置
 - Webpack 版本: ^3.5.5, 对应 `easywebpack-react` 版本为 3.0.0,  Webpack2 版本项目骨架请见 `feature/webpack2` 分支, 对应 `easywebpack-react` 版本为 1.0.0
-- React 版本: ^15.6.1
-
+- React 版本: ^15.0.0, ^16.0.0, 
+- 最新变更说明: [RELEASE](RELEASE.md)
 
 ## 特性
 
@@ -18,11 +18,11 @@
 
 - 支持服务端渲染 `render` 和纯前端渲染 `renderClient`
 
-- 支持自动根据jsx文件构建Webpack entry入口文件
+- 支持自动根据 jsx 文件构建 Webpack entry 入口文件
 
 - 支持 css, sass, scss, less, stylus
 
-- 支持 css module , 且同时支持css和css module 共存的情况
+- 支持 css module , 且同时支持 css 和 css module 共存的情况
 
 - 支持 react-router, react-redux 服务端/客户端单页面渲染
 

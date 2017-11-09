@@ -7,7 +7,7 @@ import {
   Link
 } from 'react-router-dom'
 
-import Header from 'component/layout/standard/header/header.jsx';
+import Header from 'component/header/header.jsx';
 
 const App = () => (
   <Router>

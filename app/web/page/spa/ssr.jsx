@@ -4,7 +4,8 @@ import { Provider } from 'react-redux'
 import {match, RouterContext} from 'react-router'
 import { BrowserRouter, StaticRouter } from 'react-router-dom';
 import { matchRoutes, renderRoutes } from 'react-router-config'
-import Header from 'component/layout/standard/header/header';
+import Layout from 'framework/layout/layout.jsx';
+import Header from 'component/header/header';
 import SSR from 'component/spa/ssr/ssr';
 import { create } from 'component/spa/ssr/store';
 import routes from 'component/spa/ssr/routes'
@@ -41,14 +42,16 @@ if (typeof window === 'object') {
       context.state = Object.assign({}, context.state, initState);
       const store = create(initState);
       return () =>(
-        <div>
-          <Header></Header>
-          <Provider store={store}>
-            <StaticRouter location={url} context={{}}>
-              <SSR url={url}/>
-            </StaticRouter>
-          </Provider>
-        </div>
+        <Layout>
+          <div>
+            <Header></Header>
+            <Provider store={store}>
+              <StaticRouter location={url} context={{}}>
+                <SSR url={url}/>
+              </StaticRouter>
+            </Provider>
+          </div>
+        </Layout>
       )
     });
   };

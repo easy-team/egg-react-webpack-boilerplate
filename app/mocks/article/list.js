@@ -1,7 +1,7 @@
 'use strict';
 const data = {
   list: [{
-    title: `Egg+Vue服务端渲染骨架`,
+    title: `Egg + React 服务端渲染骨架`,
     summary: '基于Egg + React + Webpack3/Webpack2 多页面和单页面服务器渲染同构工程骨架项目',
     hits: 550,
     url: 'https://github.com/hubcarl/egg-react-webpack-boilerplate'

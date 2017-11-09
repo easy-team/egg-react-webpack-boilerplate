@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from 'component/layout/standard/header/header.jsx';
+import Header from 'component/header/header.jsx';
 import style from './module.css';
 import logo from '../../../asset/images/loading.gif';
 export default class Module extends Component {

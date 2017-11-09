@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from 'component/layout/standard/header/header.jsx';
+import Header from 'component/header/header.jsx';
 import List from 'component/home/list.jsx';
 import './home.css';
 export default class Home extends Component {
