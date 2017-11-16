@@ -1,6 +1,6 @@
 {
   "name": "egg-react-webpack-boilerplate",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "description": "基于easywebpack-react和egg-view-react插件工程骨架项目",
   "scripts": {
     "build": "cross-env easywebpack build prod",
@@ -16,7 +16,7 @@
     "egg": "^1.4.0",
     "egg-logger": "^1.5.0",
     "egg-validate": "^1.0.0",
-    "egg-view-react-ssr": "^2.0.0",
+    "egg-view-react-ssr": "^2.1.0",
     "extend": "~3.0.0",
     "history": "^4.7.2",
     "lodash": "^4.17.4",
@@ -51,7 +51,6 @@
     "eslint-plugin-react": "^7.1.0",
     "history": "^4.7.2",
     "html-webpack-plugin": "^2.30.1",
-    "imagemin-webpack-plugin": "^1.5.2",
     "ip": "^1.1.5",
     "less": "^2.7.2",
     "less-loader": "^4.0.5",
