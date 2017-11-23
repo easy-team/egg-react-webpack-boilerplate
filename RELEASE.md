@@ -1,7 +1,26 @@
 # 版本发布
 
+## 3.3.0
+
+- ES6 module Webpack build mode
+- Support Tree-Shaking
+- Support jsx file hot reload, css hot reload will support in next version.
+
+## 依赖
+
+- egg-view-react-ssr 2.1.1
+- easywebpack-react 3.2.1
+
+
+## 修改文件
+
+- .babelrc  添加 `react-hot-loader/babel`  和 `modules: false`
+- app/web/page/spa/ssr.jsx `module.exports` 方式 改为 `export default`
+
+
 
 ## 3.2.0
+
 
 ### 依赖
 
