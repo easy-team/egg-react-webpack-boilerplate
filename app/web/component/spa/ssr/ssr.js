@@ -17,7 +17,7 @@ class App extends Component {
   handleClick(e) {
     console.log('click ', e, this.state);
     this.setState({
-      current: e.key,
+      current: e.key
     });
   };
 

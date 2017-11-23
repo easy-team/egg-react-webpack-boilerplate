@@ -5,7 +5,7 @@ export default createStore(
   reducers, {
     list: [{
       id: 0,
-      title: `webpack配置官方文档`,
+      title: 'webpack配置官方文档',
       summary: '基于Egg + React + Webpack3/Webpack2 服务端渲染同构工程骨架项目',
       hits: 550,
       url: 'https://github.com/hubcarl/egg-react-webpack-boilerplate'

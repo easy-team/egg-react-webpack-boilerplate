@@ -54,11 +54,12 @@ class Home extends Component {
 }
 
 
-function mapStateToProps(state) {
+
+const mapStateToProps = state => {
   console.log('mapStateToProps', state);
   return {
     list: state.list
   }
-}
+};
 
 export default connect(mapStateToProps, { add, del })(Home)

@@ -1,6 +1,6 @@
-import { LIST,ADD, DEL } from './constant'
+import { ADD, DEL } from './constant'
 
-export function add(item) {
+export const add = item => {
   console.log('item', item);
   return {
     type: ADD,
@@ -8,9 +8,10 @@ export function add(item) {
   }
 }
 
-export function del(id) {
+export const del = id => {
   return {
     type: DEL,
     id
   }
 }
+

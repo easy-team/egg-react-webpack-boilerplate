@@ -1,13 +1,13 @@
 {
   "presets": [
     "react",
-    "env"
+    ["env",  { "modules": false }]
   ],
   "plugins": [
+    "react-hot-loader/babel",
     "transform-object-assign",
      "syntax-dynamic-import",
     "transform-object-rest-spread",
-    'add-module-exports',
     ["import", { libraryName: "antd", style: "css" }]],
   "comments": false
 }

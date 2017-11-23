@@ -5,9 +5,9 @@ import { add, del } from 'component/spa/ssr/actions';
 class Home extends Component {
   static fetch() {
     return Promise.resolve({
-      list:[{
+      list: [{
         id: 0,
-        title: `Egg+React 服务端渲染骨架`,
+        title: 'Egg+React 服务端渲染骨架',
         summary: '基于Egg + React + Webpack3/Webpack2 服务端渲染同构工程骨架项目',
         hits: 550,
         url: 'https://github.com/hubcarl/egg-react-webpack-boilerplate'
@@ -80,11 +80,11 @@ class Home extends Component {
 }
 
 
-function mapStateToProps(state) {
+const mapStateToProps = state => {
   console.log('mapStateToProps', state);
   return {
     list: state.list
   }
-}
+};
 
 export default connect(mapStateToProps, { add, del })(Home)

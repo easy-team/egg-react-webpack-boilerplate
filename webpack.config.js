@@ -31,6 +31,11 @@ module.exports = {
     stylus: false
   },
   plugins: {
+    define:{
+      args(){
+        return { isServer: !!this.ssr, isDev: !!this.dev };
+      }
+    },
     imagemini: false,
     buildfile: false,
     manifest: false,  // old manifest feature
