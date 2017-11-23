@@ -40,7 +40,7 @@
 
 - webpack.config.js 配置变更, 目前采用兼容方式, 待 Webpack 发布 4.0 时, webpack-manifest-plugin 替换为 webpack-manifest-resource-plugin 
 
-```json
+```js
 {
    plugins: {
      buildfile: true,
@@ -50,7 +50,7 @@
 ```
 
 
-```json
+```js
 {
    plugins: {
      buildfile: false,
@@ -68,7 +68,7 @@
 
 
 
-```json
+```js
 {
     entry: {
         loader: {
