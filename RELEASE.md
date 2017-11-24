@@ -1,12 +1,22 @@
 # 版本发布
 
+## 3.3.1
+
+- support extract css hot reload.
+
+## 依赖更新
+
+- easywebpack 3.3.6
+- easywebpack-react 3.2.2
+
+
 ## 3.3.0
 
 - ES6 module Webpack build mode
 - Support Tree-Shaking
 - Support jsx file hot reload, css hot reload will support in next version.
 
-## 依赖
+## 依赖更新
 
 - egg-view-react-ssr 2.1.1
 - easywebpack-react 3.2.1
