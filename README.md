@@ -64,7 +64,7 @@ npm start
 应用访问: http://127.0.0.1:7001
 
 
-![npm start启动](https://github.com/hubcarl/egg-react-webpack-boilerplate/blob/master/doc/images/webpack.png)
+![npm start启动](https://github.com/hubcarl/egg-react-webpack-boilerplate/blob/master/docs/images/webpack.png)
 
 ### 配置说明
 
