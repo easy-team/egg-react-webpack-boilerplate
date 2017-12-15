@@ -15,7 +15,7 @@ ReactDOM.render(
   <div>
     <Header></Header>
     <Provider store={store}>
-     <App />
+      <App />
     </Provider>
   </div>,
   document.getElementById('app')
