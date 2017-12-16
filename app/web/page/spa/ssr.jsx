@@ -56,7 +56,7 @@ const serverRender = (context, options)=> {
   });
 };
 
-export default isServer ?  serverRender : clientRender();
+export default EASY_ENV_IS_NODE ?  serverRender : clientRender();
 
 
 

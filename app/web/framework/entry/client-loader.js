@@ -8,10 +8,10 @@ module.exports = function(source) {
     import Entry from '${this.resourcePath.replace(/\\/g, '\\\\')}';
     const state = window.__INITIAL_STATE__;
     const render = (App)=>{
-      ReactDom.hydrate(isDev ? <AppContainer><App {...state} /></AppContainer> : <App {...state} />, document.getElementById('app'));
+      ReactDom.hydrate(EASY_ENV_IS_DEV ? <AppContainer><App {...state} /></AppContainer> : <App {...state} />, document.getElementById('app'));
     };
 
-    if (isDev && module.hot) {
+    if (EASY_ENV_IS_DEV && module.hot) {
       module.hot.accept('${this.resourcePath.replace(/\\/g, '\\\\')}', () => { render(Entry) });
     }
     render(Entry);
