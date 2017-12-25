@@ -1,4 +1,3 @@
-const path = require('path');
 module.exports = {
   egg: true,
   framework: 'react',
@@ -26,13 +25,13 @@ module.exports = {
     include: 'app/web/page/css/module'
   },
   loaders: {
-    
+
   },
   plugins: {
 
   },
-  
-  done(){
+
+  done() {
     console.log('---webpack compile finish---');
   }
 };

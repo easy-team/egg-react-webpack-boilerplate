@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import { BrowserRouter, Route, Link, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
 import Home from 'component/spa/redux/components/home';
 import About from 'component/spa/redux/components/about';
 
@@ -8,14 +8,14 @@ import { Menu, Icon } from 'antd';
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 
-const handleClick = (e) => {
+const handleClick = e => {
   console.log('click ', e);
 };
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {current: 'home'};
+    this.state = { current: 'home' };
   }
 
   handleClick(e) {
@@ -23,7 +23,7 @@ class App extends Component {
     this.setState({
       current: e.key
     });
-  };
+  }
 
   render() {
     return <BrowserRouter>

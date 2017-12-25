@@ -1,6 +1,5 @@
-module.exports = function(source) {
+module.exports = function() {
   this.cacheable();
-  const resourcePath = this.resourcePath;
   return `
     import React from 'react';
     import ReactDom from 'react-dom';

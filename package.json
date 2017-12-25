@@ -1,7 +1,7 @@
 {
   "name": "egg-react-webpack-boilerplate",
-  "version": "3.5.0",
-  "description": "基于easywebpack-react和egg-view-react-ssr插件服务端渲染工程骨架项目",
+  "version": "3.6.0",
+  "description": "基于 easywebpack-react 和 egg-view-react-ssr 插件服务端渲染工程骨架项目",
   "scripts": {
     "build": "cross-env easywebpack build prod",
     "build:test": "cross-env easywebpack build test",
@@ -14,7 +14,8 @@
     "fix": "eslint --fix ."
   },
   "dependencies": {
-    "egg": "^1.4.0",
+    "egg": "^2.1.0",
+    "egg-cors": "^2.0.0",
     "egg-logger": "^1.5.0",
     "egg-validate": "^1.0.0",
     "egg-view-react-ssr": "^2.1.0",
@@ -29,7 +30,7 @@
     "react-router-config": "^1.0.0-beta.4"
   },
   "devDependencies": {
-    "antd": "^2.13.2",
+    "antd": "^3.0.3",
     "autod-egg": "^1.0.0",
     "autoprefixer": "^7.1.4",
     "babel-core": "^6.26.0",
@@ -45,7 +46,6 @@
     "directory-named-webpack-plugin": "^2.2.3",
     "easywebpack-cli": "^3.5.0",
     "easywebpack-react": "^3.5.0",
-    "egg-cors": "^1.1.0",
     "egg-webpack": "^3.2.4",
     "egg-webpack-react": "^2.0.0",
     "eslint": "^4.6.1",
@@ -70,7 +70,7 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
     "uglifyjs-webpack-plugin": "^1.1.2",
-    "vconsole": "^2.5.2",
+    "vconsole": "^3.0.0",
     "webpack-manifest-resource-plugin": "^2.0.2"
   },
   "engines": {

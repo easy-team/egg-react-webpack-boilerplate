@@ -1,5 +1,5 @@
-import React from 'react'
-import { Route, IndexRoute, Link } from 'react-router'
+import React from 'react';
+import { Route, IndexRoute, Link } from 'react-router';
 
 const App = ({ children }) => (
   <div>

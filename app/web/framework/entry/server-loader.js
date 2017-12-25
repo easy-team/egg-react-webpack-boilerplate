@@ -1,4 +1,4 @@
-module.exports = function(source) {
+module.exports = function() {
   this.cacheable();
   return `
     import React, { Component } from 'react';

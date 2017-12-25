@@ -1,24 +1,29 @@
 # egg-react-webpack-boilerplate
 
-基于Egg + React + Webpack3 多页面和单页面服务器渲染同构工程骨架项目, 文档请见: [Egg+React解决方案](http://hubcarl.github.io/easywebpack/react/dev/)
+基于 Egg + React + Webpack3 多页面和单页面服务器渲染同构工程骨架项目, 文档请见: [Egg+React解决方案](http://hubcarl.github.io/easywebpack/react/dev/)
 
-
-- Node 版本: Node 4.x.x+,  服务端支持 Node.js 8 await 和 async 特性, 客户端请修改.babelrc配置
+- Egg 版本： ^2.x.x
+- Node 版本: Node ^8.x.x+,  Node 6.x.x 版本请见 [Egg 1.0 + Node6分支](https://github.com/hubcarl/egg-react-webpack-boilerplate/tree/node6)
 - Webpack 版本: ^3.5.5, 对应 `easywebpack-react` 版本为 3.0.0,  Webpack2 版本项目骨架请见 `feature/webpack2` 分支, 对应 `easywebpack-react` 版本为 1.0.0
 - React 版本: ^15.0.0, ^16.0.0, 
 - 最新变更说明: [RELEASE](RELEASE.md)
 
+## 文档
+
+- http://hubcarl.github.io/easywebpack/react/rule
+- https://zhuanlan.zhihu.com/easywebpack
+
 ## 特性
 
-- 基于React多页面/单页面服务端客户端同构实现
+- 基于 React 多页面/单页面服务端客户端同构实现
 
-- 基于 easywebpack 基础配置, 使用es6 class 继承方式编写webpack配置
+- 基于 easywebpack 基础配置, 使用 es6 class 继承方式编写 webpack 配置
 
-- 支持 server和client 端代码修改, webpack时时编译和热更新, `npm start` 一键启动应用
+- 支持 server 和 client 端代码修改, webpack时时编译和热更新, `npm start` 一键启动应用
 
 - 支持服务端渲染 `render` 和纯前端渲染 `renderClient`
 
-- 支持自动根据 jsx 文件构建 Webpack entry 入口文件
+- 支持自动根据 jsx 文件构建 webpack entry 入口文件
 
 - 支持 css, sass, scss, less, stylus
 
@@ -26,14 +31,20 @@
 
 - 支持 react-router, react-redux 服务端/客户端单页面渲染
 
+- egg-webpack ^3.2.4 版本开始支持多进程编译
+
+- easywebpack ^3.5.0 版本开始支持 webpack dll 自动化构建, 与多进程编译结合，构建速度减少 2/3
+
+- Node 8 版本的async和await特性, Controller 采用 class 方式编写
+
+
 ## 依赖
 
-- [easywebpack](https://github.com/hubcarl/easywebpack) programming instead of configuration, webpack is no longer complex.
-- [easywebpack-react](https://github.com/hubcarl/easywebpack-react) Webpack build plugin for React.
-- [egg-view-react](https://github.com/eggjs/egg-view-react) egg view plugin for react.
-- [egg-view-react-ssr](https://github.com/hubcarl/egg-view-react-ssr) react server side render solution for egg-view-react.
-- [egg-webpack](https://github.com/hubcarl/egg-webpack) webpack dev server plugin for egg, support read file in memory and hot reload.
-- [egg-webpack-react](https://github.com/hubcarl/egg-webpack-react) egg webpack building solution for react.
+- [easywebpack](https://github.com/hubcarl/easywebpack) ^3.5.3
+- [easywebpack-react](https://github.com/hubcarl/easywebpack-react) ^3.5.0
+- [egg-view-react-ssr](https://github.com/hubcarl/egg-view-react-ssr) ^2.1.0
+- [egg-webpack](https://github.com/hubcarl/egg-webpack) webpack dev ^2.4.6
+- [egg-webpack-react](https://github.com/hubcarl/egg-webpack-react) ^2.0.0
 
 ![工程化](http://hubcarl.github.io/img/webpack/egg-webpack-react-ssr.png)
 

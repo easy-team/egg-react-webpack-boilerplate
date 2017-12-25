@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { add, del } from 'component/spa/ssr/actions';
 
 class Home extends Component {
@@ -26,7 +26,7 @@ class Home extends Component {
       }]
     }).then(data => {
       return data;
-    })
+    });
   }
 
   render() {
@@ -84,7 +84,7 @@ const mapStateToProps = state => {
   console.log('mapStateToProps', state);
   return {
     list: state.list
-  }
+  };
 };
 
-export default connect(mapStateToProps, { add, del })(Home)
+export default connect(mapStateToProps, { add, del })(Home);

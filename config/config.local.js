@@ -1,8 +1,7 @@
-'use strict';
-const path = require('path');
+
 const ip = require('ip');
 const EasyWebpack = require('easywebpack-react');
-module.exports = app => {
+module.exports = () => {
   const exports = {};
 
   exports.static = {

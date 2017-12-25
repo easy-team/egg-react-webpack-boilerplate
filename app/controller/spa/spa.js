@@ -1,14 +1,21 @@
-const reactRouter = require('react-router');
+module.exports = app => {
 
-exports.client = function* (ctx) {
-  yield ctx.renderClient('spa/client.js', {});
+  return class SPAController extends app.Controller {
+
+    async client() {
+      const { ctx } = this;
+      await ctx.renderClient('spa/client.js', {});
+    }
+
+    async redux() {
+      const { ctx } = this;
+      await ctx.renderClient('spa/redux.js', {});
+    }
+
+    async ssr() {
+      const { ctx } = this;
+      await ctx.render('spa/ssr.js', { url: ctx.url });
+    }
+
+  };
 };
-
-exports.redux = function* (ctx) {
-  yield ctx.renderClient('spa/redux.js', {});
-};
-
-exports.ssr = function* (ctx) {
-  yield ctx.render('spa/ssr.js', { url: ctx.url });
-};
-

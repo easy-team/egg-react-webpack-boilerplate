@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import { BrowserRouter, Route, Link, Switch } from 'react-router-dom'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
 import Home from 'component/spa/ssr/components/home';
 import About from 'component/spa/ssr/components/about';
 
@@ -19,7 +19,7 @@ class App extends Component {
     this.setState({
       current: e.key
     });
-  };
+  }
 
   render() {
     return <div>
