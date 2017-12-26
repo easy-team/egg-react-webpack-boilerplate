@@ -24,6 +24,7 @@ module.exports = {
   cssModule: {
     include: 'app/web/page/css/module'
   },
+  dll: ['react', 'react-dom'],
   loaders: {
 
   },
