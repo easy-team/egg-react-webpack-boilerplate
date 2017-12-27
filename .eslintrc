@@ -28,6 +28,7 @@
     "no-undefined": "off",
     "array-bracket-spacing": "off",
     "no-unused-expressions": "off",
+    "linebreak-style": "off",
     "func-style": [
       "error",
       "expression"
