@@ -15,11 +15,11 @@ const App = () => (
       <Header></Header>
       <h2>Official Site</h2>
       <ul>
-        <li><Link to="/spa/client/">Home</Link></li>
-        <li><Link to="/spa/client/product">Product</Link></li>
-        <li><Link to="/spa/client/about">About</Link></li>
+        <li><Link to="/client/">Home</Link></li>
+        <li><Link to="/client/product">Product</Link></li>
+        <li><Link to="/client/about">About</Link></li>
       </ul>
-      <Route path="/spa/client/:id?" component={Child}/>
+      <Route path="/client/:id?" component={Child}/>
     </div>
   </Router>
 );

@@ -9,7 +9,6 @@ import Header from 'component/header/header';
 import SSR from 'component/spa/ssr/ssr';
 import { create } from 'component/spa/ssr/store';
 import routes from 'component/spa/ssr/routes'
-import './spa.css';
 
 const clientRender = () => {
   const store = create(window.__INITIAL_STATE__);

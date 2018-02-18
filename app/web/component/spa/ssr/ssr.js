@@ -25,15 +25,15 @@ class App extends Component {
     return <div>
       <Menu onClick={this.handleClick.bind(this)} selectedKeys={[this.state.current]} mode="horizontal">
         <Menu.Item key="home">
-          <Link to="/spa/ssr">SPA-Redux-Server-Side-Render</Link>
+          <Link to="/ssr">SPA-Redux-Server-Side-Render</Link>
         </Menu.Item>
         <Menu.Item key="about">
-          <Link to="/spa/ssr/about">About</Link>
+          <Link to="/ssr/about">About</Link>
         </Menu.Item>
       </Menu>
       <Switch>
-        <Route path="/spa/ssr/about" component={About}/>
-        <Route path="/spa/ssr" component={Home}/>
+        <Route path="/ssr/about" component={About}/>
+        <Route path="/ssr" component={Home}/>
       </Switch>
     </div>;
   }

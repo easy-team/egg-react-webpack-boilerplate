@@ -30,18 +30,18 @@ class App extends Component {
       <div>
         <Menu onClick={this.handleClick.bind(this)} selectedKeys={[this.state.current]} mode="horizontal">
           <Menu.Item key="ssr">
-            <a href="/spa/ssr">SPA-Redux-Server-Side-Render</a>
+            <a href="/ssr">SPA-Redux-Server-Side-Render</a>
           </Menu.Item>
           <Menu.Item key="home">
-            <Link to="/spa/redux">SPA-Redux-Client-Render</Link>
+            <Link to="/redux">SPA-Redux-Client-Render</Link>
           </Menu.Item>
           <Menu.Item key="about">
-            <Link to="/spa/redux/about">About</Link>
+            <Link to="/redux/about">About</Link>
           </Menu.Item>
         </Menu>
         <Switch>
-          <Route path="/spa/redux/about" component={About}/>
-          <Route path="/spa/redux" component={Home}/>
+          <Route path="/redux/about" component={About}/>
+          <Route path="/redux" component={Home}/>
         </Switch>
       </div>
     </BrowserRouter>;

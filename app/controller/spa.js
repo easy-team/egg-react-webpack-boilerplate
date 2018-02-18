@@ -4,17 +4,17 @@ module.exports = app => {
 
     async client() {
       const { ctx } = this;
-      await ctx.renderClient('spa/client.js', {});
+      await ctx.renderClient('client.js', {});
     }
 
     async redux() {
       const { ctx } = this;
-      await ctx.renderClient('spa/redux.js', {});
+      await ctx.renderClient('redux.js', {});
     }
 
     async ssr() {
       const { ctx } = this;
-      await ctx.render('spa/ssr.js', { url: ctx.url });
+      await ctx.render('ssr.js', { url: ctx.url });
     }
 
   };
