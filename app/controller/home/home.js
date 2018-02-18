@@ -11,11 +11,6 @@ module.exports = app => {
       await ctx.renderClient('home/home.js', Model.getPage(1, 10));
     }
 
-    async element() {
-      const { ctx } = this;
-      ctx.render('element/element.js', Model.getPage(1, 10));
-    }
-
     async pager() {
       const { ctx } = this;
       const pageIndex = ctx.query.pageIndex;

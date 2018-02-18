@@ -1,12 +1,11 @@
 # egg-react-webpack-boilerplate
 
-基于 Egg + React + Webpack3 多页面和单页面服务器渲染同构工程骨架项目, 文档请见: [Egg+React解决方案](http://hubcarl.github.io/easywebpack/react/dev/)
+基于 Egg + React + Webpack3 多页面服务端渲染同构工程骨架项目
 
 - Egg 版本： ^2.x.x
-- Node 版本: Node ^8.x.x+,  Node 6.x.x 版本请见 [Egg 1.0 + Node6分支](https://github.com/hubcarl/egg-react-webpack-boilerplate/tree/node6)
-- Webpack 版本: ^3.10.0, 对应 `easywebpack-react` 版本为 3.5.0,  Webpack2 版本项目骨架请见 `feature/webpack2` 分支, 对应 `easywebpack-react` 版本为 1.0.0
+- Node 版本: Node ^8.x.x+
+- Webpack 版本: ^3.10.0, 对应 `easywebpack-react` 版本为 3.6.0
 - React 版本: ^15.0.0, ^16.0.0, 
-- 最新变更说明: [RELEASE](RELEASE.md)
 
 ## 文档
 
@@ -15,9 +14,7 @@
 
 ## 特性
 
-- 基于 React 多页面/单页面服务端客户端同构实现
-
-- 基于 easywebpack 基础配置, 使用 es6 class 继承方式编写 webpack 配置
+- 基于 React 多页面服务端客户端同构实现
 
 - 支持 server 和 client 端代码修改, webpack时时编译和热更新, `npm start` 一键启动应用
 
@@ -25,17 +22,9 @@
 
 - 支持自动根据 jsx 文件构建 webpack entry 入口文件
 
-- 支持 css, sass, scss, less, stylus
-
-- 支持 css module , 且同时支持 css 和 css module 共存的情况
-
-- 支持 react-router, react-redux 服务端/客户端单页面渲染
-
-- egg-webpack ^3.2.4 版本开始支持多进程编译
-
 - easywebpack ^3.5.0 版本开始支持 webpack dll 自动化构建, 与多进程编译结合，构建速度减少 2/3
 
-- Node 8 版本的async和await特性, Controller 采用 class 方式编写
+- Node 8 版本的 async 和 await 特性, Controller 采用 class 方式编写
 
 
 ## 依赖
@@ -47,7 +36,6 @@
 - [egg-webpack-react](https://github.com/hubcarl/egg-webpack-react) ^2.0.0
 
 ![工程化](http://hubcarl.github.io/img/webpack/egg-webpack-react-ssr.png)
-
 
 
 ## 使用
@@ -102,83 +90,12 @@ npm run build 或者 easywebpack build prod
 
 ```
 
-## 项目结构和基本规范
-
-    ├── app
-    │   ├── controller
-    │   │   ├── test
-    │   │   │   └── test.js
-    │   ├── extend
-    │   ├── lib
-    │   ├── middleware
-    │   ├── mocks
-    │   ├── proxy
-    │   ├── router.js
-    │   ├── view
-    │   │   ├── about                         // 服务器编译的jsbundle文件
-    │   │   │   └── about.js
-    │   │   ├── home
-    │   │   │     └── home.js                 // 服务器编译的jsbundle文件
-    │   │   └── layout.js                     // 编译的layout文件
-    │   └── web                               // 前端工程目录
-    │       ├── asset                         // 存放公共js,css资源
-    │       ├── framework                     // 前端公共库和第三方库
-    │       │   └── entry                          
-    │       │       ├── loader.js              // 根据jsx文件自动生成entry入口文件loader
-    │       ├── page                              // 前端页面和webpack构建目录, 也就是webpack打包配置entryDir
-    │       │   ├── home                          // 每个页面遵循目录名, js文件名, scss文件名, jsx文件名相同
-    │       │   │   ├── home.scss
-    │       │   │   ├── home.jsx
-    │       │   └── hello                          // 每个页面遵循目录名, js文件名, scss文件名, jsx文件名相同
-    │       │       ├── test.css                   // 服务器render渲染时, 传入 render('test/test.js', data)
-    │       │       └── test.jsx
-    │       ├── store                             
-    │       │   ├── app
-    │       │   │   ├── actions.js
-    │       │   │   ├── getters.js
-    │       │   │   ├── index.js
-    │       │   │   ├── mutation-type.js
-    │       │   │   └── mutations.js
-    │       │   └── store.js
-    │       └── component                         // 公共业务组件, 比如loading, toast等, 遵循目录名, js文件名, scss文件名, jsx文件名相同
-    │           ├── loading
-    │           │   ├── loading.scss
-    │           │   └── loading.jsx
-    │           ├── test
-    │           │   ├── test.jsx
-    │           │   └── test.scss
-    │           └── toast
-    │               ├── toast.scss
-    │               └── toast.jsx
-    ├── config
-    │   ├── config.default.js
-    │   ├── config.local.js
-    │   ├── config.prod.js
-    │   ├── config.test.js
-    │   └── plugin.js
-    ├── doc
-    ├── index.js
-    ├── webpack.config.js                      // easywebpack-cli 构建配置
-    ├── public                                 // webpack编译目录结构, render文件查找目录
-    │   ├── static
-    │   │   ├── css
-    │   │   │   ├── home
-    │   │   │   │   ├── home.07012d33.css
-    │   │   │   └── test
-    │   │   │       ├── test.4bbb32ce.css
-    │   │   ├── img
-    │   │   │   ├── change_top.4735c57.png
-    │   │   │   └── intro.0e66266.png
-    │   ├── test
-    │   │   └── test.js
-    │   └── vendor.js                         // 生成的公共打包库
-
 
 ## 功能实现
 
-### 一.多页面服务器渲染同构实现
+### 多页面服务器渲染同构实现
 
-#### 1.编写jsx页面
+#### 编写jsx页面
 
 在app/web/page 目录下面创建home目录, home.jsx, home.css文件.
 
@@ -208,7 +125,7 @@ export default class Home extends Component {
 ```
 
 
-#### 2.多页面后端实现
+#### 多页面后端实现
 
 - 创建controller文件home.js
 
@@ -224,7 +141,7 @@ exports.index = function* (ctx) {
 app.get('/home', app.controller.home.home.index);
 ```
 
-### 3.前端渲染
+### 前端渲染
 
 - 创建controller的home.js 添加如下代码
 

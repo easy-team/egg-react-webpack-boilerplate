@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from 'component/header/header.jsx';
-import List from 'component/home/list.jsx';
+import List from './component/list.jsx';
 import './home.css';
 export default class Home extends Component {
   componentDidMount() {
