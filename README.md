@@ -8,6 +8,15 @@
 - React 版本: ^15.0.0, ^16.0.0, 
 - 最新变更说明: [RELEASE](RELEASE.md)
 
+## 版本
+
+因该项目包含了多种实现, 提供多种例子实现，为防干扰, 特提供了两个纯净版本分支用于实际项目开发, 请自行选用。
+
+- Egg2 + React 多页面服务端渲染分支 [feature/green/multi](https://github.com/hubcarl/egg-react-webpack-boilerplate/tree/feature/green/multi)
+- Egg2 + React + React Router + Redux + React-Redux 单页面服务端渲染分支 [feature/green/spa](https://github.com/hubcarl/egg-react-webpack-boilerplate/tree/feature/green/spa)
+
+可以通过 [easywebpack-cli](https://github.com/hubcarl/easywebpack-cli) 命令行初始化对应类型项目。 
+
 ## 文档
 
 - http://hubcarl.github.io/easywebpack/react/rule
