@@ -32,7 +32,7 @@ class Home extends Component {
                         <li className="tauthor">
                           <a href="#" target="_blank" className="get">Sky</a>
                         </li>
-                        <li><a>+收藏</a></li>
+                        <li><a>+收藏11</a></li>
                         <li>
                           <span className="timeago">{item.summary}</span>
                         </li>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
 import Home from 'component/spa/redux/components/home';
 import About from 'component/spa/redux/components/about';
