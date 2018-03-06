@@ -52,7 +52,7 @@
     "easywebpack-cli": "^3.7.0",
     "easywebpack-react": "next",
     "egg-webpack": "next",
-    "egg-webpack-react": "^2.0.0",
+    "egg-webpack-react": "^2.0.2",
     "eslint-config-egg": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
     "imagemin-webpack-plugin": "^1.5.2",
