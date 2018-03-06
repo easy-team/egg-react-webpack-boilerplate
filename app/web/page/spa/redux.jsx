@@ -5,7 +5,7 @@ import { AppContainer } from 'react-hot-loader';
 import Header from 'component/header/header.jsx';
 import App from 'component/spa/redux/app';
 import store from 'component/spa/redux/store';
-
+import './spa.css';
 
 // Create an enhanced history that syncs navigation events with the store
 // const history = syncHistoryWithStore(createHistory(), store);
