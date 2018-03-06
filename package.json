@@ -1,8 +1,9 @@
 {
   "name": "egg-react-webpack-boilerplate",
-  "version": "3.6.3",
+  "version": "4.0.0-rc.1",
   "description": "基于 easywebpack-react 和 egg-view-react-ssr 插件服务端渲染工程骨架项目",
   "scripts": {
+    "postinstall": "node ./script/postinstall.js",
     "build": "cross-env easywebpack build prod",
     "build:test": "cross-env easywebpack build test",
     "build:prod": "cross-env easywebpack build prod",
@@ -11,9 +12,11 @@
     "start:prod": "cross-env EGG_SERVER_ENV=prod node index.js",
     "kill-port": "kill -9 $(lsof -i:8888 |grep 'node'|aw '{print $2}') ",
     "lint": "eslint .",
-    "fix": "eslint --fix ."
+    "fix": "eslint --fix .",
+    "ii": "npm install --registry https://registry.npm.taobao.org"
   },
   "dependencies": {
+    "cross-env": "^5.0.0",
     "egg": "^2.1.0",
     "egg-cors": "^2.0.0",
     "egg-logger": "^1.5.0",
@@ -27,7 +30,11 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-router": "^4.2.0",
-    "react-router-config": "^1.0.0-beta.4"
+    "react-router-config": "^1.0.0-beta.4",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^4.0.8",
+    "redux": "^3.7.2"
   },
   "devDependencies": {
     "antd": "^3.0.3",
@@ -42,42 +49,27 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
-    "cross-env": "^5.0.0",
-    "directory-named-webpack-plugin": "^2.2.3",
-    "easywebpack-cli": "^3.5.0",
-    "easywebpack-react": "^3.5.0",
-    "egg-webpack": "^3.2.4",
+    "easywebpack-cli": "^3.7.0",
+    "easywebpack-react": "next",
+    "egg-webpack": "next",
     "egg-webpack-react": "^2.0.0",
-    "eslint": "^4.6.1",
     "eslint-config-egg": "^5.1.1",
-    "eslint-loader": "^1.9.0",
     "eslint-plugin-react": "^7.1.0",
-    "history": "^4.7.2",
-    "html-webpack-plugin": "^2.30.1",
     "imagemin-webpack-plugin": "^1.5.2",
     "ip": "^1.1.5",
     "less": "^2.7.2",
     "less-loader": "^4.0.5",
     "node-sass": "^4.6.0",
     "postcss-loader": "^2.0.8",
-    "progress-bar-webpack-plugin": "^1.10.0",
-    "react-redux": "^5.0.6",
-    "react-router": "^4.2.0",
-    "react-router-dom": "^4.2.2",
-    "react-router-redux": "^4.0.8",
-    "redux": "^3.7.2",
     "sass-loader": "^6.0.6",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.1",
-    "uglifyjs-webpack-plugin": "^1.1.2",
-    "vconsole": "^3.0.0",
-    "webpack-manifest-resource-plugin": "^2.0.2"
+    "stylus-loader": "^3.0.1"
   },
   "engines": {
     "node": ">=6.0.0"
   },
   "ci": {
-    "version": "6, 7, 8"
+    "version": "6, 8, 9"
   },
   "repository": {
     "type": "git",
