@@ -1,6 +1,6 @@
 {
   "name": "egg-react-webpack-boilerplate",
-  "version": "4.0.0-rc.1",
+  "version": "4.0.0",
   "description": "基于 easywebpack-react 和 egg-view-react-ssr 插件服务端渲染工程骨架项目",
   "scripts": {
     "postinstall": "node ./script/postinstall.js",
@@ -49,9 +49,9 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
-    "easywebpack-cli": "^3.7.0",
-    "easywebpack-react": "next",
-    "egg-webpack": "next",
+    "easywebpack-cli": "^3.8.0",
+    "easywebpack-react": "^4.0.0",
+    "egg-webpack": "^4.0.1",
     "egg-webpack-react": "^2.0.2",
     "eslint-config-egg": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
