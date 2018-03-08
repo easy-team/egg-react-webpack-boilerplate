@@ -73,20 +73,30 @@ npm install easywebpack-cli -g
 
 ```bash
 npm install
-npm start
 ```
 
 
-#### 启动应用
+#### 启动应用(开发模式)
 
 ```bash
-npm start
+npm run dev
 ```
 
 应用访问: http://127.0.0.1:7001
 
+![npm start启动](https://github.com/hubcarl/egg-react-webpack-boilerplate/raw/master/docs/images/webpack.png)
 
-![npm start启动](https://github.com/hubcarl/egg-react-webpack-boilerplate/blob/master/docs/images/webpack.png)
+
+#### 启动应用(发布模式)
+
+发布模式，需要先进行 webpack 构建， 然后后再启动应用
+
+```bash
+npm run build
+npm start
+```
+
+详细打包部署请见： http://hubcarl.github.io/easywebpack/react/rule/
 
 ### 配置说明
 
