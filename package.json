@@ -1,6 +1,6 @@
 {
   "name": "egg-react-webpack-boilerplate",
-  "version": "3.6.3",
+  "version": "3.6.4",
   "description": "基于 easywebpack-react 和 egg-view-react-ssr 插件服务端渲染工程骨架项目",
   "scripts": {
     "build": "cross-env easywebpack build prod",
@@ -14,6 +14,7 @@
     "ii": "npm install --registry https://registry.npm.taobao.org"
   },
   "dependencies": {
+    "cross-env": "^5.0.0",
     "egg": "^2.1.0",
     "egg-cors": "^2.0.0",
     "egg-logger": "^1.5.0",
@@ -42,7 +43,6 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
-    "cross-env": "^5.0.0",
     "directory-named-webpack-plugin": "^2.2.3",
     "easywebpack-cli": "^3.5.0",
     "easywebpack-react": "^3.5.0",
