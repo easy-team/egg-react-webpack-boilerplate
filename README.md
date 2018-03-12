@@ -51,10 +51,10 @@
 
 ## 依赖
 
-- [easywebpack](https://github.com/hubcarl/easywebpack) ^3.5.3
-- [easywebpack-react](https://github.com/hubcarl/easywebpack-react) ^3.5.0
+- [easywebpack](https://github.com/hubcarl/easywebpack) ^4.x.x
+- [easywebpack-react](https://github.com/hubcarl/easywebpack-react) ^4.x.x
 - [egg-view-react-ssr](https://github.com/hubcarl/egg-view-react-ssr) ^2.1.0
-- [egg-webpack](https://github.com/hubcarl/egg-webpack) ^2.4.6
+- [egg-webpack](https://github.com/hubcarl/egg-webpack) ^4.x.x
 - [egg-webpack-react](https://github.com/hubcarl/egg-webpack-react) ^2.0.0
 
 ![工程化](http://hubcarl.github.io/img/webpack/egg-webpack-react-ssr.png)
