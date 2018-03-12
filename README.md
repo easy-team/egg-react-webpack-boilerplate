@@ -73,20 +73,33 @@ npm install easywebpack-cli -g
 
 ```bash
 npm install
-npm start
 ```
 
 
-#### 启动应用
+#### 本地开发启动应用
 
 ```bash
-npm start
+npm run dev
 ```
 
 应用访问: http://127.0.0.1:7001
 
 
 ![npm start启动](https://github.com/hubcarl/egg-react-webpack-boilerplate/blob/master/docs/images/webpack.png)
+
+#### 发布模式启动应用
+
+- 首先在本地或者ci构建好jsbundle文件
+
+```bash
+npm run build 
+```
+
+- 然后,启动应用
+
+```bash
+npm start 
+```
 
 ### 配置说明
 
