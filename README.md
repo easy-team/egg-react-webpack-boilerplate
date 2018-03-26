@@ -7,6 +7,7 @@
 - Webpack 版本: ^4.x.x, 对应 `easywebpack-react` 版本为 4.x.x,  Webpack3 版本项目骨架请见 `webpack3` 分支, 对应 `easywebpack-react` 版本为 3.x.x
 - React 版本: ^15.0.0, ^16.0.0, 
 - 最新变更说明: [RELEASE](RELEASE.md)
+- 骨架功能性需求或者Bug问题, 欢迎大家 PR 完善
 - 如果你需要了解 Egg + React + Webpack 项目更多信息，请扫以下二维码加 QQ 好友，请备注：Node.js
 ![hubcarl](https://avatars3.githubusercontent.com/u/4983042?v=4&u=0befb64a57a7911c630b7f97df5632385b08da2a&s=250)
 
