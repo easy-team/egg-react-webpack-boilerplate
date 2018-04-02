@@ -3,7 +3,6 @@
   "version": "4.0.1",
   "description": "基于 easywebpack-react 和 egg-view-react-ssr 插件服务端渲染工程骨架项目",
   "scripts": {
-    "postinstall": "node ./script/postinstall.js",
     "build": "cross-env easywebpack build prod",
     "build:test": "cross-env easywebpack build test",
     "build:prod": "cross-env easywebpack build prod",
