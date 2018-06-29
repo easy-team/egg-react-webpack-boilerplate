@@ -55,7 +55,6 @@
     "egg-webpack-react": "^2.0.2",
     "eslint-config-egg": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
-    "imagemin-webpack-plugin": "^1.5.2",
     "ip": "^1.1.5",
     "less": "^2.7.2",
     "less-loader": "^4.0.5",

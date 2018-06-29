@@ -1,7 +1,7 @@
 module.exports = {
   egg: true,
   framework: 'react',
-  // devtool: 'source-map',
+  devtool: 'source-map',
   entry: {
     include: ['app/web/page',
       { layout: 'app/web/framework/layout/layout.jsx?loader=false' },
@@ -25,13 +25,10 @@ module.exports = {
     include: 'app/web/page/css/module'
   },
   dll: ['react', 'react-dom'],
-  loaders: {
-
-  },
+  loaders: {},
   plugins: {
-
+    imagemini: false
   },
-
   done() {
     console.log('---webpack compile finish---');
   }
