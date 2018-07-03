@@ -21,7 +21,7 @@
     "egg-cors": "^2.0.0",
     "egg-logger": "^1.5.0",
     "egg-validate": "^1.0.0",
-    "egg-view-react-ssr": "^2.1.0",
+    "egg-view-react-ssr": "^2.2.6",
     "extend": "~3.0.0",
     "history": "^4.7.2",
     "lodash": "^4.17.4",
