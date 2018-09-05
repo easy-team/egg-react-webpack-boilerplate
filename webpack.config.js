@@ -20,9 +20,6 @@ module.exports = {
     framework: 'app/web/framework',
     store: 'app/web/store'
   },
-  cssModule: {
-    include: 'app/web/page/css/module'
-  },
   dll: ['react', 'react-dom'],
   loaders: {},
   plugins: {

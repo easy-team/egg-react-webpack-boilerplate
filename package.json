@@ -1,6 +1,6 @@
 {
   "name": "egg-react-webpack-boilerplate",
-  "version": "4.1.0",
+  "version": "4.2.0",
   "description": "基于 easywebpack-react 和 egg-view-react-ssr 插件服务端渲染工程骨架项目",
   "scripts": {
     "clean": "easy clean",
@@ -50,7 +50,7 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "easywebpack-cli": "^3.8.0",
-    "easywebpack-react": "^4.0.0",
+    "easywebpack-react": "^4.2.0-beta.1",
     "egg-bin": "^4.5.0",
     "egg-webpack": "^4.0.1",
     "egg-webpack-react": "^2.0.2",
@@ -66,10 +66,10 @@
     "stylus-loader": "^3.0.1"
   },
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=8.0.0"
   },
   "ci": {
-    "version": "6, 8, 9"
+    "version": "8, 9"
   },
   "repository": {
     "type": "git",

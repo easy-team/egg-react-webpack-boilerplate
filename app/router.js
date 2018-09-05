@@ -5,7 +5,7 @@ module.exports = app => {
   app.get('/hello/element', app.controller.hello.hello.element);
   app.get('/hello/component', app.controller.hello.hello.component);
 
-  app.get('/css/module', app.controller.css.css.cssModule);
+  app.get('/css/module', app.controller.css.module.index);
   app.get('/ant/tab', app.controller.ant.ant.tab);
   app.get('/element', app.controller.home.home.element);
   app.get('/pager', app.controller.home.home.pager);
