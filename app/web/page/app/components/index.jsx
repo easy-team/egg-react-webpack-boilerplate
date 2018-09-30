@@ -1,17 +1,14 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
-import { connect } from 'react-redux';
+import { Route, Link, Switch } from 'react-router-dom';
 import Home from './router/home';
 import About from './router/about';
 
 import { Menu, Icon } from 'antd';
 
-const tabKey = { '/': 'home', '/about': 'about' };
 class App extends Component {
   constructor(props) {
     super(props);
-    const { url } = props;
-    this.state = { current: tabKey[url] };
+    this.state = { current: 'home' };
   }
 
   handleClick(e) {

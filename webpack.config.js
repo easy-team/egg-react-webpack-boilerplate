@@ -8,8 +8,8 @@ module.exports = {
   },
   dll: ['react', 'react-dom'],
   loaders: {},
-  plugins: {},
-  done() {
-    console.log('---webpack compile finish---');
-  }
+  plugins: {}
+  // done() {
+  //   console.log('---webpack compile finish---');
+  // }
 };

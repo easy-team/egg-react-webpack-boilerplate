@@ -7,7 +7,7 @@ class Home extends Component {
     return Promise.resolve({
       list: [{
         id: 0,
-        title: 'Egg+React 服务端渲染骨架',
+        title: 'Egg + React 服务端渲染骨架',
         summary: '基于Egg + React + Webpack3/Webpack2 服务端渲染同构工程骨架项目',
         hits: 550,
         url: 'https://github.com/hubcarl/egg-react-webpack-boilerplate'
@@ -19,7 +19,7 @@ class Home extends Component {
         url: 'https://github.com/hubcarl/easywebpack'
       }, {
         id: 2,
-        title: '前端工程化解决方案脚手架easywebpack-cli',
+        title: '最强大的 Webpack CLI 工具 easywebpack-cli',
         summary: 'easywebpack command tool, support init Vue/Reac/Weex boilerplate',
         hits: 278,
         url: 'https://github.com/hubcarl/easywebpack-cli'
@@ -40,7 +40,6 @@ class Home extends Component {
       url: 'https://github.com/hubcarl/egg-react-webpack-boilerplate'
     };
     return <div className="redux-nav-item">
-      <h3>SPA Server Side</h3>
       <div className="container">
         <div className="row row-offcanvas row-offcanvas-right">
           <div className="col-xs-12 col-sm-9">

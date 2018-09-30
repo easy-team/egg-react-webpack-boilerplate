@@ -32,7 +32,6 @@ const ClientRender = () => {
   const render = (App)=>{
     ReactDom.hydrate(EASY_ENV_IS_DEV ? <AppContainer><App {...state} /></AppContainer> : <App {...state} />, document.getElementById('app'));
   };
-
   if (EASY_ENV_IS_DEV && module.hot) {
     module.hot.accept();
     // module.hot.accept('/list', () => { render(ListIndex) });
@@ -40,4 +39,4 @@ const ClientRender = () => {
   render(ListIndex);
 }
 
-export default EASY_ENV_IS_NODE ?  <ServerRender /> : ClientRender();
+export default EASY_ENV_IS_NODE ?  ServerRender : ClientRender();

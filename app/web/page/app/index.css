@@ -168,8 +168,14 @@
 }
 
 .redux-nav-item{
+    margin-top: 40px;
     padding-left: 40px;
     padding-bottom: 40px;
+}
+
+.redux-nav-item h3{
+   text-align: center;
+   margin: 12px 0px;
 }
 
 .redux-btn-add{

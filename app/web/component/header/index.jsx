@@ -7,8 +7,8 @@ export default class Header extends Component {
 
   render() {
     return <header className="header">
-      <div className="container"><h1>
-        <a href="/" className="router-link-active">Egg + React</a></h1>
+      <div className="container">
+        <h1>Egg + React</h1>
       </div>
     </header>;
   }
