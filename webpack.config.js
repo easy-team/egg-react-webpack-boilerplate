@@ -1,30 +1,14 @@
 module.exports = {
   egg: true,
   framework: 'react',
-  devtool: 'source-map',
+  devtool: 'eval',
   entry: {
-    include: ['app/web/page',
-      { 'spa/redux': 'app/web/page/spa/redux.jsx?loader=false' },
-      { 'spa/client': 'app/web/page/spa/client.jsx?loader=false' },
-      { 'spa/ssr': 'app/web/page/spa/ssr.jsx?loader=false' }
-    ],
-    exclude: ['app/web/page/test'],
-    loader: {
-      client: 'app/web/framework/entry/client-loader.js',
-      server: 'app/web/framework/entry/server-loader.js'
-    }
-  },
-  alias: {
-    asset: 'app/web/asset',
-    component: 'app/web/component',
-    framework: 'app/web/framework',
-    store: 'app/web/store'
+    app: 'app/web/page/app/index.jsx',
+    list: 'app/web/page/list/index.jsx'
   },
   dll: ['react', 'react-dom'],
   loaders: {},
-  plugins: {
-    imagemini: false
-  },
+  plugins: {},
   done() {
     console.log('---webpack compile finish---');
   }
