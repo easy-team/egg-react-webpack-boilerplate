@@ -5,8 +5,8 @@ import {match, RouterContext} from 'react-router'
 import { BrowserRouter, StaticRouter } from 'react-router-dom';
 import { matchRoutes, renderRoutes } from 'react-router-config';
 import { AppContainer } from 'react-hot-loader';
-import Layout from '../../component/layout.jsx';
-import App from './components/index';
+import Layout from '../../component/layout';
+import App from './components';
 import { create } from './components/store';
 import routes from './components/router'
 import './index.css';
