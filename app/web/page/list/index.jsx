@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import ReactDom from 'react-dom';
-import { AppContainer } from 'react-hot-loader';
 import Layout from '../../component/layout.jsx';
 import List from './componets/list';
 import './index.css';
