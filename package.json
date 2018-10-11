@@ -55,9 +55,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hubcarl/egg-react-webpack-boilerplate.git"
+    "url": "git+https://github.com/easy-team/egg-react-webpack-boilerplate.git"
   },
   "author": "hubcarl@126.com",
   "license": "MIT",
-  "homepage": "https://github.com/hubcarl/egg-react-webpack-boilerplate"
+  "homepage": "https://github.com/easy-team/egg-react-webpack-boilerplate"
 }

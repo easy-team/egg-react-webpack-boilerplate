@@ -1,9 +1,9 @@
 # egg-react-webpack-boilerplate
 
-基于 Egg + React + Webpack4 多页面和单页面服务器渲染同构工程骨架项目, 文档请见: [Egg+React解决方案](http://hubcarl.github.io/easywebpack/react/dev/)
+基于 Egg + React + Webpack4 多页面和单页面服务器渲染同构工程骨架项目, 文档请见: [Egg+React解决方案](https://www.yuque.com/easy-team/res)
 
 - Egg 版本： ^2.x.x
-- Node 版本: Node ^8.x.x+,  Node 6.x.x 版本请见 [Egg 1.0 + Node6分支](https://github.com/hubcarl/egg-react-webpack-boilerplate/tree/node6)
+- Node 版本: Node ^8.x.x+,  Node 6.x.x 版本请见 [Egg 1.0 + Node6分支](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/node6)
 - Webpack 版本: ^4.x.x, 对应 `easywebpack-react` 版本为 4.x.x,  Webpack3 版本项目骨架请见 `webpack3` 分支, 对应 `easywebpack-react` 版本为 3.x.x
 - React 版本: ^15.0.0, ^16.0.0, 
 - 最新变更说明: [RELEASE](RELEASE.md)
@@ -15,14 +15,14 @@
 
 因该项目包含了多种实现, 提供多种例子实现，为防干扰, 特提供了两个纯净版本分支用于实际项目开发, 请自行选用。
 
-- Egg2 + React 多页面服务端渲染分支 [feature/green/multi](https://github.com/hubcarl/egg-react-webpack-boilerplate/tree/feature/green/multi)
-- Egg2 + React + React Router + Redux + React-Redux 单页面服务端渲染分支 [feature/green/spa](https://github.com/hubcarl/egg-react-webpack-boilerplate/tree/feature/green/spa)
+- Egg2 + React 多页面服务端渲染分支 [feature/green/multi](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/feature/green/multi)
+- Egg2 + React + React Router + Redux + React-Redux 单页面服务端渲染分支 [feature/green/spa](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/feature/green/spa)
 
 可以通过 [easywebpack-cli](https://github.com/hubcarl/easywebpack-cli) 命令行初始化对应类型项目。 
 
 ## 文档
 
-- http://hubcarl.github.io/easywebpack/react/rule
+- https://www.yuque.com/easy-team/res
 - https://zhuanlan.zhihu.com/easywebpack
 
 ## 特性
@@ -52,11 +52,11 @@
 
 ## 依赖
 
-- [easywebpack](https://github.com/hubcarl/easywebpack) ^4.x.x
-- [easywebpack-react](https://github.com/hubcarl/easywebpack-react) ^4.x.x
-- [egg-view-react-ssr](https://github.com/hubcarl/egg-view-react-ssr) ^2.1.0
-- [egg-webpack](https://github.com/hubcarl/egg-webpack) ^4.x.x
-- [egg-webpack-react](https://github.com/hubcarl/egg-webpack-react) ^2.0.0
+- [easywebpack](https://github.com/easy-team/easywebpack) ^4.x.x
+- [easywebpack-react](https://github.com/easy-team/easywebpack-react) ^4.x.x
+- [egg-view-react-ssr](https://github.com/easy-team/egg-view-react-ssr) ^2.1.0
+- [egg-webpack](https://github.com/easy-team/egg-webpack) ^4.x.x
+- [egg-webpack-react](https://github.com/easy-team/egg-webpack-react) ^2.0.0
 
 ![工程化](http://hubcarl.github.io/img/webpack/egg-webpack-react-ssr.png)
 
@@ -86,7 +86,7 @@ npm run dev
 应用访问: http://127.0.0.1:7001
 
 
-![npm start启动](https://github.com/hubcarl/egg-react-webpack-boilerplate/blob/master/docs/images/webpack.png)
+![npm start启动](https://github.com/easy-team/egg-react-webpack-boilerplate/blob/master/docs/images/webpack.png)
 
 #### 发布模式启动应用
 
