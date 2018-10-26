@@ -22,7 +22,7 @@
 
 ## 文档
 
-- https://www.yuque.com/easy-team/res
+- https://www.yuque.com/easy-team/egg-react
 - https://zhuanlan.zhihu.com/easywebpack
 
 ## 特性
