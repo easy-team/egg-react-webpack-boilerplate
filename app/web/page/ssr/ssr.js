@@ -5,7 +5,7 @@ import {match, RouterContext} from 'react-router'
 import { BrowserRouter, StaticRouter } from 'react-router-dom';
 import { matchRoutes, renderRoutes } from 'react-router-config';
 import { AppContainer } from 'react-hot-loader';
-import Layout from 'framework/layout/layout.jsx';
+import Layout from '../../framework/layout/layout.js';
 import Header from 'component/header/header';
 import SSR from 'component/spa/ssr/ssr';
 import { create } from 'component/spa/ssr/store';

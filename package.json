@@ -1,15 +1,13 @@
 {
   "name": "egg-react-webpack-spa-boilerplate",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "基于 easywebpack-react 和 egg-view-react-ssr 插件单页面服务端渲染工程骨架项目",
   "scripts": {
-    "build": "cross-env easywebpack build prod",
-    "build:test": "cross-env easywebpack build test",
-    "build:prod": "cross-env easywebpack build prod",
-    "dev": "cross-env WORKERS=1 node index.js",
-    "start": "cross-env EGG_SERVER_ENV=prod node index.js",
-    "start:test": "cross-env EGG_SERVER_ENV=test node index.js",
-    "kill-port": "kill -9 $(lsof -i:8888 |grep 'node'|aw '{print $2}') ",
+    "clean": "easy clean",
+    "build": "easy build",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "start": "egg-scripts start",
     "lint": "eslint .",
     "fix": "eslint --fix .",
     "ii": "npm install --registry https://registry.npm.taobao.org"
@@ -38,23 +36,17 @@
   },
   "devDependencies": {
     "autod-egg": "^1.0.0",
-    "autoprefixer": "^7.1.4",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-plugin-import": "^1.4.0",
-    "babel-plugin-syntax-dynamic-import": "^6.18.0",
-    "babel-plugin-transform-object-assign": "^6.22.0",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
-    "easywebpack-cli": "^3.5.0",
-    "easywebpack-react": "^3.6.0",
-    "egg-webpack": "^3.2.4",
+    "easywebpack-cli": "^4.0.0",
+    "easywebpack-react": "^4.0.0",
+    "egg-bin": "^4.9.0",
+    "egg-scripts": "^2.10.0",
+    "egg-webpack": "^4.4.8",
     "egg-webpack-react": "^2.0.0",
     "eslint-config-egg": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
     "imagemin-webpack-plugin": "^1.5.2",
-    "ip": "^1.1.5",
-    "uglifyjs-webpack-plugin": "^1.1.2"
+    "ip": "^1.1.5"
   },
   "engines": {
     "node": ">=6.0.0"
