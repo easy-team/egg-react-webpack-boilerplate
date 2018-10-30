@@ -1,27 +1,29 @@
+const path = require('path');
+const resolve = (filepath) => path.resolve(__dirname, filepath);
 module.exports = {
   devtool: 'source-map',
   entry: {
-    include: ['app/web/page'],
-    exclude: ['app/web/page/[a-z]+/component', 'app/web/page/test'],
-    loader: {
-      client: 'app/web/framework/entry/client-loader.js',
-      server: 'app/web/framework/entry/server-loader.js'
-    }
+    tab: 'app/web/page/ant/tab/tab.js'
   },
   resolve: {
     extensions: ['.less']
   },
   lib: ['react', 'react-dom'],
   loaders: {
-    // babel: {
-    //   include: [/app\/web/, /node_modules\/antd/]
-    // },
-    // less: {
-    //   include: [/app\/web/, /node_modules\/antd/],
-    //   options: {
-    //     javascriptEnabled: true
-    //   }
-    // }
+    babel: {
+      include: [resolve('app/web'), resolve('node_modules')]
+    },
+    less: {
+      include: [resolve('app/web'), resolve('node_modules')],
+      options: {
+        javascriptEnabled: true,
+        modifyVars: {
+          'primary-color': '#1DA57A',
+          'link-color': '#1DA57A',
+          'border-radius-base': '2px'
+        }
+      }
+    }
   },
   plugins: {},
   done() {
