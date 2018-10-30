@@ -4,9 +4,9 @@ module.exports = app => {
     async tab() {
       const { ctx } = this;
       await ctx.render('ant/tab/tab.js', {
-        title:'--ant design server side render--',
+        title:'--Ant Design Tab--',
         keywords:'react, server side render, ant design',
-        message: { text: 'react ant design server side render demo!'}});
+        message: { text: 'Ant Design Tab'}});
     }
   };
 };

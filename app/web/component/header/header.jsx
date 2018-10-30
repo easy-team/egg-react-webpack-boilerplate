@@ -8,12 +8,7 @@ export default class Header extends Component {
   render() {
     return <header className="header">
       <div className="container"><h1>
-        <a href="/" className="router-link-active">Egg+React</a></h1>
-      <ul className="nav">
-        <li className="nav-item"><a href="/">Server-Render</a></li>
-        <li className="nav-item"><a href="/client">Client-Render</a></li>
-        <li className="nav-item"><a href="/ant/tab">Ant-Design</a></li>
-      </ul>
+        <a href="/" className="router-link-active">Egg+Ant-Design</a></h1>
       </div>
     </header>;
   }

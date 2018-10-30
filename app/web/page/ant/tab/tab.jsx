@@ -13,7 +13,7 @@ export default class Module extends Component {
     return <div>
       <Header></Header>
       <div className="tab">
-        <div>{this.props.message.text}</div>
+        <h1>{this.props.message.text}</h1>
         <Tabs defaultActiveKey="1" onChange={tabItemClick}>
           <TabPane tab="Tab 1" key="1">Content of Tab Pane 1</TabPane>
           <TabPane tab="Tab 2" key="2">Content of Tab Pane 2</TabPane>
