@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from 'component/header/header.jsx';
+import Layout from 'framework/layout/layout.jsx';
 import { Tabs } from 'antd';
 import './tab.css';
 const TabPane = Tabs.TabPane;
@@ -8,7 +9,7 @@ const tabItemClick = (key) =>{
   console.log('tab click',key);
 };
 
-export default class Module extends Component {
+class TabComponent extends Component {
   render() {
     return <div>
       <Header></Header>
@@ -20,6 +21,13 @@ export default class Module extends Component {
           <TabPane tab="Tab 3" key="3">Content of Tab Pane 3</TabPane>
         </Tabs>
       </div>
-    </div>;
+    </div>
+  }
+}
+
+
+export default class TabApp extends Component {
+  render() {
+    return EASY_ENV_IS_NODE ? <Layout><TabComponent {...this.props}></TabComponent></Layout> :  <TabComponent {...this.props}></TabComponent>
   }
 }

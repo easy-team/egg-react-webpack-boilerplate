@@ -9,7 +9,9 @@ module.exports = {
     extensions: ['.less']
   },
   lib: ['react', 'react-dom'],
+  cssModule: false,
   loaders: {
+    eslint: false,
     babel: {
       include: [resolve('app/web'), resolve('node_modules')]
     },
@@ -18,7 +20,7 @@ module.exports = {
       options: {
         javascriptEnabled: true,
         modifyVars: {
-          'primary-color': '#1DA57A',
+          'primary-color': 'red',
           'link-color': '#1DA57A',
           'border-radius-base': '2px'
         }
