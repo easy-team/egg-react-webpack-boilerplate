@@ -3,13 +3,12 @@ const resolve = (filepath) => path.resolve(__dirname, filepath);
 module.exports = {
   devtool: 'source-map',
   entry: {
-    tab: 'app/web/page/ant/tab/tab.js'
+    tab: 'app/web/page/ant/tab/tab.jsx'
   },
   resolve: {
     extensions: ['.less']
   },
   lib: ['react', 'react-dom'],
-  cssModule: false,
   loaders: {
     eslint: false,
     babel: {

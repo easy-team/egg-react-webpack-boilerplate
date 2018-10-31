@@ -18,7 +18,7 @@ module.exports = () => {
   };
 
   exports.webpack = {
-    webpackConfigList: EasyWebpack.getWebpackConfig()
+    // webpackConfigList: EasyWebpack.getWebpackConfig()
   };
 
   const localIP = ip.address();

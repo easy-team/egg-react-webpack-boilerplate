@@ -10,6 +10,9 @@ const tabItemClick = (key) =>{
 };
 
 class TabComponent extends Component {
+  componentDidUpdate() {
+    console.log('---componentDidUpdate---');
+  }
   render() {
     return <div>
       <Header></Header>
