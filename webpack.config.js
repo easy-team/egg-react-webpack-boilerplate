@@ -1,16 +1,12 @@
 const path = require('path');
 const resolve = (filepath) => path.resolve(__dirname, filepath);
 module.exports = {
-  devtool: 'source-map',
+  devtool: 'eval',
   entry: {
     tab: 'app/web/page/ant/tab/tab.jsx'
   },
-  resolve: {
-    extensions: ['.less']
-  },
   lib: ['react', 'react-dom'],
   loaders: {
-    eslint: false,
     babel: {
       include: [resolve('app/web'), resolve('node_modules')]
     },

@@ -39,7 +39,7 @@
   "devDependencies": {
     "autod-egg": "^1.0.0",
     "easywebpack-cli": "^4.0.0",
-    "easywebpack-react": "next",
+    "easywebpack-react": "^4.0.0",
     "egg-bin": "^4.9.0",
     "egg-webpack": "^4.0.0",
     "egg-webpack-react": "^2.0.0",
