@@ -1,9 +1,9 @@
 # egg-react-webpack-boilerplate
 
-基于 Egg + React + Webpack4 多页面和单页面服务器渲染同构工程骨架项目, 文档请见: [Egg+React解决方案](https://www.yuque.com/easy-team/res)
+基于 Egg + React + Webpack 多页面和单页面服务器渲染同构工程骨架项目, 文档请见: [Egg + React 解决方案](https://www.yuque.com/easy-team/egg-react)
 
 - Egg 版本： ^2.x.x
-- Node 版本: Node ^8.x.x+,  Node 6.x.x 版本请见 [Egg 1.0 + Node6分支](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/node6)
+- Node 版本: Node ^8.x.x+
 - Webpack 版本: ^4.x.x, 对应 `easywebpack-react` 版本为 4.x.x,  Webpack3 版本项目骨架请见 `webpack3` 分支, 对应 `easywebpack-react` 版本为 3.x.x
 - React 版本: ^15.0.0, ^16.0.0, 
 - 最新变更说明: [RELEASE](RELEASE.md)
@@ -15,10 +15,13 @@
 
 因该项目包含了多种实现, 提供多种例子实现，为防干扰, 特提供了两个纯净版本分支用于实际项目开发, 请自行选用。
 
-- Egg2 + React 多页面服务端渲染分支 [feature/green/multi](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/feature/green/multi)
-- Egg2 + React + React Router + Redux + React-Redux 单页面服务端渲染分支 [feature/green/spa](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/feature/green/spa)
+- Egg + React 多页面服务端渲染分支 [feature/green/multi](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/feature/green/multi)
+- Egg + React + React Router + Redux + React-Redux 单页面服务端渲染分支 [feature/green/spa](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/feature/green/spa)
+- Egg + AntD + React Router + Redux + React-Redux  单页面服务端渲染分支 [antd](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/antd)
+- Egg + AntD 多页面服务端渲染分支 [antd](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/antd-theme)
+- Egg + React + TypeScript 项目请见[egg-react-typescript-boilerplate](https://github.com/easy-team/egg-react-typescript-boilerplate)
 
-可以通过 [easywebpack-cli](https://github.com/hubcarl/easywebpack-cli) 命令行初始化对应类型项目。 
+可以通过 [easywebpack-cli](https://github.com/easy-team/easywebpack-cli) 命令行初始化对应类型项目。 
 
 ## 文档
 
@@ -123,7 +126,7 @@ exports.webpack = {
 npm start
 
 // 编译文件到磁盘打包使用(发布正式环境)
-npm run build 或者 easywebpack build prod
+npm run build 或者 easy build
 
 ```
 
