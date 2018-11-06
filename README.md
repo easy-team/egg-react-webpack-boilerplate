@@ -2,23 +2,21 @@
 
 基于 Egg + React + Webpack 多页面和单页面服务器渲染同构工程骨架项目, 文档请见: [Egg + React 解决方案](https://www.yuque.com/easy-team/egg-react)
 
-- Egg 版本： ^2.x.x
-- Node 版本: Node ^8.x.x+
-- Webpack 版本: ^4.x.x, 对应 `easywebpack-react` 版本为 4.x.x,  Webpack3 版本项目骨架请见 `webpack3` 分支, 对应 `easywebpack-react` 版本为 3.x.x
-- React 版本: ^15.0.0, ^16.0.0, 
-- 最新变更说明: [RELEASE](RELEASE.md)
-- 骨架功能性需求或者Bug问题, 欢迎大家 PR 完善
-- 如果你需要了解 Egg + React + Webpack 项目更多信息，请扫以下二维码加 QQ 好友，请备注：Node.js
+- Egg 版本：^2.x.x
+- Node 版本: ^8.x.x
+- React 版本: ^16.0.0, 
+- Webpack 版本: ^4.x.x, 对应 `easywebpack-react` 版本为 4.x.x
+- 骨架功能性需求或者Bug问题, 欢迎大家 PR 完善, 如果你需要了解 Egg + React + Webpack 项目更多信息，请扫以下二维码加 QQ 好友，请备注：Node.js
 ![hubcarl](https://avatars3.githubusercontent.com/u/4983042?v=4&u=0befb64a57a7911c630b7f97df5632385b08da2a&s=250)
 
 ## 版本
 
-因该项目包含了多种实现, 提供多种例子实现，为防干扰, 特提供了两个纯净版本分支用于实际项目开发, 请自行选用。
+因该项目包含了多种实现, 提供多种例子实现，为防干扰, 特提供纯净版本分支用于实际项目开发, 请自行选用。
 
 - Egg + React 多页面服务端渲染分支 [feature/green/multi](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/feature/green/multi)
 - Egg + React + React Router + Redux + React-Redux 单页面服务端渲染分支 [feature/green/spa](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/feature/green/spa)
 - Egg + AntD + React Router + Redux + React-Redux  单页面服务端渲染分支 [antd](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/antd)
-- Egg + AntD 多页面服务端渲染分支 [antd](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/antd-theme)
+- Egg + Antd 按需配置和主题定制 [antd-theme](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/antd-theme) 和 [文档](https://www.yuque.com/easy-team/egg-react/antd)
 - Egg + React + TypeScript 项目请见[egg-react-typescript-boilerplate](https://github.com/easy-team/egg-react-typescript-boilerplate)
 
 可以通过 [easywebpack-cli](https://github.com/easy-team/easywebpack-cli) 命令行初始化对应类型项目。 
@@ -50,7 +48,7 @@
 
 - easywebpack ^3.5.0 版本开始支持 webpack dll 自动化构建, 与多进程编译结合，构建速度减少 2/3
 
-- Node 8 版本的async和await特性, Controller 采用 class 方式编写
+- Node 8 版本的 async 和 await 特性, Controller 采用 class 方式编写
 
 
 ## 依赖
@@ -62,7 +60,6 @@
 - [egg-webpack-react](https://github.com/easy-team/egg-webpack-react) ^2.0.0
 
 ![工程化](http://hubcarl.github.io/img/webpack/egg-webpack-react-ssr.png)
-
 
 
 ## 使用
