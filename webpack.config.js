@@ -5,7 +5,7 @@ module.exports = {
   entry: {
     tab: 'app/web/page/ant/tab/tab.jsx'
   },
-  lib: ['react', 'react-dom'],
+  dll: ['react', 'react-dom'],
   loaders: {
     babel: {
       include: [resolve('app/web'), resolve('node_modules')]

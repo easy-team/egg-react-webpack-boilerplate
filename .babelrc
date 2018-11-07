@@ -1,43 +1,54 @@
 {
-  "env":{
+  "env": {
     "node": {
       "presets": [
-        "react",
-        ["env", {
-          "modules": false,
-          "targets": {
-            "node": "current"
+        "@babel/preset-react",
+        [
+          "@babel/preset-env",
+          {
+            "modules": false,
+            "targets": {
+              "node": "current"
+            }
           }
-        }]
+        ]
       ],
       "plugins": [
-        "syntax-dynamic-import",
-        "transform-object-rest-spread"
+        "@babel/plugin-syntax-dynamic-import",
+        "@babel/plugin-proposal-object-rest-spread"
       ]
     },
     "web": {
       "presets": [
-        "react",
-        ["env", {
-          "modules": false,
-          "targets": {
-            "browsers": ["last 2 versions", "safari >= 7"]
+        "@babel/preset-react",
+        [
+          "@babel/preset-env",
+          {
+            "modules": false,
+            "targets": {
+              "browsers": [
+                "last 2 versions",
+                "safari >= 7"
+              ]
+            }
           }
-        }]
+        ]
       ],
       "plugins": [
         "react-hot-loader/babel",
-        "transform-object-assign",
-        "syntax-dynamic-import",
-        "transform-object-rest-spread",
-        ["import", {
-          "libraryName": "antd",
-          "libraryDirectory": "lib",
-          "style": true
-        }]
+        "@babel/plugin-transform-object-assign",
+        "@babel/plugin-syntax-dynamic-import",
+        "@babel/plugin-proposal-object-rest-spread",
+        [
+          "import",
+          {
+            "libraryName": "antd",
+            "libraryDirectory": "lib",
+            "style": true
+          }
+        ]
       ]
     }
   },
-  
   "comments": false
 }
