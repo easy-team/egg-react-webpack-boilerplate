@@ -26,6 +26,8 @@
 
 - Node 8 版本的 async 和 await 特性, Controller 采用 class 方式编写
 
+- 支持国际化多语言
+
 
 ## 依赖
 

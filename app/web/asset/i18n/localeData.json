@@ -1,0 +1,12 @@
+{
+  "en": {
+    "Server-Render": "Server-Render",
+    "Client-Render": "Client-Render",
+    "Ant-Design": "Ant-Design"
+  },
+  "es": {
+    "Server-Render": "Server-Render",
+    "Client-Render": "Cliente-Render",
+    "Ant-Design": "Diseño de hormigas"
+  }
+}
