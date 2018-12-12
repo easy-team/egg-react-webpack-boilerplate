@@ -29,6 +29,7 @@
     "moment": "^2.17.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-intl": "^2.7.2",
     "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
     "react-router-config": "^1.0.0-beta.4",

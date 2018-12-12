@@ -3,7 +3,9 @@ module.exports = app => {
   return class AppController extends app.Controller {
     async index() {
       const { ctx } = this;
-      await ctx.render('home/home.js', Model.getPage(1, 10));
+      const responseData = Model.getPage(1, 10);
+      responseData.locale = 'es';
+      await ctx.render('home/home.js', responseData);
     }
 
     async client() {
