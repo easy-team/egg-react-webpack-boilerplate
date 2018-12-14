@@ -13,9 +13,10 @@
 
 因该项目包含了多种实现, 提供多种例子实现，为防干扰, 特提供纯净版本分支用于实际项目开发, 请自行选用。
 
-- Egg + React 多页面服务端渲染分支 [feature/green/multi](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/feature/green/multi)
-- Egg + React + React Router + Redux + React-Redux 单页面服务端渲染分支 [feature/green/spa](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/feature/green/spa)
-- Egg + AntD + React Router + Redux + React-Redux  单页面服务端渲染分支 [antd](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/antd)
+- Egg + React 多页面服务端渲染方案 [feature/green/multi](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/feature/green/multi)
+- Egg + React + React Router + Redux + React-Redux 单页面服务端渲染方案 [feature/green/spa](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/feature/green/spa)
+- Egg + AntD + React Router + Redux + React-Redux  单页面前端渲染asset方案 [feature/green/asset](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/feature/green/asset)
+- Egg + AntD + React Router + Redux + React-Redux  单页面服务端渲染方案 [antd](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/antd)
 - Egg + Antd 按需配置和主题定制 [antd-theme](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/antd-theme) 和 [文档](https://www.yuque.com/easy-team/egg-react/antd)
 - Egg + React + TypeScript 项目请见[egg-react-typescript-boilerplate](https://github.com/easy-team/egg-react-typescript-boilerplate)
 
