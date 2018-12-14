@@ -1,7 +1,7 @@
 {
-  "name": "egg-react-webpack-spa-boilerplate",
-  "version": "2.0.0",
-  "description": "基于 easywebpack-react 和 egg-view-react-ssr 插件单页面服务端渲染工程骨架项目",
+  "name": "egg-react-asset-boilerplate",
+  "version": "1.0.0",
+  "description": "基于 easywebpack-react 和 egg-view-react-ssr Asset 前端渲染工程骨架项目",
   "scripts": {
     "clean": "easy clean",
     "build": "easy build",
@@ -19,7 +19,8 @@
     "egg-cors": "^2.0.0",
     "egg-logger": "^1.5.0",
     "egg-validate": "^1.0.0",
-    "egg-view-react-ssr": "^2.1.0",
+    "egg-view-nunjucks": "^2.0.0",
+    "egg-view-react-ssr": "^2.2.0",
     "extend": "~3.0.0",
     "history": "^4.7.2",
     "lodash": "^4.17.4",
@@ -45,14 +46,14 @@
     "egg-webpack-react": "^2.0.0",
     "eslint-config-egg": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
-    "imagemin-webpack-plugin": "^1.5.2",
+    "imagemin-webpack-plugin": "^2.0.0",
     "ip": "^1.1.5"
   },
   "engines": {
     "node": ">=6.0.0"
   },
   "ci": {
-    "version": "6, 8, 9"
+    "version": "8, 10"
   },
   "repository": {
     "type": "git",

@@ -1,38 +1,25 @@
-# egg-react-webpack-boilerplate
+# egg-react-asset-boilerplate
 
-基于 Egg + React + Webpack3 单页面服务端渲染同构工程骨架项目
-
-- Egg 版本： ^2.x.x
-- Node 版本: Node ^8.x.x+
-- Webpack 版本: ^3.10.0, 对应 `easywebpack-react` 版本为 3.6.0
-- React 版本: ^15.0.0, ^16.0.0, 
+基于 Egg + React + Webpack 前端渲染 Asset 骨架项目, 开发前请阅读 [asset 渲染](https://www.yuque.com/easy-team/egg-react/asset)
 
 ## 文档
 
-- http://hubcarl.github.io/easywebpack/react/rule
+- https://yuque.com/easy-team/egg-react
 - https://zhuanlan.zhihu.com/easywebpack
 
 ## 特性
 
-- 基于 React 单页面服务端客户端同构实现
-
-- 支持服务端渲染 `render` 和纯前端渲染 `renderClient`
-
-- 支持 react-router, react-redux 服务端/客户端单页面渲染
-
-- Node 8 版本的 async 和 await 特性, Controller 采用 class 方式编写
-
+- 基于 React + React-Router + React-Redux 单页面前端渲染方案
 
 ## 依赖
 
-- [easywebpack](https://github.com/hubcarl/easywebpack) ^3.5.3
-- [easywebpack-react](https://github.com/hubcarl/easywebpack-react) ^3.5.0
-- [egg-view-react-ssr](https://github.com/hubcarl/egg-view-react-ssr) ^2.1.0
-- [egg-webpack](https://github.com/hubcarl/egg-webpack) ^2.4.6
+- [easywebpack](https://github.com/hubcarl/easywebpack) ^4.0.0
+- [easywebpack-react](https://github.com/hubcarl/easywebpack-react) ^4.0.0
+- [egg-view-react-ssr](https://github.com/hubcarl/egg-view-react-ssr) ^2.4.0
+- [egg-webpack](https://github.com/hubcarl/egg-webpack) ^4.0.0
 - [egg-webpack-react](https://github.com/hubcarl/egg-webpack-react) ^2.0.0
 
 ![工程化](http://hubcarl.github.io/img/webpack/egg-webpack-react-ssr.png)
-
 
 
 ## 使用
@@ -47,13 +34,12 @@ npm install easywebpack-cli -g
 
 ```bash
 npm install
-npm start
 ```
 
 #### 启动应用
 
 ```bash
-npm start
+npm run dev
 ```
 
 应用访问: http://127.0.0.1:7001
@@ -68,7 +54,7 @@ npm start
 npm start
 
 // 编译文件到磁盘打包使用(发布正式环境)
-npm run build 或者 easywebpack build prod
+npm run build 或者 easy build
 ```
 
 ## License

@@ -1,8 +1,8 @@
-import { createStore, combineReducers } from 'redux';
-import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
-import reducers from 'component/spa/redux/reducers';
+import { createStore } from 'redux';
+import reducers from './reducers';
 export default createStore(
   reducers, {
+    ...window.__INITIAL_STATE__,
     list: [{
       id: 0,
       title: 'webpack配置官方文档',
