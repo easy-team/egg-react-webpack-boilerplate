@@ -2,6 +2,8 @@
 
 基于 Egg + React + Webpack 多页面和单页面服务器渲染同构工程骨架项目, 文档请见: [Egg + React 解决方案](https://www.yuque.com/easy-team/egg-react)
 
+![easy-react-admin](https://github.com/easy-team/egg-react-webpack-boilerplate/blob/master/docs/images/easy-react-admin.png)
+
 - Egg 版本：^2.x.x
 - Node 版本: ^8.x.x
 - React 版本: ^16.0.0, 
@@ -17,6 +19,7 @@
 - Egg + React + React Router + Redux + React-Redux 单页面服务端渲染方案 [feature/green/spa](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/feature/green/spa)
 - Egg + AntD + React Router + Redux + React-Redux  单页面前端渲染asset方案 [feature/green/asset](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/feature/green/asset)
 - Egg + AntD + React Router + Redux + React-Redux  单页面服务端渲染方案 [antd](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/antd)
+- Egg + AntD + React Router + Redux + React-Redux  单页面管理后台前端渲染方案 [antd](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/easy-admin)
 - Egg + Antd 按需配置和主题定制 [antd-theme](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/antd-theme) 和 [文档](https://www.yuque.com/easy-team/egg-react/antd)
 - Egg + React + TypeScript 项目请见[egg-react-typescript-boilerplate](https://github.com/easy-team/egg-react-typescript-boilerplate)
 
