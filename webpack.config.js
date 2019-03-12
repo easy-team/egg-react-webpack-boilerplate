@@ -1,7 +1,7 @@
 module.exports = {
+  target: 'web',
   entry: {
-    app: 'app/web/page/app/index.js',
-    list: 'app/web/page/list/index.jsx',
+    login: 'app/web/page/login/index.jsx',
     admin: 'app/web/page/admin/index.jsx'
   }
 };

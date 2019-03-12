@@ -1,7 +1,7 @@
 {
-  "name": "egg-react-webpack-boilerplate",
-  "version": "4.3.1",
-  "description": "基于 easywebpack-react 和 egg-view-react-ssr 插件服务端渲染工程骨架项目",
+  "name": "easy-react-admin",
+  "version": "1.0.0",
+  "description": "基于 egg + easywebpack-react 管理后台工程骨架项目",
   "scripts": {
     "clean": "easy clean",
     "build": "easy build",

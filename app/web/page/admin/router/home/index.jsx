@@ -4,32 +4,14 @@ import { add, del } from '../../store/actions';
 
 import './index.css';
 class Home extends Component {
+  
   render() {
-    const list = [{
-      id: 0,
-      title: 'Egg + React 服务端渲染骨架',
-      summary: '基于Egg + React + Webpack3/Webpack2 服务端渲染同构工程骨架项目',
-      hits: 550,
-      url: 'https://github.com/hubcarl/egg-react-webpack-boilerplate'
-    }, {
-      id: 1,
-      title: '前端工程化解决方案easywebpack',
-      summary: 'programming instead of configuration, webpack is so easy',
-      hits: 550,
-      url: 'https://github.com/hubcarl/easywebpack'
-    }, {
-      id: 2,
-      title: '最强大的 Webpack CLI 工具 easywebpack-cli',
-      summary: 'easywebpack command tool, support init Vue/Reac/Weex boilerplate',
-      hits: 278,
-      url: 'https://github.com/hubcarl/easywebpack-cli'
-    }];
-    const id = list.length + 1;
-    const item = {
-      id,
-      title: `Egg+React 服务端渲染骨架-${id}`,
+    const { add, del, list } = this.props;
+    const newItem = {
+      id: new Date().getTime(),
+      title: `Egg + React 服务端渲染骨架-${Math.floor(Math.random() * 400)}`,
       summary: '基于Egg + React + Webpack3/Webpack2 服务端渲染骨架项目',
-      hits: 550 + id,
+      hits: 100 + Math.floor(Math.random() * 400),
       url: 'https://github.com/hubcarl/egg-react-webpack-boilerplate'
     };
     return <div className="redux-nav-item">
@@ -66,7 +48,7 @@ class Home extends Component {
           </div>
         </div>
       </div>
-      <div className="redux-btn-add" onClick={() => add(item)}>Add</div>
+      <div className="redux-btn-add" onClick={() => add(newItem)}>Add</div>
     </div>;
   }
 }

@@ -4,6 +4,7 @@ import { Layout, Menu, Icon } from 'antd';
 
 import Home from './home/index';
 import About from './about/index';
+import './index.css';
 
 const { Header, Sider, Content } = Layout;
 
@@ -11,6 +12,7 @@ export default class AppRoute extends Component {
   state = {
     title: 'easy-admin',
     collapsed: false,
+    defaultSelectedKeys: [this.props.url]
   };
 
   toggle = () => {
@@ -25,9 +27,10 @@ export default class AppRoute extends Component {
       <Layout className="admin" style={{height:"100vh"}}>
         <Sider trigger={null} collapsible collapsed={this.state.collapsed}>
           <div className="logo">{ this.state.title }</div>
-          <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
-            <Menu.Item key="home">
-              <Icon type="user" />
+          <Menu className={ this.state.collapsed ? 'left-menu-collapsed' : 'left-menu'} 
+            theme="dark" mode="inline" defaultSelectedKeys={this.state.defaultSelectedKeys}>
+            <Menu.Item key="/">
+              <Icon type="home" />
               <Link to="/">Home</Link>
             </Menu.Item>
             <Menu.Item key="about">
@@ -46,8 +49,8 @@ export default class AppRoute extends Component {
           </Header>
           <Content style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280 }}>
             <Switch>
-              <Route path="/" component={Home}/>
-              <Route path="/about" component={About}/>
+              <Route exact path="/" component={Home}/>
+              <Route exact path="/about" component={About}/>
             </Switch>
           </Content>
         </Layout>
