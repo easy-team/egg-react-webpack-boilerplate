@@ -4,14 +4,9 @@
 
 ![easy-react-admin](https://github.com/easy-team/egg-react-webpack-boilerplate/blob/master/docs/images/easy-react-admin.jpg)
 
-- Egg 版本：^2.x.x
-- Node 版本: ^8.x.x
-- React 版本: ^16.0.0, 
-- Webpack 版本: ^4.x.x, 对应 `easywebpack-react` 版本为 4.x.x
-- 骨架功能性需求或者Bug问题, 欢迎大家 PR 完善, 如果你需要了解 Egg + React + Webpack 项目更多信息，请扫以下二维码加 QQ 好友，请备注：Node.js
-![hubcarl](https://avatars3.githubusercontent.com/u/4983042?v=4&u=0befb64a57a7911c630b7f97df5632385b08da2a&s=250)
-
 ## 版本
+
+> 骨架功能性需求或者Bug问题, 欢迎大家 PR 完善, 如果你需要了解项目更多信息，请扫加 QQ 群: 433207205，请备注：Node.js.
 
 因该项目包含了多种实现, 提供多种例子实现，为防干扰, 特提供纯净版本分支用于实际项目开发, 请自行选用。
 
