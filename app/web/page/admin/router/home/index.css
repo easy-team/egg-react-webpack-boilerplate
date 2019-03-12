@@ -1,0 +1,20 @@
+
+.redux-btn-add{
+  background-color: #1CB94A;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.redux-btn-del{
+  background-color: #cd2a19;
+  color: white;
+  display: block;
+  width: 60px;
+  line-height: 30px;
+  height: 30px;
+  vertical-align: middle;
+  text-align: center;
+}

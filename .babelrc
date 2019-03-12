@@ -5,7 +5,7 @@
     }]
   ],
   "plugins": [
-    "transform-object-assign",
+    "transform-class-properties",
     "syntax-dynamic-import",
     "transform-object-rest-spread", ["import", {
       "libraryName": "antd",
