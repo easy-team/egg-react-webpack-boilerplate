@@ -8,7 +8,6 @@ import { Menu, Icon } from 'antd';
 class App extends Component {
   constructor(props) {
     super(props);
-    console.log('>>>', props.url);
     this.state = { current: props.url };
   }
 
@@ -30,8 +29,8 @@ class App extends Component {
         </Menu.Item>
       </Menu>
       <Switch>
-        <Route path="/" component={Home}/>
         <Route path="/about" component={About}/>
+        <Route path="/" component={Home}/>
       </Switch>
     </div>;
   }
