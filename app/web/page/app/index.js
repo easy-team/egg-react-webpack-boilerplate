@@ -14,6 +14,7 @@ import './index.css';
 const clientRender = () => {
   const store = create(window.__INITIAL_STATE__);
   const url = store.getState().url;
+  console.log('>>>url', url);
   const Entry = () => (<div>
     <Provider store={ store }>
       <BrowserRouter>
@@ -33,6 +34,7 @@ const clientRender = () => {
 
 const serverRender = (context, options)=> {
   const url = context.state.url;
+  console.log('>>>>url', url);
   const branch = matchRoutes(routes, url);
   const promises = branch.map(({route}) => {
     const fetch = route.component.fetch;

@@ -8,7 +8,8 @@ import { Menu, Icon } from 'antd';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { current: 'home' };
+    console.log('>>>', props.url);
+    this.state = { current: props.url };
   }
 
   handleClick(e) {
@@ -21,10 +22,10 @@ class App extends Component {
   render() {
     return <div>
       <Menu onClick={this.handleClick.bind(this)} selectedKeys={[this.state.current]} mode="horizontal">
-        <Menu.Item key="home">
+        <Menu.Item key="/">
           <Link to="/">Home</Link>
         </Menu.Item>
-        <Menu.Item key="about">
+        <Menu.Item key="/about">
           <Link to="/about">About</Link>
         </Menu.Item>
       </Menu>
