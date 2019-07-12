@@ -1,6 +1,6 @@
 # egg-react-webpack-boilerplate
 
-基于 Egg + React + Webpack 多页面和单页面服务器渲染同构工程骨架项目, 文档请见: [Egg + React 解决方案](https://www.yuque.com/easy-team/egg-react)
+基于 Egg + React + Webpack 服务端渲染(Server Side Render)工程骨架项目, 文档请见: [Egg + React 解决方案](https://www.yuque.com/easy-team/egg-react)
 
 ![easy-react-admin](https://github.com/easy-team/egg-react-webpack-boilerplate/blob/master/docs/images/easy-react-admin.jpg)
 
@@ -27,11 +27,9 @@
 
 ## 特性
 
-- 基于 React 多页面/单页面服务端客户端同构实现
+- 基于 React 多页面/单页面服务端渲染
 
-- 基于 easywebpack 基础配置, 使用 es6 class 继承方式编写 webpack 配置
-
-- 支持 server 和 client 端代码修改, webpack时时编译和热更新, `npm start` 一键启动应用
+- 支持 Node 和 前端代码修改 Webpack 时时编译和热更新
 
 - 支持服务端渲染 `render` 和纯前端渲染 `renderClient`
 
@@ -41,11 +39,11 @@
 
 - 支持 css module , 且同时支持 css 和 css module 共存的情况
 
-- 支持 react-router, react-redux 服务端/客户端单页面渲染
+- 支持 react-router, react-redux 服务端SPA渲染
 
-- egg-webpack ^3.2.4 版本开始支持多进程编译
+- 支持 webpack dll 自动化构建, 与多进程编译结合，构建速度减少 2/3
 
-- easywebpack ^3.5.0 版本开始支持 webpack dll 自动化构建, 与多进程编译结合，构建速度减少 2/3
+- 支持服务端渲染失败时, 自动降级为前端渲染模式
 
 - Node 8 版本的 async 和 await 特性, Controller 采用 class 方式编写
 
