@@ -15,6 +15,6 @@ export default class Layout extends Component {
         <body><HeaderComponet></HeaderComponet><div id="app">{this.props.children}</div></body>
       </html>;
     }
-    return <div id="app">{this.props.children}</div>;
+    return this.props.children;
   }
 }
