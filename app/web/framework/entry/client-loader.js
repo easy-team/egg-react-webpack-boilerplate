@@ -14,7 +14,9 @@ module.exports = function () {
     const locale = state.locale || 'en';
     const messages =  localeData[locale];
     addLocaleData([...en, ...es]);
-    ReactDom.hydrate(EASY_ENV_IS_DEV ? <AppContainer><IntlProvider locale={locale} messages={messages}><App {...state} /></IntlProvider></AppContainer> : <IntlProvider locale={locale} messages={messages}><App {...state} /></IntlProvider>, document.getElementById('app'));
+    const root = document.getElementById('app');
+    const renderMode = root.children.length ? 'hydrate' : 'render';
+    ReactDom[renderMode](EASY_ENV_IS_DEV ? <AppContainer><IntlProvider locale={locale} messages={messages}><App {...state} /></IntlProvider></AppContainer> : <IntlProvider locale={locale} messages={messages}><App {...state} /></IntlProvider>, root);
   };
 
   if (EASY_ENV_IS_DEV && module.hot) {
