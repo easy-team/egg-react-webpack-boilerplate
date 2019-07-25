@@ -14,7 +14,6 @@ tmp/
 *tmp
 _site
 logs
-.vscode
 config/buildConfig.json
 config/manifest.json
 app/view/*
