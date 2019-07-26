@@ -19,6 +19,7 @@
     "egg-cors": "^2.0.0",
     "egg-logger": "^2.4.1",
     "egg-scripts": "^2.8.1",
+    "egg-serviceworker": "^1.0.0",
     "egg-validate": "^2.0.2",
     "egg-view-react-ssr": "^2.2.6",
     "extend": "~3.0.0",
@@ -46,7 +47,8 @@
     "eslint-config-egg": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
     "imagemin-webpack-plugin": "^2.3.0",
-    "ip": "^1.1.5"
+    "ip": "^1.1.5",
+    "service-worker-register": "^1.2.6"
   },
   "engines": {
     "node": ">=8.0.0"

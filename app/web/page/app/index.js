@@ -30,6 +30,10 @@ const clientRender = () => {
     module.hot.accept();
   }
   render(Entry);
+  import('service-worker-register').then(sw =>{
+    sw.default.register('service-worker.js');
+  });
+
 };
 
 const serverRender = (context, options)=> {
