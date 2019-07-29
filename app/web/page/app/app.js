@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
-import Header from 'component/header/header.jsx';
+import Header from '../../component/header/header.jsx';
 import App from './route';
 import store from './store';
 
