@@ -3,6 +3,13 @@ const fs = require('fs');
 module.exports = app => {
   const exports = {};
 
+  exports.view = {
+    defaultViewEngine: 'nunjucks',
+    mapping: {
+      '.tpl': 'nunjucks'
+    },
+  };
+
   exports.siteFile = {
     '/favicon.ico': fs.readFileSync(path.join(app.baseDir, 'app/web/asset/images/favicon.ico'))
   };
@@ -22,10 +29,5 @@ module.exports = app => {
   exports.middleware = [
     'access'
   ];
-
-  exports.reactssr = {
-    layout: path.join(app.baseDir, 'app/web/view/layout.html')
-  }
-
   return exports;
 };

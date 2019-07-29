@@ -13,10 +13,6 @@ module.exports = () => {
     ignoreDirs: ['app/web', 'public', 'config'] // 指定过滤的目录（包括子目录）
   };
 
-  exports.reactssr = {
-    injectCss: true
-  };
-
   exports.webpack = {
     webpackConfigList: EasyWebpack.getWebpackConfig()
   };

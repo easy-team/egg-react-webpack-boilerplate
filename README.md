@@ -1,6 +1,6 @@
-# egg-react-asset-boilerplate
+# egg-react-nunjucks-boilerplate
 
-基于 Egg + React + Webpack 前端渲染 Asset 骨架项目, 开发前请阅读 [asset 渲染](https://www.yuque.com/easy-team/egg-react/asset)
+基于 Egg + React + Webpack + Nunjucks 前端渲染骨架项目, 开发前请阅读 [nunjucks渲染](https://www.yuque.com/easy-team/egg-react/nunjucks)
 
 ## 文档
 
@@ -9,18 +9,14 @@
 
 ## 特性
 
-- 基于 React + React-Router + React-Redux 单页面前端渲染方案
+- 基于 React + React-Router + React-Redux 单页面 Nunjucks 前端渲染方案
 
 ## 依赖
 
 - [easywebpack](https://github.com/hubcarl/easywebpack) ^4.0.0
 - [easywebpack-react](https://github.com/hubcarl/easywebpack-react) ^4.0.0
-- [egg-view-react-ssr](https://github.com/hubcarl/egg-view-react-ssr) ^2.4.0
+- [egg-view-nunjucks](https://github.com/eggjs/egg-view-nunjucks) ^2.0.0
 - [egg-webpack](https://github.com/hubcarl/egg-webpack) ^4.0.0
-- [egg-webpack-react](https://github.com/hubcarl/egg-webpack-react) ^2.0.0
-
-![工程化](http://hubcarl.github.io/img/webpack/egg-webpack-react-ssr.png)
-
 
 ## 使用
 

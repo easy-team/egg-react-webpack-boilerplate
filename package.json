@@ -1,7 +1,7 @@
 {
-  "name": "egg-react-asset-boilerplate",
+  "name": "egg-react-html-boilerplate",
   "version": "1.0.0",
-  "description": "基于 easywebpack-react 和 egg-view-react-ssr Asset 前端渲染工程骨架项目",
+  "description": "基于 easywebpack-react 和 egg-view-nunjucks 前端渲染工程骨架项目",
   "scripts": {
     "clean": "easy clean",
     "build": "easy build",
@@ -20,7 +20,6 @@
     "egg-logger": "^1.5.0",
     "egg-validate": "^1.0.0",
     "egg-view-nunjucks": "^2.0.0",
-    "egg-view-react-ssr": "^2.2.0",
     "extend": "~3.0.0",
     "history": "^4.7.2",
     "lodash": "^4.17.4",
@@ -47,7 +46,8 @@
     "eslint-config-egg": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
     "imagemin-webpack-plugin": "^2.0.0",
-    "ip": "^1.1.5"
+    "ip": "^1.1.5",
+    "write-file-webpack-plugin": "^4.5.0"
   },
   "engines": {
     "node": ">=6.0.0"
