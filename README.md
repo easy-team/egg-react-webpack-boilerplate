@@ -1,6 +1,6 @@
 # egg-react-nunjucks-boilerplate
 
-基于 Egg + React + Webpack + Nunjucks 前端渲染骨架项目, 开发前请阅读 [nunjucks渲染](https://www.yuque.com/easy-team/egg-react/nunjucks)
+基于 Egg + React + Webpack + Nunjucks 前端渲染骨架项目, 开发前请阅读 [nunjucks渲染](https://www.yuque.com/easy-team/egg-react/html)
 
 ## 文档
 
