@@ -1,9 +1,9 @@
+'use strict';
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WriteFilePlugin = require('write-file-webpack-plugin');
 module.exports = {
   target: 'web',
-  cssExtract: false,
   entry: {
     app: 'app/web/page/app/app.js'
   },
@@ -13,7 +13,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: '../app/view/layout.tpl',
+      filename: '../view/layout.tpl',
       template: './app/web/view/layout.tpl'
     }),
     new WriteFilePlugin({
