@@ -1,3 +1,12 @@
+# [4.5.0](https://github.com/easy-team/egg-react-webpack-boilerplate/compare/4.4.1...4.5.0) (2019-08-03)
+
+
+### Features
+
+* upgrade babel6 to babel7 by update easywebpack-react to @easy-team/easywebpack-react ([88ff768](https://github.com/easy-team/egg-react-webpack-boilerplate/commit/88ff768))
+
+
+
 ## [4.4.1](https://github.com/easy-team/egg-react-webpack-boilerplate/compare/4.3.0...4.4.1) (2019-07-18)
 
 
