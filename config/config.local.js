@@ -1,6 +1,6 @@
 
 const ip = require('ip');
-const EasyWebpack = require('easywebpack-react');
+const easywebpack = require('@easy-team/easywebpack-react');
 module.exports = () => {
   const exports = {};
 
@@ -18,7 +18,7 @@ module.exports = () => {
   };
 
   exports.webpack = {
-    webpackConfigList: EasyWebpack.getWebpackConfig()
+    webpackConfigList: easywebpack.getWebpackConfig()
   };
 
   const localIP = ip.address();
