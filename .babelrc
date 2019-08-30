@@ -1,16 +1,24 @@
 {
   "presets": [
-    "react", ["env", {
-      "modules": false
-    }]
+    "@babel/preset-react",
+    [
+      "@babel/preset-env",
+      {
+        "modules": false
+      }
+    ]
   ],
   "plugins": [
-    "transform-object-assign",
-    "syntax-dynamic-import",
-    "transform-object-rest-spread", ["import", {
-      "libraryName": "antd",
-      "style": "css"
-    }]
+    "@babel/plugin-transform-object-assign",
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-proposal-object-rest-spread",
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "style": "css"
+      }
+    ]
   ],
   "env": {
     "development": {
