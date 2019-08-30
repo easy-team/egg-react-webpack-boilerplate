@@ -1,3 +1,14 @@
+<a name="4.6.0"></a>
+# [4.6.0](https://github.com/easy-team/egg-react-webpack-boilerplate/compare/4.4.1...4.6.0) (2019-08-30)
+
+
+### Features
+
+* add debug config ([d7f4b55](https://github.com/easy-team/egg-react-webpack-boilerplate/commit/d7f4b55))
+* add service worker demo ([11536aa](https://github.com/easy-team/egg-react-webpack-boilerplate/commit/11536aa))
+
+
+
 ## [4.4.1](https://github.com/easy-team/egg-react-webpack-boilerplate/compare/4.3.0...4.4.1) (2019-07-18)
 
 
