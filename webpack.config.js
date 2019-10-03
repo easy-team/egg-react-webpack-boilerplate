@@ -1,7 +1,8 @@
 module.exports = {
   entry: {
     app: 'app/web/page/app/index.js',
-    list: 'app/web/page/list/index.jsx'
+    js: 'app/web/page/js/index.js',
+    jsx: 'app/web/page/jsx/index.jsx'
   },
   plugins:[
     { serviceworker: true }

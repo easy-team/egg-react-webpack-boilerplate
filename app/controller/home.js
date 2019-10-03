@@ -6,9 +6,14 @@ module.exports = app => {
       await ctx.render('app.js', { url: ctx.url });
     }
 
-    async list() {
+    async js() {
       const { ctx } = this;
-      await ctx.render('list.js', Model.getPage(1, 10));
+      await ctx.render('js.js', Model.getPage(1, 10));
+    }
+
+    async jsx() {
+      const { ctx } = this;
+      await ctx.render('jsx.js', Model.getPage(1, 10));
     }
 
     async client() {
