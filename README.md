@@ -1,6 +1,6 @@
-# egg-react-webpack-boilerplate
+# egg-react-webpack-spa-boilerplate
 
-基于 Egg + AntD + Webpack 框架的 Admin 骨架项目, 文档请见: [Egg + React 解决方案](https://www.yuque.com/easy-team/egg-react)
+基于 Egg + AntD + Webpack 框架 SAP Server Side Render 项目骨架, 文档请见: [Egg + React 解决方案](https://www.yuque.com/easy-team/egg-react)
 
 
 

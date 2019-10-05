@@ -56,7 +56,7 @@ class Home extends Component {
 
 const mapStateToProps = state => {
   return {
-    list: state.list
+    list: state.list || []
   };
 };
 

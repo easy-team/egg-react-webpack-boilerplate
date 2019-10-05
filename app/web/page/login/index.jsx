@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Layout from '../../component/layout'
 import './index.css';
 
 export default class ListIndex extends Component {
@@ -7,12 +8,12 @@ export default class ListIndex extends Component {
   }
 
   render() {
-    return <div>
+    return <Layout>
       <div className="login">
         <div>
-          <h1>welcome <a href="/">easy-admin</a>!</h1>
+          <h1>Welcome <a href="/">easy-admin</a>!</h1>
         </div>
       </div>
-    </div>;
+    </Layout>;
   }
 }

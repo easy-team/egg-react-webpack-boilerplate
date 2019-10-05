@@ -1,5 +1,4 @@
-import { createStore, combineReducers } from 'redux';
-import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
+import { createStore } from 'redux';
 import reducers from './reducers';
 
 export const create = initalState => {

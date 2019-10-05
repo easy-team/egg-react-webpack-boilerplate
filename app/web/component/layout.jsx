@@ -12,9 +12,9 @@ export default class Layout extends Component {
           <meta name="description" content={this.props.description}></meta>
           <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"></link>
         </head>
-        <body><HeaderComponet></HeaderComponet><div id="app">{this.props.children}</div></body>
+        <body><div id="app">{this.props.children}</div></body>
       </html>;
     }
-    return <div id="app">{this.props.children}</div>;
+    return this.props.children;
   }
 }

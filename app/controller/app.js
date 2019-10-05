@@ -2,7 +2,7 @@ module.exports = app => {
   return class AdminController extends app.Controller {
     async login() {
       const { ctx } = this;
-      await ctx.renderClient('login.js', {});
+      await ctx.render('login.js', {});
     }
     async index() {
       const { ctx } = this;
@@ -25,7 +25,7 @@ module.exports = app => {
         hits: 278,
         url: 'https://github.com/hubcarl/easywebpack-cli'
       }];
-      await ctx.renderClient('admin.js', { url: ctx.url, list });
+      await ctx.render('admin.js', { url: ctx.url, list });
     }
   };
 };

@@ -1,5 +1,5 @@
 
 module.exports = app => {
-  app.get('/login', app.controller.admin.login);
-  app.get('/(.*?)', app.controller.admin.index);
+  app.get('/login', app.controller.app.login);
+  app.get('/(.*?)', app.controller.app.index);
 };
