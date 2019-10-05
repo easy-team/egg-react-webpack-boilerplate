@@ -1,6 +1,6 @@
 {
   "name": "egg-react-webpack-spa-boilerplate",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "基于 Egg + AntD + Webpack 框架 SAP Server Side Render 项目骨架",
   "scripts": {
     "clean": "easy clean",
