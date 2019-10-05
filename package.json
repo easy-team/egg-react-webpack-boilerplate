@@ -10,7 +10,8 @@
     "start": "egg-scripts start",
     "lint": "eslint .",
     "fix": "eslint --fix .",
-    "ii": "npm install --registry https://registry.npm.taobao.org"
+    "ii": "npm install --registry https://registry.npm.taobao.org",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "dependencies": {
     "antd": "^3.0.3",
