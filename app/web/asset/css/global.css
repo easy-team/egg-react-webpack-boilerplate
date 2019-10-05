@@ -1,5 +1,4 @@
 @import "./normalize.css";
-@import "./bootstrap.css";
 @import "./app.css";
 
 .redux-nav{
@@ -28,6 +27,8 @@
   line-height: 40px;
   height: 40px;
   vertical-align: middle;
+  width: 80%;
+  margin: auto
 }
 
 .redux-btn-del{

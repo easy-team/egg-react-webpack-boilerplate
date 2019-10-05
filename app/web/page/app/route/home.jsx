@@ -13,8 +13,13 @@ class Home extends Component {
       hits: 550 + id,
       url: 'https://github.com/hubcarl/egg-react-webpack-boilerplate'
     };
+    const titleStyle = {
+      textAlign: 'center',
+      marginTop: '40px',
+      marginBottom: '40px'
+    };
     return <div className="redux-nav-item">
-      <h3>SPA Client Side</h3>
+      <h4 style={{...titleStyle}}>基于 Egg + React + Webpack 前端渲染 Asset 骨架项目, 开发前请阅读<a href="https://www.yuque.com/easy-team/egg-react/asset"> Egg + React + Asset 渲染 </a></h4>
       <div className="container">
         <div className="row row-offcanvas row-offcanvas-right">
           <div className="col-xs-12 col-sm-9">
