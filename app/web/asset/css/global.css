@@ -28,6 +28,8 @@
   line-height: 40px;
   height: 40px;
   vertical-align: middle;
+  margin: auto;
+  width: 80%;
 }
 
 .redux-btn-del{

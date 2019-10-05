@@ -1,7 +1,6 @@
 'use strict';
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const WriteFilePlugin = require('write-file-webpack-plugin');
 module.exports = {
   target: 'web',
   entry: {
@@ -11,9 +10,6 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'app/public'),
     publicPath: '/public/'
-  },
-  loaders: {
-    typescript: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -26,8 +22,5 @@ module.exports = {
       filename: '../view/test.tpl',
       template: './app/web/view/layout.tpl'
     }),
-    new WriteFilePlugin({
-      test: /\.tpl$/
-    })
   ]
 };
