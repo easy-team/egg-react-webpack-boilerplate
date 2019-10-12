@@ -1,4 +1,4 @@
-{
+module.exports = {
   "presets": [
     "@babel/preset-react",
     [
@@ -9,7 +9,8 @@
     ]
   ],
   "plugins": [
-    "@babel/plugin-transform-object-assign",
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    ["@babel/plugin-proposal-class-properties", { "loose": true }],
     "@babel/plugin-syntax-dynamic-import",
     "@babel/plugin-proposal-object-rest-spread",
     [
