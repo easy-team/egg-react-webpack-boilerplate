@@ -1,3 +1,21 @@
+<a name="4.7.0"></a>
+# [4.7.0](https://github.com/easy-team/egg-react-webpack-boilerplate/compare/4.4.1...4.7.0) (2019-10-13)
+
+
+### Features
+
+* add debug config ([d7f4b55](https://github.com/easy-team/egg-react-webpack-boilerplate/commit/d7f4b55))
+* add js and jsx mode ([1da1358](https://github.com/easy-team/egg-react-webpack-boilerplate/commit/1da1358))
+* add service worker demo ([11536aa](https://github.com/easy-team/egg-react-webpack-boilerplate/commit/11536aa))
+* upgrade easy-team mode ([f380e3b](https://github.com/easy-team/egg-react-webpack-boilerplate/commit/f380e3b))
+
+
+### Performance Improvements
+
+* babel config use babel.config.js ([644c131](https://github.com/easy-team/egg-react-webpack-boilerplate/commit/644c131))
+
+
+
 <a name="4.6.0"></a>
 # [4.6.0](https://github.com/easy-team/egg-react-webpack-boilerplate/compare/4.4.1...4.6.0) (2019-08-30)
 
