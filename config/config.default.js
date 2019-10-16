@@ -12,13 +12,6 @@ module.exports = app => {
     dir: path.join(app.baseDir, 'logs')
   };
 
-  exports.static = {
-    prefix: '/public/',
-    dir: path.join(app.baseDir, 'public')
-  };
-
-  exports.keys = '123456';
-
   exports.middleware = [
     'access'
   ];
@@ -26,6 +19,7 @@ module.exports = app => {
   exports.reactssr = {
     layout: path.join(app.baseDir, 'app/web/view/layout.html')
   }
+
 
   return exports;
 };
