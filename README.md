@@ -1,30 +1,19 @@
-# egg-react-nunjucks-boilerplate
+# React Web Application
 
-基于 Egg + React + Webpack + Nunjucks 前端渲染骨架项目, 开发前请阅读 [nunjucks渲染](https://www.yuque.com/easy-team/egg-react/html)
+- 基于 React + React-Router + React-Redux + Nunjucks 前端渲染方案
 
 ## 文档
 
-- https://yuque.com/easy-team/egg-react
+- https://yuque.com/easy-team/res
 - https://zhuanlan.zhihu.com/easywebpack
 
 ## 特性
 
 - 基于 React + React-Router + React-Redux 单页面 Nunjucks 前端渲染方案
 
-## 依赖
-
-- [easywebpack](https://github.com/hubcarl/easywebpack) ^4.0.0
-- [easywebpack-react](https://github.com/hubcarl/easywebpack-react) ^4.0.0
-- [egg-view-nunjucks](https://github.com/eggjs/egg-view-nunjucks) ^2.0.0
-- [egg-webpack](https://github.com/hubcarl/egg-webpack) ^4.0.0
 
 ## 使用
 
-#### 安装cli
-
-```bash
-npm install easywebpack-cli -g
-```
 
 #### 安装依赖
 
@@ -50,7 +39,7 @@ npm run dev
 npm start
 
 // 编译文件到磁盘打包使用(发布正式环境)
-npm run build 或者 easy build
+npm run build
 ```
 
 ## License

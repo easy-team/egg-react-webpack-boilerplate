@@ -8,13 +8,13 @@ class Home extends Component {
     const id = list.length + 1;
     const item = {
       id,
-      title: `Egg+React 服务端渲染骨架-${id}`,
-      summary: '基于Egg + React + Webpack3/Webpack2 服务端渲染骨架项目',
+      title: `Res+React 服务端渲染骨架-${id}`,
+      summary: '基于Res + React + Webpack3/Webpack2 服务端渲染骨架项目',
       hits: 550 + id,
-      url: 'https://github.com/hubcarl/egg-react-webpack-boilerplate'
+      url: 'https://github.com/hubcarl/Res-react-webpack-boilerplate'
     };
     return <div className="redux-nav-item">
-      <h3 style={{textAlign: 'center', marginTop: '40px', marginBottom: '40px'}}>基于 Egg + React + Webpack + Nunjucks 前端渲染骨架项目</h3>
+      <h3 style={{textAlign: 'center', marginTop: '40px', marginBottom: '40px'}}>基于 Res + React + Webpack + Nunjucks 前端渲染骨架项目</h3>
       <div className="container">
         <div className="row row-offcanvas row-offcanvas-right">
           <div className="col-xs-12 col-sm-9">

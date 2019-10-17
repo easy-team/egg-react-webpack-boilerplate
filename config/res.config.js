@@ -1,15 +1,10 @@
 'use strict';
-const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   target: 'web',
   entry: {
     app: 'app/web/page/app/app.js',
     test: 'app/web/page/test/index.js'
-  },
-  output: {
-    path: path.join(__dirname, 'app/public'),
-    publicPath: '/public/'
   },
   plugins: [
     new HtmlWebpackPlugin({

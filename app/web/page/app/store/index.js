@@ -5,21 +5,21 @@ export default createStore(
     ...window.__INITIAL_STATE__,
     list: [{
       id: 0,
-      title: 'webpack配置官方文档',
-      summary: '基于Egg + React + Webpack3/Webpack2 服务端渲染同构工程骨架项目',
+      title: 'React Node Web Framework 文档',
+      summary: '基于 Eggjs + React + Webpack 实现的 Node React Web 框架文档',
       hits: 550,
-      url: 'https://github.com/hubcarl/egg-react-webpack-boilerplate'
+      url: 'https://github.com/hubcarl/Res-react-webpack-boilerplate'
     }, {
       id: 1,
-      title: '前端工程化解决方案easywebpack',
-      summary: 'programming instead of configuration, webpack is so easy',
+      title: 'React Node Web Framework',
+      summary: '基于 Eggjs + React + Webpack 实现的 Node React Web 框架',
       hits: 550,
-      url: 'https://github.com/hubcarl/easywebpack'
+      url: 'https://github.com/easy-team/res'
     }, {
       id: 2,
-      title: '前端工程化解决方案脚手架easywebpack-cli',
-      summary: 'easywebpack command tool, support init Vue/Reac/Weex boilerplate',
-      hits: 278,
-      url: 'https://github.com/hubcarl/easywebpack-cli'
+      title: 'React Node Web Framework Command Tool',
+      summary: 'React Node Web Framework Command Tool',
+      hits: 150,
+      url: 'https://github.com/easy-team/res-cli'
     }]
   });
