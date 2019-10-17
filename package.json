@@ -30,16 +30,14 @@
     "redux": "^3.7.2"
   },
   "devDependencies": {
-    "@easy-team/res-cli": "^1.0.0"
+    "@easy-team/res-cli": "^1.0.1"
   },
-  "egg": {
-    "framework": "@easy-team/res"
-  },
+  
   "engines": {
     "node": ">=8.0.0"
   },
   "ci": {
-    "version": "8, 10"
+    "version": "8, 10, 12"
   },
   "repository": {
     "type": "git",
