@@ -21,7 +21,7 @@
     "egg-scripts": "^2.8.1",
     "egg-serviceworker": "^1.0.0",
     "egg-validate": "^2.0.2",
-    "egg-view-react-ssr": "^2.2.6",
+    "egg-view-react-ssr": "next",
     "extend": "~3.0.0",
     "history": "^4.7.2",
     "lodash": "^4.17.4",
