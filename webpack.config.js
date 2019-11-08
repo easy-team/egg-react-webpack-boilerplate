@@ -1,10 +1,10 @@
+'use strict';
+// https://yuque.com/easy-team/egg-react
 module.exports = {
   entry: {
-    app: 'app/web/page/app/index.js',
-    js: 'app/web/page/js/index.js',
-    jsx: 'app/web/page/jsx/index.jsx'
-  },
-  plugins:[
-    { serviceworker: true }
-  ]
+    home: 'app/web/page/home/index.js'
+    // index: 'app/web/page/index/index.jsx',
+    // category: 'app/web/page/category/index.jsx',
+    // redux: 'app/web/page/redux/index.js'
+  }
 };
