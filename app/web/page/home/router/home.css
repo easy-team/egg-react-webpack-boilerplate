@@ -1,0 +1,76 @@
+.ant-menu-horizontal {
+  text-align: center;
+}
+
+.ant-menu-item > a:hover {
+  text-decoration: none;
+}
+
+.easy-article-list {
+  width: 90%;
+  margin: 40px auto;
+}
+
+.easy-article-list > li {
+  margin-top: 40px;
+  color: #404040;
+  border-bottom: 1px solid #cecece;
+}
+.easy-article-list > h2 {
+  font-family: "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  line-height: 1.1;
+  font-size: 30px;
+}
+
+.easy-article-summary {
+  font-size: 13px;
+  font-style: normal;
+  color: #a3a3a3;
+}
+
+.easy-article-info {
+  font-family: 'Lora', 'Times New Roman', serif;
+  color: #808080;
+  font-size: 16px;
+  font-style: italic;
+  margin-top: 0;
+}
+
+.easy-article-item {
+  margin: 0px 0px 40px 0px;
+}
+
+.easy-article-item> a {
+  color: #404040;
+}
+.easy-article-item> a:hover,
+.easy-article-item> a:focus {
+  text-decoration: none;
+  color: #0666C5;
+}
+.easy-article-item> a > .easy-article-title {
+  font-size: 21px;
+  line-height: 1.3;
+  margin-top: 30px;
+  margin-bottom: 8px;
+}
+.easy-article-item> a > .article-subtitle {
+  font-size: 15px;
+  margin: 0;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.easy-article-item> .easy-article-meta {
+  font-family: 'Lora', 'Times New Roman', serif;
+  color: #808080;
+  font-size: 16px;
+  font-style: italic;
+  margin-top: 0;
+}
+
+.easy-article-item> .easy-article-meta > a:hover,
+.easy-article-item> .easy-article-meta > a:focus {
+  color: #2B4180;
+  text-decoration: underline;
+}
+

@@ -1,6 +1,6 @@
 import Home from './home';
+import Async from './async';
 import About from './about';
-
 const NotFound = () => {
   return (
     <Route render={({ staticContext }) => {
@@ -24,12 +24,16 @@ export default function createRouter() {
       component: Home
     },
     {
+      path: '/async',
+      component: Async
+    },
+    {
       path: '/about',
-      component: About
+      component: Async
     },
     {
       path: '*',
-      component: NotFound
+      component: Home
     }
   ];  
 }

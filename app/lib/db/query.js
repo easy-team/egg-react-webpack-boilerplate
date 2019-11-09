@@ -1,10 +1,10 @@
 'use strict';
 module.exports = class Query {
   constructor() {
-    this.orderByField = 'createTime';
-    this.orderBy = 'desc';
+    this.orderByField = 'id';
+    this.orderBy = 'asc';
     this._pageIndex = 1;
-    this._pageSize = 10;
+    this._pageSize = 50;
     this.where = new Proxy({}, {
       set(target, key, value, proxy) {
         if (value === undefined) {

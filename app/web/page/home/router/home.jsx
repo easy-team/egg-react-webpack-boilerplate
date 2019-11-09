@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import request from 'framework/request';
 import { add, del } from '../store/actions';
-
+import './home.css'
 class Home extends Component {
   static asyncData(context, route) {
     return request.get('/api/list', context.state).then(res => {
@@ -11,12 +11,17 @@ class Home extends Component {
   }
 
   render() {
-    return <div className="easy-artilce-list">
+    const { list } = this.props;
+    return <div className="easy-article-list">
       <ul>
         {list.map(function (item) {
-          return <li key={item.id}>
-            <h2><a href={item.url} target="_blank">{item.title}</a></h2>
-            <div>{item.summary}</div>
+          return <li key={item.id} className="easy-article-item">
+            <h2 className="easy-article-title"><a href={item.url} target="_blank">{item.title}</a></h2>
+            <div className="easy-article-summary">{item.summary}</div>
+            <div className="easy-article-meta">
+              <span>Word Count:{item.wordCount}  </span>
+              <span>Create Time: {item.createTime}</span>
+            </div>
           </li>;
         })}
       </ul>

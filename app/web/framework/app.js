@@ -4,6 +4,7 @@ import { Provider } from 'react-redux'
 import { BrowserRouter, StaticRouter } from 'react-router-dom'
 import { matchRoutes } from 'react-router-config'
 
+
 export default class App {
   constructor(config) {
     this.config = config;
@@ -21,12 +22,23 @@ export default class App {
     const store = createStore(window.__INITIAL_STATE__);
     const url = store.getState().url;
     const root = document.getElementById('app');
-    const render = root.childNodes.length > 0 ? 'render' : 'hydrate';
-    ReactDOM[render](<Provider store={store}>
-      <BrowserRouter>
-        <Entry url={url} />
-      </BrowserRouter>
-    </Provider>, root);
+    const renderMethod = root.childNodes.length > 0 ? 'render' : 'hydrate';
+    const { AppContainer } = require('react-hot-loader');
+    const render = () => {
+      ReactDOM[renderMethod](<Provider store={store}>
+        <BrowserRouter>
+          { EASY_ENV_IS_DEV ? <AppContainer><Entry url={url} /></AppContainer> : <Entry url={url} /> }
+        </BrowserRouter>
+      </Provider>, root);
+    }
+
+    render();
+
+    if (EASY_ENV_IS_DEV) {
+      module.hot.accept(() => {
+        render();
+      });
+    }
   }
 
   server() {
