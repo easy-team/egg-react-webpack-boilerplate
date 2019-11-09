@@ -8,6 +8,8 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 html {
   font-family: sans-serif;
@@ -566,6 +568,7 @@ li {
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
+  font-weight: bold;
 }
 .easy-menu-brand:hover,
 .easy-menu-brand:focus {
@@ -826,13 +829,10 @@ fieldset[disabled] .easy-menu-inverse .btn-link:focus {
   font-family: "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
 }
-.easy-menu-custom .easy-menu-brand {
-  font-weight: 800;
-}
+
 .easy-menu-custom .nav li a {
   text-transform: uppercase;
   font-size: 16px;
-  font-weight: 800;
   letter-spacing: 1px;
 }
 

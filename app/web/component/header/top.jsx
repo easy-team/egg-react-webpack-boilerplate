@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './index.css';
+import './top.css';
 export default class Header extends Component {
   
   state = {
@@ -7,7 +7,6 @@ export default class Header extends Component {
   }
 
   menuToggle = () => {
-    console.log('>>click');
     this.setState({
       collapsed: !this.state.collapsed
     })
@@ -44,20 +43,6 @@ export default class Header extends Component {
           </div>
         </div>
       </nav>
-      <header className="easy-intro-header" style={{backgroundColor:'#3c763d'}}>
-        <div className="easy-top-intro-container">
-          <div className="easy-top-intro-info">
-            <div>
-              {/* <img src="../../../../asset/images/loading.gif" width="80px" height="80px" style="display: inline"> */}
-            </div>
-            <div className="easy-top-intro-info-text">
-              <h1>Egg React 工程方案</h1>
-              <hr className="large" />
-              <span className="subheading">Egg React Server Side Render(SSR)</span>
-            </div>
-          </div>
-        </div>
-      </header>
     </div>;
   }
 }

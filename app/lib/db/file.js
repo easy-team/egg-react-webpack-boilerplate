@@ -20,6 +20,9 @@ module.exports = class FileDB extends Base {
   get(collectionName) {
     return this.instance.get(collectionName);
   }
+  getByWhere(collectionName, json) {
+    return this.instance.get(collectionName).find(json).value();
+  }
   add(collectionName, json) {
     return this.get(collectionName)
       .push(json)

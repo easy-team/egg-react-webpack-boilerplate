@@ -8,7 +8,7 @@ module.exports = class Collection {
     return this.db.get(this.name);
   }
   getByWhere(json) {
-    return this.db.get(this.name).find(json);
+    return this.db.getByWhere(this.name, json);
   }
   add(json) {
     return this.db.add(this.name, json);
@@ -23,9 +23,9 @@ module.exports = class Collection {
     return this.db.getPager(this.name, query);
   }
   getOrderAscByField(field) {
-    return this.get().orderBy(field, 'asc').value();
+    return this.get().orderBy(field, 'asc');
   }
   getOrderDescByField(field) {
-    return this.get().orderBy(field, 'desc').value();
+    return this.get().orderBy(field, 'desc');
   }
 };

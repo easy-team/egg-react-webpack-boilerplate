@@ -10,6 +10,9 @@ module.exports = class DB {
   get(collectionName) {
     return null;
   }
+  getByWhere(collectionName, json) {
+    return null;
+  }
   add(collectionName, json) {
     return null;
   }

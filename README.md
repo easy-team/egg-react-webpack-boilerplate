@@ -1,4 +1,4 @@
-# egg-react-webpack-boilerplate
+# egg-react-webpack-spa-boilerplate
 
 基于 Egg + React + Webpack 服务端渲染 SSR (Server Side Render) 和 前端渲染 CSR (Client Side Render) 工程骨架项目, 文档请见: [Egg + React 解决方案](https://www.yuque.com/easy-team/egg-react)
 

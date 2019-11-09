@@ -20,7 +20,14 @@ module.exports = class IndexController extends egg.Controller {
     this.ctx.body = this.service.article.getArtilceList();
   }
 
-  async detail() {
-    const id = this.ctx.query.id;
+  async detail(ctx) {
+    const id = ctx.params.id;
+    const article = this.service.article.getArticle(Number(id));
+    await ctx.render('detail.js', { 
+      title: `${article.title}|Egg React `,
+      keywords: 'Egg,React,Egg React,Egg React SSR, Egg React CSR, Server Side Render, Client Side Render',
+      description: `${article.summary} | Egg + React + Webpack 服务端渲染 SSR (Server Side Render) 和 前端渲染 CSR (Client Side Render) 工程骨架项目`,
+      article
+    });
   }
 };

@@ -16,7 +16,7 @@ class Home extends Component {
       <ul>
         {list.map(function (item) {
           return <li key={item.id} className="easy-article-item">
-            <h2 className="easy-article-title"><a href={item.url} target="_blank">{item.title}</a></h2>
+            <h2 className="easy-article-title"><a href={'/detail/' + item.id} target="_blank">{item.title}</a></h2>
             <div className="easy-article-summary">{item.summary}</div>
             <div className="easy-article-meta">
               <span>Word Count:{item.wordCount}  </span>
