@@ -1,6 +1,6 @@
 
 const ip = require('ip');
-const EasyWebpack = require('easywebpack-react');
+const easywebpack = require('@easy-team/easywebpack-react');
 module.exports = () => {
   const exports = {};
 
@@ -18,18 +18,8 @@ module.exports = () => {
   };
 
   exports.webpack = {
-    webpackConfigList: EasyWebpack.getWebpackConfig()
+    webpackConfigList: easywebpack.getWebpackConfig()
   };
-
-  const localIP = ip.address();
-  const domainWhiteList = [];
-  [9000, 9001, 9002].forEach(port => {
-    domainWhiteList.push(`http://localhost:${port}`);
-    domainWhiteList.push(`http://127.0.0.1:${port}`);
-    domainWhiteList.push(`http://${localIP}:${port}`);
-  });
-
-  exports.security = { domainWhiteList };
 
   return exports;
 };
