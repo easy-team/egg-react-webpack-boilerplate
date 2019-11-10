@@ -3,7 +3,12 @@
 基于 Egg + React + Webpack 服务端渲染 SSR (Server Side Render) 和 前端渲染 CSR (Client Side Render) 工程骨架项目，文档请见: [Egg + React 解决方案](https://www.yuque.com/easy-team/egg-react)
 
 
+## 效果
+
 ![egg-react-ssr](https://github.com/easy-team/egg-react-webpack-boilerplate/blob/master/docs/images/egg-react-ssr.png)
+
+
+![egg-react-admin](https://github.com/easy-team/egg-react-webpack-boilerplate/blob/master/docs/images/easy-react-admin.jpg)
 
 
 ## 版本
