@@ -1,12 +1,10 @@
-# egg-react-webpack-spa-boilerplate
+# egg-react-webpack-boilerplate
 
-基于 Egg + React + Webpack 服务端渲染 SSR (Server Side Render) 和 前端渲染 CSR (Client Side Render) 工程骨架项目, 文档请见: [Egg + React 解决方案](https://www.yuque.com/easy-team/egg-react)
+基于 Egg + React + Webpack 服务端渲染 SSR (Server Side Render) 和 前端渲染 CSR (Client Side Render) 工程骨架项目，文档请见: [Egg + React 解决方案](https://www.yuque.com/easy-team/egg-react)
 
 
 ![egg-react-ssr](https://github.com/easy-team/egg-react-webpack-boilerplate/blob/master/docs/images/egg-react-ssr.png)
 
-
-![easy-react-admin](https://github.com/easy-team/egg-react-webpack-boilerplate/blob/master/docs/images/easy-react-admin.jpg)
 
 ## 版本
 
@@ -32,23 +30,25 @@
 
 ## 特性
 
-- 基于 React 多页面/单页面服务端渲染
+- 基于 React 多页面/单页面服务端渲染, 前端渲染以及 asyncData 同构实现
+
+- 支持服务端渲染失败时, 自动降级为前端渲染模式; 支持 react-loadable 异步组件渲染
+
+- 数据层面进行了简单设计，支持 FileDB，MySQL，Mongo 接口
 
 - 支持 Node 和 前端代码修改 Webpack 时时编译和热更新
 
 - 支持服务端渲染 `render` 和纯前端渲染 `renderClient`
 
-- 支持自动根据 jsx 文件构建 webpack entry 入口文件
+- 支持自动根据 jsx 文件构建 Webpack entry 入口文件
 
 - 支持 css, sass, scss, less, stylus
 
 - 支持 css module , 且同时支持 css 和 css module 共存的情况
 
-- 支持 react-router, react-redux 服务端SPA渲染
+- 支持 react-router, react-redux 服务端渲染(SSR)和前端渲染(CSR) 
 
-- 支持 webpack dll 自动化构建, 与多进程编译结合，构建速度减少 2/3
-
-- 支持服务端渲染失败时, 自动降级为前端渲染模式
+- 支持 Webpack dll 自动化构建, 与多进程编译结合，构建速度减少 2/3
 
 - Node 8 版本的 async 和 await 特性, Controller 采用 class 方式编写
 

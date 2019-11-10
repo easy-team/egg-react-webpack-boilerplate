@@ -4,7 +4,7 @@ import Loading from '../widget/loading';
 
 const AsyncImageLoadableComponent = Loadable({
   loader: () => import('../widget/async-image'),
-  loading: Loading,
+  loading: Loading
 });
 
 export default class Async extends Component {
