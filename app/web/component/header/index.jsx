@@ -18,15 +18,10 @@ export default class Header extends Component {
       <nav className="easy-menu easy-menu-default easy-menu-custom easy-menu-fixed-top">
         <div className="easy-menu-menu-fluid">
           <div className="easy-menu-header page-scroll">
-            <div className={ this.state.collapsed ? 'easy-menu-toggle collapsed' : 'easy-menu-toggle' } onClick={this.menuToggle}>
-              <span className="easy-menu-toggle">Toggle navigation</span>
-              <span className="easy-icon-line"></span>
-              <span className="easy-icon-line"></span>
-              <span className="easy-icon-line"></span>
-            </div>
+            <div className="easy-menu-toggle" onClick={this.menuToggle}></div>
             <a className="easy-menu-brand" href="/">Egg + React</a>
           </div>
-          <div className="collapse easy-menu-collapse" className={ this.state.collapsed ? "collapse easy-menu-collapse collapse in" : "collapse easy-menu-collapse" } id="bs-example-easy-menu-collapse-1">
+          <div className="collapse easy-menu-collapse" className={ this.state.collapsed ? 'collapse easy-menu-collapse collapse in' : 'collapse easy-menu-collapse' } id="bs-example-easy-menu-collapse-1">
             <ul className="nav easy-menu-nav easy-menu-right">
               <li>
                 <a href="/">Home</a>

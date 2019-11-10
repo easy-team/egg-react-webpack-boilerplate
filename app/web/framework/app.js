@@ -4,30 +4,22 @@ import { Provider } from 'react-redux'
 import { BrowserRouter, StaticRouter } from 'react-router-dom'
 import { matchRoutes } from 'react-router-config'
 
+class App {
 
-export default class App {
   constructor(config) {
     this.config = config;
   }
 
-  bootstrap() {
-    if (EASY_ENV_IS_NODE) {
-      return this.server();
-    }
-    return this.client();
-  }
-
-  client() {
-    const { Entry, createStore } = this.config;
+  client(config) {
+    const { Entry, createStore } = config;
     const store = createStore(window.__INITIAL_STATE__);
     const url = store.getState().url;
     const root = document.getElementById('app');
     const renderMethod = root.childNodes.length > 0 ? 'render' : 'hydrate';
-    const { AppContainer } = require('react-hot-loader');
     const render = () => {
       ReactDOM[renderMethod](<Provider store={store}>
         <BrowserRouter>
-          { EASY_ENV_IS_DEV ? <AppContainer><Entry url={url} /></AppContainer> : <Entry url={url} /> }
+          <Entry url={url} /> 
         </BrowserRouter>
       </Provider>, root);
     }
@@ -41,9 +33,9 @@ export default class App {
     }
   }
 
-  server() {
+  server(config) {
     return context => {
-      const { Entry, createRouter, createStore } = this.config;
+      const { Entry, createRouter, createStore } = config;
       const url = context.state.url;
       const router = createRouter();
       const matchRoute = matchRoutes(router, url);
@@ -67,4 +59,14 @@ export default class App {
       });
     };
   }
+
+
+  bootstrap() {
+    if (EASY_ENV_IS_NODE) {
+      return this.server(this.config);
+    }
+    return this.client(this.config);
+  }
 }
+
+export default App;

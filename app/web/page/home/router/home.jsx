@@ -19,7 +19,7 @@ class Home extends Component {
             <h2 className="easy-article-title"><a href={'/detail/' + item.id} target="_blank">{item.title}</a></h2>
             <div className="easy-article-summary">{item.summary}</div>
             <div className="easy-article-meta">
-              <span>Word Count:{item.wordCount}  </span>
+              <span>11Word Count:{item.wordCount}  </span>
               <span>Create Time: {item.createTime}</span>
             </div>
           </li>;

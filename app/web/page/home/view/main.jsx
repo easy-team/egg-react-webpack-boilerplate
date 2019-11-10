@@ -16,7 +16,7 @@ class Main extends Component {
   }
 
   handleClick(e) {
-    console.log('click ', e, this.state);
+    console.log('click', e, this.state);
     this.setState({
       current: e.key
     });
