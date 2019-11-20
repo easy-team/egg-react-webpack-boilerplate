@@ -5,6 +5,7 @@ import Layout from 'component/layout/blog';
 import Header from 'component/header'
 import '../../asset/css/blog.css'
 import './index.css'
+
 export default class Intro extends Component {
   render() {
     return <Layout>
