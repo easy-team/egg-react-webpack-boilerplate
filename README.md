@@ -1,6 +1,6 @@
 # egg-react-webpack-boilerplate
 
-基于 Egg + React + Webpack 服务端渲染 SSR (Server Side Render) 和 前端渲染 CSR (Client Side Render) 工程骨架项目，文档请见: [Egg + React 解决方案](https://www.yuque.com/easy-team/egg-react)
+基于 Egg + React + Webpack 服务端渲染 SSR (Server Side Render) 和 前端渲染 CSR (Client Side Render) 工程骨架项目，文档请见: [Egg + React 工程解决方案](https://www.yuque.com/easy-team/egg-react)
 
 
 ## 效果
@@ -84,7 +84,9 @@ npm install
 ```
 
 
-#### 本地开发启动应用
+#### 本地开发
+
+> 启动流程: https://www.yuque.com/easy-team/egg-react/build
 
 ```bash
 npm run dev
@@ -95,7 +97,17 @@ npm run dev
 
 ![npm start启动](https://github.com/easy-team/egg-react-webpack-boilerplate/blob/master/docs/images/webpack.png)
 
-#### 发布模式启动应用
+
+
+- 本地开发启动 Webpack 构建, 默认配置文件为项目根目录 `webpack.config.js` 文件。 SSR 需要配置两份 Webpack 配置，所以构建会同时启动两个 Webpack 构建服务。web 表示构建 JSBundle 给前端用，构建后文件目录 `public`, 默认端口 9000; node 表示构建 JSBundle 给前端用，构建后文件目录 `app/view`, 默认端口 9001.
+
+- 本地构建是 Webpack 内存构建，文件不落地磁盘，所以 `app/view` 和 `public` 在本地开发时，是看不到文件的。 只有发布模式(npm run build)才能在这两个目录中看到构建后的内容。
+
+
+#### 线上部署
+
+> 部署细节请阅读：https://www.yuque.com/easy-team/egg-react/online
+
 
 - 首先在本地或者ci构建好jsbundle文件
 
@@ -111,6 +123,7 @@ npm start
 
 ### 配置说明
 
+> https://www.yuque.com/easy-team/egg-react/config
 
 ```js
 `config/config.local.js` 
@@ -119,8 +132,6 @@ exports.webpack = {
   webpackConfigList: EasyWebpack.getWebpackConfig()
 };
 ```
-
-构建会同时启动两个webpack构建服务, 客户端js构建(build/client), 服务端构建(build/server), 默认端口9000,  webpackConfigList 端口依次递增. 
 
 
 #### 项目构建
