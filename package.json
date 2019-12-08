@@ -1,13 +1,14 @@
 {
   "name": "egg-react-webpack-boilerplate",
-  "version": "4.8.0",
+  "version": "4.8.1",
   "description": "Egg React Server Side Render(SSR) 服务端渲染骨架项目",
   "scripts": {
     "clean": "easy clean",
     "build": "easy build",
     "debug": "egg-bin debug",
     "dev": "egg-bin dev",
-    "start": "egg-scripts start",
+    "start": "egg-scripts start --port 7001 --workers 4",
+    "backend": "nohup egg-scripts start --port 7001 --workers 4 &",
     "lint": "eslint .",
     "fix": "eslint --fix .",
     "ii": "npm install --registry https://registry.npm.taobao.org",
@@ -50,7 +51,6 @@
     "egg-webpack-react": "^2.0.3",
     "eslint-config-egg": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
-    "imagemin-webpack-plugin": "^2.3.0",
     "ip": "^1.1.5",
     "service-worker-register": "^1.2.6"
   },
