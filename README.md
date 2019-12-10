@@ -33,6 +33,7 @@
 
 ## 文档
 
+- https://easyjs.cn
 - https://www.yuque.com/easy-team/egg-react
 - https://zhuanlan.zhihu.com/easywebpack
 
