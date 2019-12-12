@@ -11,6 +11,7 @@ export default class Layout extends Component {
           <meta name="keywords" content={this.props.keywords}></meta>
           <meta name="description" content={this.props.description}></meta>
           <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"></link>
+          <script src="/public/lib/react-core-lib-1.0.0.min.js"></script>
         </head>
         <body><HeaderComponet></HeaderComponet><div id="app">{this.props.children}</div></body>
       </html>;
