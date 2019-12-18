@@ -287,6 +287,32 @@ exports.client = function* (ctx) {
 app.get('/client', app.controller.home.home.client);
 ```
 
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://easyjs.cn"><img src="https://avatars2.githubusercontent.com/u/4983042?v=4" width="100px;" alt=""/><br /><sub><b>sky</b></sub></a><br /><a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=hubcarl" title="Code">💻</a> <a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=hubcarl" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/jasonjcpeng"><img src="https://avatars0.githubusercontent.com/u/13363216?v=4" width="100px;" alt=""/><br /><sub><b>jasonjcpeng</b></sub></a><br /><a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=jasonjcpeng" title="Code">💻</a> <a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=jasonjcpeng" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/willworks"><img src="https://avatars2.githubusercontent.com/u/5542777?v=4" width="100px;" alt=""/><br /><sub><b>Kevin Zhong</b></sub></a><br /><a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=willworks" title="Code">💻</a> <a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=willworks" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/HiuYanChong"><img src="https://avatars0.githubusercontent.com/u/15319816?v=4" width="100px;" alt=""/><br /><sub><b>HiuYanChong</b></sub></a><br /><a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=HiuYanChong" title="Code">💻</a> <a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=HiuYanChong" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://www.thonatos.com"><img src="https://avatars2.githubusercontent.com/u/958063?v=4" width="100px;" alt=""/><br /><sub><b>Suyi</b></sub></a><br /><a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=thonatos" title="Code">💻</a> <a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=thonatos" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://blog.dada.li"><img src="https://avatars0.githubusercontent.com/u/3274850?v=4" width="100px;" alt=""/><br /><sub><b>Roy Li</b></sub></a><br /><a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=geekdada" title="Code">💻</a> <a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=geekdada" title="Documentation">📖</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+
 ## License
 
 [MIT](LICENSE)
