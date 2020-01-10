@@ -1,17 +1,14 @@
 # egg-react-webpack-boilerplate
 
-基于 Egg + React + Webpack 服务端渲染 SSR (Server Side Render) 和 前端渲染 CSR (Client Side Render) 工程骨架项目。
+基于 Egg + Rax + Webpack 服务端渲染 SSR (Server Side Render) 和 前端渲染 CSR (Client Side Render) 工程骨架项目。
 
 - 线上访问: http://49.233.172.37:7001
-- 文档请见: [Egg + React 工程解决方案](https://www.yuque.com/easy-team/egg-react)
+- 文档请见: [Egg + React 工程解决方案](https://www.yuque.com/easy-team/egg-react/rax)
 
 
 ## 截图
 
-![egg-react-ssr](https://github.com/easy-team/egg-react-webpack-boilerplate/blob/master/docs/images/egg-react-ssr.png)
-
-
-![egg-react-admin](https://github.com/easy-team/egg-react-webpack-boilerplate/blob/master/docs/images/easy-react-admin.jpg)
+![egg-view-rax-ssr](https://github.com/easy-team/egg-react-webpack-boilerplate/blob/master/docs/images/egg-react-ssr.png)
 
 
 ## 版本

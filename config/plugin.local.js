@@ -8,7 +8,7 @@ exports.webpack = {
   package: 'egg-webpack'
 };
 
-exports.webpackreact = {
+exports.webpackrax = {
   enable: true,
-  package: 'egg-webpack-react'
+  package: 'egg-webpack-rax'
 };

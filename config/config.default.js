@@ -24,7 +24,7 @@ module.exports = app => {
     'access'
   ];
 
-  exports.reactssr = {
+  exports.raxssr = {
     layout: path.join(app.baseDir, 'app/web/view/layout.html')
   };
 

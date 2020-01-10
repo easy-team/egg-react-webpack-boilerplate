@@ -1,10 +1,6 @@
 exports.static = true;
 
-exports.reactssr = {
+exports.raxssr = {
   enable: true,
-  package: 'egg-view-react-ssr'
-};
-exports.serviceworker = {
-  enable: true,
-  package: 'egg-serviceworker'
+  package: 'egg-view-rax-ssr'
 };
