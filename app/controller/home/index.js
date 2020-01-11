@@ -11,6 +11,14 @@ module.exports = class IndexController extends egg.Controller {
     });
   }
 
+
+  async node(ctx) {
+    const result = this.service.article.getArtilceList();
+    console.time('render');
+    await ctx.render('blog.js', result);
+    console.timeEnd('render');
+  }
+
   async csr(ctx) {
     const result = this.service.article.getArtilceList();
     await ctx.renderClient('home.js', result);
