@@ -2,12 +2,23 @@
 const egg = require('egg');
 module.exports = class IndexController extends egg.Controller {
   
-  async ssr(ctx) {
+  async asyncData(ctx) {
     await ctx.render('home.js', { 
       url: ctx.url,
-      title: 'Egg React ',
-      keywords: 'Egg,React,Egg React,Egg React SSR, Egg React CSR, Server Side Render, Client Side Render',
-      description: 'Egg + React + Webpack 服务端渲染 SSR (Server Side Render) 和 前端渲染 CSR (Client Side Render) 工程骨架项目'
+      title: 'Egg Rax',
+      keywords: 'Egg,React,Egg Rax, Egg React,Egg React SSR, Egg React CSR, Server Side Render, Client Side Render',
+      description: 'Egg + Rax + Webpack 服务端渲染 SSR (Server Side Render) 和 前端渲染 CSR (Client Side Render) 工程骨架项目'
+    });
+  }
+
+  async nodeData(ctx) {
+    const result = this.service.article.getArtilceList();
+    await ctx.render('node.js', { 
+      ...result,
+      url: ctx.url,
+      title: 'Egg Rax',
+      keywords: 'Egg,React,Egg Rax, Egg React,Egg React SSR, Egg React CSR, Server Side Render, Client Side Render',
+      description: 'Egg + Rax + Webpack 服务端渲染 SSR (Server Side Render) 和 前端渲染 CSR (Client Side Render) 工程骨架项目'
     });
   }
 

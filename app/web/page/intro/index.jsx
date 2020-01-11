@@ -8,7 +8,7 @@ import './index.css'
 
 export default class Intro extends Component {
   render() {
-    return <Layout>
+    return <Layout {...this.props}>
       <Header></Header>
       <h2 className="easy-intro-title">{this.props.message}</h2>
       <div className="easy-intro-info">

@@ -1,17 +1,11 @@
 import React, { Component } from 'react';
-import request from 'framework/request';
 import Layout from 'component/layout/default';
 import Header from 'component/header'
 import '../../asset/css/blog.css'
 
-import './home.css'
+import './index.css'
 export default class Home extends Component {
-  static asyncData(locals) {
-    return request.get('/api/list', locals).then(res => {
-      return res.data;
-    });
-  }
-
+  
   render() {
     const { list } = this.props;
     return <Layout {...this.props}>

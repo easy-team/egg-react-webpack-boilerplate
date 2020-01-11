@@ -5,6 +5,7 @@ module.exports = {
   framework: 'react',
   entry: {
     home: 'app/web/page/home/home.jsx',
+    node: 'app/web/page/node/index.jsx',
     detail: 'app/web/page/detail/index.jsx',
     intro: 'app/web/page/intro/index.jsx',
     'test/async': 'app/web/page/async/async.jsx'

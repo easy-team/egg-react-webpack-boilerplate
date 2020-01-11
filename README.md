@@ -1,32 +1,10 @@
-# egg-react-webpack-boilerplate
+# egg-rax-webpack-boilerplate
 
-基于 Egg + Rax + Webpack 服务端渲染 SSR (Server Side Render) 和 前端渲染 CSR (Client Side Render) 工程骨架项目。
-
-- 线上访问: http://49.233.172.37:7001
-- 文档请见: [Egg + React 工程解决方案](https://www.yuque.com/easy-team/egg-react/rax)
-
+基于 Egg + Rax + Webpack 服务端渲染 SSR (Server Side Render) 和 前端渲染 CSR (Client Side Render) 工程骨架项目。https://www.yuque.com/easy-team/egg-react/rax
 
 ## 截图
 
 ![egg-view-rax-ssr](https://github.com/easy-team/egg-react-webpack-boilerplate/blob/master/docs/images/egg-react-ssr.png)
-
-
-## 版本
-
-> 功能性需求或者Bug问题, 欢迎大家 PR 完善, 如果你需要了解更多信息，请加QQ群: 433207205(备注：Node.js).
-
-因该项目包含了多种实现, 提供多种例子实现，为防干扰, 特提供纯净版本分支用于实际项目开发, 请自行选用。
-
-- Egg + React 多页面服务端渲染方案 [feature/green/multi](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/feature/green/multi)
-- Egg + React 多页面前端渲染方案 [feature/green/html](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/feature/green/html)
-- Egg + React + React Router + Redux + React-Redux 单页面服务端渲染方案 [feature/green/spa](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/feature/green/spa)
-- Egg + AntD + React Router + Redux + React-Redux  单页面前端渲染asset方案 [feature/green/asset](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/feature/green/asset)
-- Egg + AntD + React Router + Redux + React-Redux  单页面服务端渲染方案 [antd](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/antd)
-- Egg + AntD + React Router + Redux + React-Redux  单页面管理后台前端渲染方案 [easy-admin](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/easy-admin)
-- Egg + Antd 按需配置和主题定制 [antd-theme](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/antd-theme) 和 [文档](https://www.yuque.com/easy-team/egg-react/antd)
-- Egg + React + TypeScript 项目请见[egg-react-typescript-boilerplate](https://github.com/easy-team/egg-react-typescript-boilerplate)
-
-可以通过 [easywebpack-cli](https://github.com/easy-team/easywebpack-cli) 命令行初始化对应类型项目。 
 
 ## 文档
 
@@ -63,9 +41,9 @@
 
 - [easywebpack](https://github.com/easy-team/easywebpack) ^4.x.x
 - [easywebpack-react](https://github.com/easy-team/easywebpack-react) ^4.x.x
-- [egg-view-react-ssr](https://github.com/easy-team/egg-view-react-ssr) ^2.1.0
+- [egg-view-rax-ssr](https://github.com/easy-team/egg-view-rax-ssr) ^1.0.0
 - [egg-webpack](https://github.com/easy-team/egg-webpack) ^4.x.x
-- [egg-webpack-react](https://github.com/easy-team/egg-webpack-react) ^2.0.0
+- [egg-webpack-rax](https://github.com/easy-team/egg-webpack-rax) ^1.0.0
 
 ![工程化](http://hubcarl.github.io/img/webpack/egg-webpack-react-ssr.png)
 
@@ -283,32 +261,6 @@ exports.client = function* (ctx) {
 ```javascript
 app.get('/client', app.controller.home.home.client);
 ```
-
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://easyjs.cn"><img src="https://avatars2.githubusercontent.com/u/4983042?v=4" width="100px;" alt=""/><br /><sub><b>sky</b></sub></a><br /><a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=hubcarl" title="Code">💻</a> <a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=hubcarl" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/jasonjcpeng"><img src="https://avatars0.githubusercontent.com/u/13363216?v=4" width="100px;" alt=""/><br /><sub><b>jasonjcpeng</b></sub></a><br /><a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=jasonjcpeng" title="Code">💻</a> <a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=jasonjcpeng" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/willworks"><img src="https://avatars2.githubusercontent.com/u/5542777?v=4" width="100px;" alt=""/><br /><sub><b>Kevin Zhong</b></sub></a><br /><a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=willworks" title="Code">💻</a> <a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=willworks" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/HiuYanChong"><img src="https://avatars0.githubusercontent.com/u/15319816?v=4" width="100px;" alt=""/><br /><sub><b>HiuYanChong</b></sub></a><br /><a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=HiuYanChong" title="Code">💻</a> <a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=HiuYanChong" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://www.thonatos.com"><img src="https://avatars2.githubusercontent.com/u/958063?v=4" width="100px;" alt=""/><br /><sub><b>Suyi</b></sub></a><br /><a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=thonatos" title="Code">💻</a> <a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=thonatos" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://blog.dada.li"><img src="https://avatars0.githubusercontent.com/u/3274850?v=4" width="100px;" alt=""/><br /><sub><b>Roy Li</b></sub></a><br /><a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=geekdada" title="Code">💻</a> <a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=geekdada" title="Documentation">📖</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
-
 
 ## License
 
