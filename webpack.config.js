@@ -8,7 +8,8 @@ module.exports = {
     node: 'app/web/page/node/index.jsx',
     detail: 'app/web/page/detail/index.jsx',
     intro: 'app/web/page/intro/index.jsx',
-    'test/async': 'app/web/page/async/async.jsx'
+    test: 'app/web/page/test/index.jsx',
+    async: 'app/web/page/async/async.jsx'
   },
   resolve: {
     alias: {

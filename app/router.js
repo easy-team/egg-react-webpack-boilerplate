@@ -1,6 +1,9 @@
 
 module.exports = app => {
   const { router, controller } = app;
+  router.get('/test/ssr', controller.test.test.ssr);
+  router.get('/test/csr', controller.test.test.csr);
+  router.get('/test/asset', controller.test.test.asset);
   router.get('/test/async', controller.test.test.asyncRender);
   router.get('/api/list', controller.home.index.list);
   router.get('/intro', controller.intro.intro.index);
