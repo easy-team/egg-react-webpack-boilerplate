@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import { Route, Link, Switch } from 'react-router-dom';
-import { connect } from 'react-redux';
+import { hot } from 'react-hot-loader/root'
 import Layout from 'component/layout/default'
 import Header from 'component/header'
 import Home from '../router/home';
 import Async from '../router/async';
 import About from '../router/about';
 
-import { Menu, Icon } from 'antd';
+import { Menu } from 'antd';
 
 class Main extends Component {
+
   constructor(props) {
     super(props);
     this.state = { current: props.url };
@@ -45,7 +46,4 @@ class Main extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  return state
-}; 
-export default connect(mapStateToProps)(Main);
+export default EASY_ENV_IS_DEV ? hot(Main) : Main;

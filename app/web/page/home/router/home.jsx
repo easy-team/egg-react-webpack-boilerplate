@@ -5,7 +5,7 @@ import { add, del } from '../store/actions';
 import './home.css'
 class Home extends Component {
   static asyncData(context, route) {
-    return request.get('/api/list', context.state).then(res => {
+    return request.get('/api/list', context).then(res => {
       return res.data;
     });
   }

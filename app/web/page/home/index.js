@@ -1,15 +1,37 @@
-import { hot } from 'react-hot-loader/root' 
-import App from 'framework/app'
+import React, { Component } from 'react';
+import { Provider } from 'react-redux';
+import { BrowserRouter, StaticRouter } from 'react-router-dom';
+import { asyncData, bootstrap } from '../../framework/app'
 import createStore from './store'
 import createRouter from './router'
 import Main from './view/main'
 import '../../asset/css/blog.css'
 import './index.css';
 
-const Entry = EASY_ENV_IS_DEV ? hot(Main) : Main;
+class Entry extends Component {
+  static async asyncData(context) {
+    const router = createRouter();
+    return asyncData(context, router);
+  }
 
-export default new App({
-  Entry,
-  createRouter,
-  createStore
-}).bootstrap();
+  render() {
+    if (EASY_ENV_IS_BROWSER) {
+      const store = createStore(window.__INITIAL_STATE__);
+      const { url } = store.getState();
+      return <Provider store={store}>
+        <BrowserRouter location={url}>
+          <Main></Main>
+        </BrowserRouter>
+      </Provider>;
+    }
+    const store = createStore(this.props);
+    const { url } = store.getState();
+    return <Provider store={store}>
+      <StaticRouter location={url} context={{}}>
+        <Main></Main>
+      </StaticRouter>
+    </Provider>;
+  }
+}
+
+export default bootstrap(Entry);

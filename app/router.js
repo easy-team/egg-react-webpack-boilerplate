@@ -7,5 +7,6 @@ module.exports = app => {
   router.get('/detail/:id', controller.home.index.detail);
   router.get('/csr', controller.home.index.csr);
   router.get('/node', controller.home.index.node);
+  router.get('/hello', controller.home.index.hello);
   router.get('/*', controller.home.index.ssr);
 };

@@ -24,6 +24,10 @@ module.exports = class IndexController extends egg.Controller {
     await ctx.renderClient('home.js', result);
   }
 
+  async hello(ctx) {
+    await ctx.renderClient('hello.js', {});
+  }
+
   async list() {
     this.ctx.body = this.service.article.getArtilceList();
   }

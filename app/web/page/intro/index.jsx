@@ -13,20 +13,15 @@ export default class Intro extends Component {
       <h2 className="easy-intro-title">{this.props.message}</h2>
       <div className="easy-intro-info">
         <h3>1.Egg React 工程方案</h3>
-        <p>
-          Egg + React 工程化解决方案, 支持 Egg + React 服务端(Server Side Render) 和 前端渲染模式(Client Side Render ).
-          <p>GitHub: <a target="_blank" href="https://github.com/easy-team/egg-react-webpack-boilerplate">https://github.com/easy-team/egg-react-webpack-boilerplate</a></p>
-          <p>Document:<a target="_blank" href="https://www.yuque.com/easy-team/egg-react">https://www.yuque.com/easy-team/egg-react</a></p>
-        </p>
+        <p>Egg + React 工程化解决方案, 支持 Egg + React 服务端(Server Side Render) 和 前端渲染模式(Client Side Render ).</p>
+        <p>GitHub: <a target="_blank" href="https://github.com/easy-team/egg-react-webpack-boilerplate">https://github.com/easy-team/egg-react-webpack-boilerplate</a></p>
+        <p>Document:<a target="_blank" href="https://www.yuque.com/easy-team/egg-react">https://www.yuque.com/easy-team/egg-react</a></p>
       </div>
       <div className="easy-intro-info">
         <h3>2.Webpack entry 配置说明</h3>
-        <p>
-          <p>1. .jsx 文件后缀这种模式可以直接渲染 React Component 组件，而无需编写 React.render 初始化代码，统一 <a target="_blank" href='https://github.com/easy-team/react-entry-template-loader'>react-entry-template-loader</a> 插件提供的模板进行 React 页面初始化。也就是如下标准的 React  Component
-          可以直接渲染出完整的 HTM 网页。</p>
-          <p>2. .js 文件后缀这种模式需要自己编写 React.render 代码且需要自己判断 SSR 还是前端渲染</p>
-          <a target="_blank" href="https://www.yuque.com/easy-team/egg-react/config">https://www.yuque.com/easy-team/egg-react/config</a>
-        </p>
+        <p>1. .jsx 文件后缀这种模式可以直接渲染 React Component 组件，而无需编写 React.render 初始化代码，统一 <a target="_blank" href='https://github.com/easy-team/react-entry-template-loader'>react-entry-template-loader</a> 插件提供的模板进行 React 页面初始化。也就是如下标准的 React  Component 可以直接渲染出完整的 HTM 网页。</p>
+        <p>2. .js 文件后缀这种模式需要自己编写 React.render 代码且需要自己判断 SSR 还是前端渲染</p>
+        <a target="_blank" href="https://www.yuque.com/easy-team/egg-react/config">https://www.yuque.com/easy-team/egg-react/config</a>
       </div>
       <div className="easy-intro-info">
         <h3>3.Egg React 服务端渲染模式</h3>
