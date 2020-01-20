@@ -15,7 +15,6 @@
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "dependencies": {
-    "antd": "^3.0.3",
     "axios": "^0.19.0",
     "egg": "^2.1.0",
     "egg-cors": "^2.0.0",

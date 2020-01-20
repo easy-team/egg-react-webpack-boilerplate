@@ -6,8 +6,7 @@ import Header from 'component/header'
 import Home from '../router/home';
 import Async from '../router/async';
 import About from '../router/about';
-
-import { Menu } from 'antd';
+import './main.css';
 
 class Main extends Component {
 
@@ -16,27 +15,18 @@ class Main extends Component {
     this.state = { current: props.url };
   }
 
-  handleClick(e) {
-    console.log('click', e, this.state);
-    this.setState({
-      current: e.key
-    });
+  tabClick(e) {
+    console.log('click', e.target);
   }
 
   render() {
     return <Layout {...this.props}>
       <Header></Header>
-      <Menu onClick={this.handleClick.bind(this)} selectedKeys={[this.state.current]} mode="horizontal">
-        <Menu.Item key="/">
-          <Link to="/">Home</Link>
-        </Menu.Item>
-        <Menu.Item key="/async">
-          <Link to="/async">Async</Link>
-        </Menu.Item>
-        <Menu.Item key="/about">
-          <Link to="/about">About</Link>
-        </Menu.Item>
-      </Menu>
+      <ul className="menu-tab">
+        <li onClick={this.tabClick.bind(this)}><Link to="/">Home</Link></li>
+        <li onClick={this.tabClick.bind(this)}><Link to="/async">Async</Link></li>
+        <li onClick={this.tabClick.bind(this)}><Link to="/about">About</Link></li>
+      </ul>
       <Switch>
         <Route path="/async" component={Async}/>
         <Route path="/about" component={About}/>

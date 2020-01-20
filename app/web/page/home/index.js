@@ -6,7 +6,6 @@ import createStore from './store'
 import createRouter from './router'
 import Main from './view/main'
 import '../../asset/css/blog.css'
-import './index.css';
 
 class Entry extends Component {
   static async asyncData(context) {
