@@ -10,7 +10,7 @@ export default class ListIndex extends Component {
     return <div>
       <div className="login">
         <div>
-          <h1>welcome <a href="/">easy-admin</a>!</h1>
+          <h1>Welcome <a href="/">easy-react-admin</a>!</h1>
         </div>
       </div>
     </div>;

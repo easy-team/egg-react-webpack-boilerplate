@@ -3,6 +3,7 @@ import { Link, Switch, Route } from 'react-router-dom';
 import { Layout, Menu, Icon } from 'antd';
 
 import Home from './home/index';
+import Detail from './detail/index';
 import About from './about/index';
 import './index.css';
 
@@ -50,6 +51,7 @@ export default class AppRoute extends Component {
           <Content style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280 }}>
             <Switch>
               <Route exact path="/" component={Home}/>
+              <Route exact path="/detail" component={Detail}/>
               <Route exact path="/about" component={About}/>
             </Switch>
           </Content>

@@ -1,7 +1,7 @@
 {
-  "name": "easy-react-admin",
-  "version": "1.0.0",
-  "description": "基于 egg + easywebpack-react 管理后台工程骨架项目",
+  "name": "egg-react-webpack-spa-boilerplate",
+  "version": "4.2.0",
+  "description": "基于 egg + react + webpack 管理后台工程骨架项目",
   "scripts": {
     "clean": "easy clean",
     "build": "easy build",
@@ -20,12 +20,13 @@
     "egg-logger": "^1.5.0",
     "egg-scripts": "^2.8.1",
     "egg-validate": "^1.0.0",
-    "egg-view-react-ssr": "^2.2.6",
+    "egg-view-react-ssr": "^3.0.0",
     "extend": "~3.0.0",
     "history": "^4.7.2",
     "lodash": "^4.17.4",
     "mockjs": "^1.0.1-beta3",
     "moment": "^2.17.1",
+    "querystring": "^0.2.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.6",
@@ -42,10 +43,9 @@
     "easywebpack-react": "^4.3.0",
     "egg-bin": "^4.5.0",
     "egg-webpack": "^4.4.1",
-    "egg-webpack-react": "^2.0.2",
+    "egg-webpack-react": "^3.0.0",
     "eslint-config-egg": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
-    "imagemin-webpack-plugin": "^2.3.0",
     "ip": "^1.1.5"
   },
   "engines": {

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+
 import { add, del } from '../../store/actions';
 
 import './index.css';
@@ -23,7 +25,7 @@ class Home extends Component {
                 return <li key={item.id}>
                   <div className="point">+{item.hits}</div>
                   <div className="card">
-                    <h2><a href={item.url} target="_blank">{item.title}</a></h2>
+                    <h2><Link to={`/detail?title=${encodeURIComponent(item.title)}&url=${encodeURIComponent(item.url)}`}>{item.title}</Link></h2>
                     <div>
                       <ul className="actions">
                         <li>
