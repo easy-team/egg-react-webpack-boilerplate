@@ -133,9 +133,9 @@ npm start
 
 ```js
 `config/config.local.js` 
-const EasyWebpack = require('@easy-team/easywebpack-react');
+const easywebpack = require('@easy-team/easywebpack-react');
 exports.webpack = {
-  webpackConfigList: EasyWebpack.getWebpackConfig()
+  webpackConfigList: easywebpack.getWebpackConfig()
 };
 ```
 

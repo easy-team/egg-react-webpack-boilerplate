@@ -1,6 +1,6 @@
 {
   "name": "egg-react-webpack-boilerplate",
-  "version": "4.8.1",
+  "version": "4.9.0",
   "description": "Egg React Server Side Render(SSR) 服务端渲染骨架项目",
   "scripts": {
     "clean": "easy clean",
@@ -21,7 +21,7 @@
     "egg-logger": "^2.4.1",
     "egg-scripts": "^2.8.1",
     "egg-validate": "^2.0.2",
-    "egg-view-react-ssr": "^3.0.0-beta.1",
+    "egg-view-react-ssr": "^3.0.0",
     "extend": "~3.0.0",
     "history": "^4.7.2",
     "lodash": "^4.17.4",
@@ -46,7 +46,7 @@
     "conventional-changelog-cli": "^1.3.5",
     "egg-bin": "^4.5.0",
     "egg-webpack": "^4.4.1",
-    "egg-webpack-react": "^3.0.0-beta.1",
+    "egg-webpack-react": "^3.0.0",
     "eslint-config-egg": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
     "ip": "^1.1.5",
@@ -56,7 +56,7 @@
     "node": ">=8.0.0"
   },
   "ci": {
-    "version": "8, 10"
+    "version": "8, 10, 12"
   },
   "repository": {
     "type": "git",
