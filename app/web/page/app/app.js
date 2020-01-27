@@ -14,13 +14,8 @@ const Entry = () => (
   </div>
 );
 const root = document.getElementById('app');
+ReactDOM.render(<Entry />, root);
 
 if (EASY_ENV_IS_DEV) {
   module.hot.accept();
-  // 本地开发模式 css inline 闪烁问题
-  setTimeout(() => {
-    ReactDOM.render(<Entry />, root);
-  }, 500);
-} else {
-  ReactDOM.render(<Entry />, root);
 }

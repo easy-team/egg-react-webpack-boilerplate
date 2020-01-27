@@ -1,13 +1,14 @@
 {
   "name": "egg-react-asset-boilerplate",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "基于 easywebpack-react 和 egg-view-react-ssr Asset 前端渲染工程骨架项目",
   "scripts": {
     "clean": "easy clean",
     "build": "easy build",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
-    "start": "egg-scripts start",
+    "start": "egg-scripts start --port 7001 --workers 4",
+    "backend": "nohup egg-scripts start --port 7001 --workers 4 &",
     "lint": "eslint .",
     "fix": "eslint --fix .",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
@@ -21,7 +22,7 @@
     "egg-logger": "^1.5.0",
     "egg-validate": "^1.0.0",
     "egg-view-nunjucks": "^2.0.0",
-    "egg-view-react-ssr": "^2.2.0",
+    "egg-view-react-ssr": "^3.0.0",
     "extend": "~3.0.0",
     "history": "^4.7.2",
     "lodash": "^4.17.4",
@@ -42,10 +43,9 @@
     "egg-bin": "^4.9.0",
     "egg-scripts": "^2.10.0",
     "egg-webpack": "^4.4.8",
-    "egg-webpack-react": "^2.0.0",
+    "egg-webpack-react": "^3.0.0",
     "eslint-config-egg": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
-    "imagemin-webpack-plugin": "^2.0.0",
     "ip": "^1.1.5"
   },
   "engines": {
