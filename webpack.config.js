@@ -6,5 +6,8 @@ module.exports = {
       client: 'app/web/framework/entry/client-loader.js',
       server: 'app/web/framework/entry/server-loader.js'
     }
-  }
+  },
+  plugins:[
+    { imagemini: false }
+  ]
 };

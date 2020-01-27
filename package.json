@@ -1,13 +1,14 @@
 {
   "name": "egg-react-webpack-mpa-boilerplate",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "基于 easywebpack-react 和 egg-view-react-ssr 插件服务端渲染工程骨架项目",
   "scripts": {
     "build": "easy build",
     "dev": "egg-bin dev",
-    "start": "egg-scripts start",
     "debug": "egg-bin debug",
     "clean": "easy clean",
+    "start": "egg-scripts start --port 7001 --workers 4",
+    "backend": "nohup egg-scripts start --port 7001 --workers 4 &",
     "kill-port": "kill -9 $(lsof -i:8888 |grep 'node'|aw '{print $2}') ",
     "lint": "eslint .",
     "fix": "eslint --fix .",
@@ -21,7 +22,7 @@
     "egg-logger": "^1.5.0",
     "egg-scripts": "^2.10.0",
     "egg-validate": "^1.0.0",
-    "egg-view-react-ssr": "^2.1.0",
+    "egg-view-react-ssr": "^3.0.0",
     "extend": "~3.0.0",
     "history": "^4.7.2",
     "lodash": "^4.17.4",
@@ -44,11 +45,10 @@
     "babel-loader": "^8.0.0",
     "egg-bin": "^4.9.0",
     "egg-webpack": "^4.0.0",
-    "egg-webpack-react": "^2.0.0",
+    "egg-webpack-react": "^3.0.0",
     "eslint": "^6.6.0",
     "eslint-config-egg": "^5.1.1",
-    "eslint-plugin-react": "^7.1.0",
-    "imagemin-webpack-plugin": "^2.0.0"
+    "eslint-plugin-react": "^7.1.0"
   },
   "engines": {
     "node": ">=6.0.0"
