@@ -20,6 +20,7 @@ module.exports = app => {
   exports.keys = '123456';
 
   exports.middleware = [
+    'locals',
     'access'
   ];
 

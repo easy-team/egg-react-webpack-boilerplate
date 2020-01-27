@@ -1,0 +1,6 @@
+{
+  "files.exclude": {
+    "**/node_modules/_**": true
+  },
+  "window.zoomLevel": 1.5
+}

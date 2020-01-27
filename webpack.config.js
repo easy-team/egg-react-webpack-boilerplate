@@ -1,11 +1,17 @@
+'use strict';
+// https://yuque.com/easy-team/egg-react
 module.exports = {
+  devtool: 'source-map',
   entry: {
-    app: 'app/web/page/app/index.js',
-    list: 'app/web/page/list/index.jsx',
-    stateless: 'app/web/page/list/stateless.js',
-    promise: 'app/web/page/list/promise.js'
+    home: 'app/web/page/home/index.js',
+    blog: 'app/web/page/blog/index.jsx',
+    detail: 'app/web/page/detail/index.jsx',
+    intro: 'app/web/page/intro/index.jsx',
+    async: 'app/web/page/async/async.jsx', 
+    stateless: 'app/web/page/example/stateless.js'
   },
   plugins:[
+    { imagemini: false },
     {
       copy: [{ from: 'app/web/asset/lib', to: 'lib' }] // 直接 Script 方式引入 React 包
     }
@@ -20,4 +26,5 @@ module.exports = {
     }
     return webpackConfig;
   }
+
 };

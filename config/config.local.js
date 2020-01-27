@@ -18,6 +18,7 @@ module.exports = () => {
   };
 
   exports.webpack = {
+    browser: false,
     webpackConfigList: easywebpack.getWebpackConfig()
   };
 

@@ -1,8 +1,18 @@
 # egg-react-webpack-boilerplate
 
-基于 Egg + React + Webpack 服务端渲染(Server Side Render)工程骨架项目, 文档请见: [Egg + React 解决方案](https://www.yuque.com/easy-team/egg-react)
+基于 Egg + React + Webpack 服务端渲染 SSR (Server Side Render) 和 前端渲染 CSR (Client Side Render) 工程骨架项目。
 
-![easy-react-admin](https://github.com/easy-team/egg-react-webpack-boilerplate/blob/master/docs/images/easy-react-admin.jpg)
+- 线上访问: http://49.233.172.37:7001
+- 文档请见: [Egg + React 工程解决方案](https://www.yuque.com/easy-team/egg-react)
+
+
+## 截图
+
+![egg-react-ssr](https://github.com/easy-team/egg-react-webpack-boilerplate/blob/master/docs/images/egg-react-ssr.png)
+
+
+![egg-react-admin](https://github.com/easy-team/egg-react-webpack-boilerplate/blob/master/docs/images/easy-react-admin.jpg)
+
 
 ## 版本
 
@@ -10,40 +20,46 @@
 
 因该项目包含了多种实现, 提供多种例子实现，为防干扰, 特提供纯净版本分支用于实际项目开发, 请自行选用。
 
-- Egg + React 多页面服务端渲染方案 [feature/green/multi](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/feature/green/multi)
+- Egg + React SSR多页面服务端渲染方案 [feature/green/multi](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/feature/green/multi)
+- Egg + React CSR 多页面前端渲染方案 [feature/green/html](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/feature/green/html)
 - Egg + React + React Router + Redux + React-Redux 单页面服务端渲染方案 [feature/green/spa](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/feature/green/spa)
 - Egg + AntD + React Router + Redux + React-Redux  单页面前端渲染asset方案 [feature/green/asset](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/feature/green/asset)
 - Egg + AntD + React Router + Redux + React-Redux  单页面服务端渲染方案 [antd](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/antd)
 - Egg + AntD + React Router + Redux + React-Redux  单页面管理后台前端渲染方案 [easy-admin](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/easy-admin)
-- Egg + Antd 按需配置和主题定制 [antd-theme](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/antd-theme) 和 [文档](https://www.yuque.com/easy-team/egg-react/antd)
+- Egg + AntD 按需配置和主题定制 [antd-theme](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/antd-theme) 和 [文档](https://www.yuque.com/easy-team/egg-react/antd)
 - Egg + React + TypeScript 项目请见[egg-react-typescript-boilerplate](https://github.com/easy-team/egg-react-typescript-boilerplate)
+- Egg + Rax SSR多页面服务端渲染方案 [rax](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/rax)
+
 
 可以通过 [easywebpack-cli](https://github.com/easy-team/easywebpack-cli) 命令行初始化对应类型项目。 
 
 ## 文档
 
+- https://easyjs.cn
 - https://www.yuque.com/easy-team/egg-react
-- https://zhuanlan.zhihu.com/easywebpack
+- https://zhuanlan.zhihu.com/easyjs
 
 ## 特性
 
-- 基于 React 多页面/单页面服务端渲染
+- 基于 React 多页面/单页面服务端渲染, 前端渲染以及 asyncData 同构实现
+
+- 支持服务端渲染失败时, 自动降级为前端渲染模式; 支持 react-loadable 异步组件渲染
+
+- 数据层面进行了简单设计，支持 FileDB，MySQL，Mongo 接口
 
 - 支持 Node 和 前端代码修改 Webpack 时时编译和热更新
 
 - 支持服务端渲染 `render` 和纯前端渲染 `renderClient`
 
-- 支持自动根据 jsx 文件构建 webpack entry 入口文件
+- 支持自动根据 jsx 文件构建 Webpack entry 入口文件
 
 - 支持 css, sass, scss, less, stylus
 
 - 支持 css module , 且同时支持 css 和 css module 共存的情况
 
-- 支持 react-router, react-redux 服务端SPA渲染
+- 支持 react-router, react-redux 服务端渲染(SSR)和前端渲染(CSR) 
 
-- 支持 webpack dll 自动化构建, 与多进程编译结合，构建速度减少 2/3
-
-- 支持服务端渲染失败时, 自动降级为前端渲染模式
+- 支持 Webpack dll 自动化构建, 与多进程编译结合，构建速度减少 2/3
 
 - Node 8 版本的 async 和 await 特性, Controller 采用 class 方式编写
 
@@ -64,7 +80,7 @@
 #### 安装cli
 
 ```bash
-npm install easywebpack-cli -g
+npm install @easy-team/easywebpack-cli -g
 ```
 
 #### 安装依赖
@@ -74,7 +90,9 @@ npm install
 ```
 
 
-#### 本地开发启动应用
+#### 本地开发
+
+> 启动流程: https://www.yuque.com/easy-team/egg-react/build
 
 ```bash
 npm run dev
@@ -85,7 +103,17 @@ npm run dev
 
 ![npm start启动](https://github.com/easy-team/egg-react-webpack-boilerplate/blob/master/docs/images/webpack.png)
 
-#### 发布模式启动应用
+
+
+- 本地开发启动 Webpack 构建, 默认配置文件为项目根目录 `webpack.config.js` 文件。 SSR 需要配置两份 Webpack 配置，所以构建会同时启动两个 Webpack 构建服务。web 表示构建 JSBundle 给前端用，构建后文件目录 `public`, 默认端口 9000; node 表示构建 JSBundle 给前端用，构建后文件目录 `app/view`, 默认端口 9001.
+
+- 本地构建是 Webpack 内存构建，文件不落地磁盘，所以 `app/view` 和 `public` 在本地开发时，是看不到文件的。 只有发布模式(npm run build)才能在这两个目录中看到构建后的内容。
+
+
+#### 线上部署
+
+> 部署细节请阅读：https://www.yuque.com/easy-team/egg-react/online
+
 
 - 首先在本地或者ci构建好jsbundle文件
 
@@ -101,16 +129,15 @@ npm start
 
 ### 配置说明
 
+> https://www.yuque.com/easy-team/egg-react/config
 
 ```js
 `config/config.local.js` 
-const EasyWebpack = require('easywebpack-react');
+const easywebpack = require('@easy-team/easywebpack-react');
 exports.webpack = {
-  webpackConfigList: EasyWebpack.getWebpackConfig()
+  webpackConfigList: easywebpack.getWebpackConfig()
 };
 ```
-
-构建会同时启动两个webpack构建服务, 客户端js构建(build/client), 服务端构建(build/server), 默认端口9000,  webpackConfigList 端口依次递增. 
 
 
 #### 项目构建
@@ -261,6 +288,32 @@ exports.client = function* (ctx) {
 ```javascript
 app.get('/client', app.controller.home.home.client);
 ```
+
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://easyjs.cn"><img src="https://avatars2.githubusercontent.com/u/4983042?v=4" width="100px;" alt=""/><br /><sub><b>sky</b></sub></a><br /><a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=hubcarl" title="Code">💻</a> <a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=hubcarl" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/jasonjcpeng"><img src="https://avatars0.githubusercontent.com/u/13363216?v=4" width="100px;" alt=""/><br /><sub><b>jasonjcpeng</b></sub></a><br /><a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=jasonjcpeng" title="Code">💻</a> <a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=jasonjcpeng" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/willworks"><img src="https://avatars2.githubusercontent.com/u/5542777?v=4" width="100px;" alt=""/><br /><sub><b>Kevin Zhong</b></sub></a><br /><a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=willworks" title="Code">💻</a> <a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=willworks" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/HiuYanChong"><img src="https://avatars0.githubusercontent.com/u/15319816?v=4" width="100px;" alt=""/><br /><sub><b>HiuYanChong</b></sub></a><br /><a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=HiuYanChong" title="Code">💻</a> <a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=HiuYanChong" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://www.thonatos.com"><img src="https://avatars2.githubusercontent.com/u/958063?v=4" width="100px;" alt=""/><br /><sub><b>Suyi</b></sub></a><br /><a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=thonatos" title="Code">💻</a> <a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=thonatos" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://blog.dada.li"><img src="https://avatars0.githubusercontent.com/u/3274850?v=4" width="100px;" alt=""/><br /><sub><b>Roy Li</b></sub></a><br /><a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=geekdada" title="Code">💻</a> <a href="https://github.com/hubcarl/egg-react-webpack-boilerplate/commits?author=geekdada" title="Documentation">📖</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
 
 ## License
 
