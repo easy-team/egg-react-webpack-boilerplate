@@ -7,5 +7,5 @@ module.exports = {
       this[DBSymbol] = Factory();
     }
     return this[DBSymbol];
-  },
+  }
 };

@@ -1,9 +1,9 @@
 {
-  "name": "egg-react-webpack-boilerplate",
-  "version": "4.9.0",
-  "description": "Egg React Server Side Render(SSR) 服务端渲染骨架项目",
+  "name": "egg-react-webpack-awesome-boilerplate",
+  "version": "4.1.0",
+  "description": "基于 easywebpack-react 和 egg-view-react-ssr 插件服务端渲染工程骨架项目",
   "scripts": {
-    "clean": "easy clean",
+    "clean": "easy clean all",
     "build": "easy build",
     "debug": "egg-bin debug",
     "dev": "egg-bin dev",
@@ -50,6 +50,7 @@
     "eslint-config-egg": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
     "ip": "^1.1.5",
+    "raw-loader": "^4.0.0",
     "service-worker-register": "^1.2.6"
   },
   "engines": {

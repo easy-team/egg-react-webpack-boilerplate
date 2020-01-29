@@ -38,4 +38,12 @@ module.exports = class IndexController extends egg.Controller {
       article
     });
   }
+
+  async stateless() {
+    const { ctx } = this;
+    await ctx.render('stateless.js', {
+      text: 'React Stateless Component Server Render'
+    });
+  }
+  
 };

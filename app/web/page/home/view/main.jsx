@@ -5,6 +5,7 @@ import Layout from 'component/layout/default'
 import Header from 'component/header'
 import Home from '../router/home';
 import Async from '../router/async';
+import Example from '../router/example';
 import About from '../router/about';
 import './main.css';
 
@@ -25,10 +26,12 @@ class Main extends Component {
       <ul className="menu-tab">
         <li onClick={this.tabClick.bind(this)}><Link to="/">Home</Link></li>
         <li onClick={this.tabClick.bind(this)}><Link to="/async">Async</Link></li>
+        <li onClick={this.tabClick.bind(this)}><Link to="/example">Example</Link></li>
         <li onClick={this.tabClick.bind(this)}><Link to="/about">About</Link></li>
       </ul>
       <Switch>
         <Route path="/async" component={Async}/>
+        <Route path="/example" component={Example}/>
         <Route path="/about" component={About}/>
         <Route path="/" component={Home}/>
       </Switch>
