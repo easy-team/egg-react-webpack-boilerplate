@@ -8,7 +8,8 @@ module.exports = {
     detail: 'app/web/page/detail/index.jsx',
     intro: 'app/web/page/intro/index.jsx',
     async: 'app/web/page/async/async.jsx', 
-    stateless: 'app/web/page/example/stateless.js'
+    stateless: 'app/web/page/example/stateless.js',
+    asyncData: 'app/web/page/async/data.jsx'
   },
   plugins:[
     { imagemini: false },

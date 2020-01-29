@@ -13,6 +13,8 @@ export default class Example extends Component {
     return <div>
       <h2 style={{...styleTitle}}>Egg React Example</h2>
       <h4 style={{...styleSub}}><a href="/stateless">React Stateless Component Render</a></h4>
+      <h4 style={{...styleSub}}><a href="/test/data">React Server Render for asyncData</a></h4>
+
     </div>;
   }
 }
