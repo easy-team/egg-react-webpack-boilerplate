@@ -4,6 +4,7 @@ module.exports = {
   devtool: 'source-map',
   entry: {
     blog: 'app/web/page/blog/index.js',
+    blogx: 'app/web/page/blog/index.jsx',
     list: 'app/web/page/list/index.jsx',
     detail: 'app/web/page/detail/index.jsx',
     intro: 'app/web/page/intro/index.jsx',
@@ -26,6 +27,7 @@ module.exports = {
         'react-dom': 'ReactCoreLib.ReactDOM'
       });
     }
+    console.log('11112');
     return webpackConfig;
   }
 
