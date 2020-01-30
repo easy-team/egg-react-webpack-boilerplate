@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
-import request from '../../framework/request';
-import Layout from 'component/layout/default';
+import Layout from 'component/layout';
 
-class AsyncDataMode extends Component {
-  
-  static async asyncData(locals) {
-    const res = await request.get('/test/api/article', locals);
-    return res.data;
-  }
+class NodeDataMode extends Component {
 
   render() {
     const { title, article } = this.props;
@@ -21,4 +15,4 @@ class AsyncDataMode extends Component {
   }
 }
 
-export default AsyncDataMode;
+export default NodeDataMode;

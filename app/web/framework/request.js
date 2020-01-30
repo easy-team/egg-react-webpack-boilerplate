@@ -5,15 +5,17 @@ axios.defaults.timeout = 15000;
 axios.defaults.xsrfHeaderName = 'x-csrf-token';
 axios.defaults.xsrfCookieName = 'csrfToken';
 export default {
-  post(url, json, state = {}) {
+  async post(url, json, locals = {}) {
     const headers = {};
     if (EASY_ENV_IS_NODE) {
-      headers['x-csrf-token'] = state.csrf;
-      headers.Cookie = `csrfToken=${state.csrf}`;
+      headers['x-csrf-token'] = locals.csrf;
+      headers.Cookie = `csrfToken=${locals.csrf}`;
     }
-    return axios.post(`${state.origin}${url}`, json, { headers });
+    const res = await axios.post(`${locals.origin}${url}`, json, { headers });
+    return res.data;
   },
-  get(url, state = {}) {
-    return axios.get(`${state.origin}${url}`);
+  async get(url, locals = {}) {
+    const res = await axios.get(`${locals.origin}${url}`);
+    return res.data;
   }
 };

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Layout from 'component/layout/default.jsx';
+import Layout from 'component/layout';
 
 export default (props) => {
   return <Layout>

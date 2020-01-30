@@ -3,13 +3,14 @@
 module.exports = {
   devtool: 'source-map',
   entry: {
-    home: 'app/web/page/home/index.js',
-    blog: 'app/web/page/blog/index.jsx',
+    blog: 'app/web/page/blog/index.js',
+    list: 'app/web/page/list/index.jsx',
     detail: 'app/web/page/detail/index.jsx',
     intro: 'app/web/page/intro/index.jsx',
-    async: 'app/web/page/async/async.jsx', 
-    stateless: 'app/web/page/example/stateless.js',
-    asyncData: 'app/web/page/async/data.jsx'
+    async: 'app/web/page/example/async/index.jsx',
+    'example/stateless': 'app/web/page/example/stateless.js',
+    'example/node': 'app/web/page/example/node.jsx',
+    'example/data': 'app/web/page/example/data.jsx'
   },
   plugins:[
     { imagemini: false },

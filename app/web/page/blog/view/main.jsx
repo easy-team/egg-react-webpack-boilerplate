@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-import { Route, Link, Switch } from 'react-router-dom';
+import { Link, Switch } from 'react-router-dom';
 import { hot } from 'react-hot-loader/root'
-import Layout from 'component/layout/default'
-import Header from 'component/header'
+import { ARTICLE_LIST, ARTICLE_DETAIL } from '../store/constant';
+import Layout from '../../../component/layout'
+import Header from '../../../component/header'
+import Route from '../router/route';
 import Home from '../router/home';
-import Async from '../router/async';
+import Detail from '../router/detail';
 import Example from '../router/example';
+import Async from '../router/async';
 import About from '../router/about';
 import './main.css';
 
@@ -30,10 +33,11 @@ class Main extends Component {
         <li onClick={this.tabClick.bind(this)}><Link to="/about">About</Link></li>
       </ul>
       <Switch>
-        <Route path="/async" component={Async}/>
+        <Route type={ARTICLE_DETAIL} path="/detail/:id" component={Detail} />
         <Route path="/example" component={Example}/>
+        <Route path="/async" component={Async}/>
         <Route path="/about" component={About}/>
-        <Route path="/" component={Home}/>
+        <Route type={ARTICLE_LIST} path="/" component={Home}/>
       </Switch>
     </Layout>;
   }

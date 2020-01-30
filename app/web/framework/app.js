@@ -4,12 +4,13 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { matchRoutes } from 'react-router-config';
 
-async function asyncData(context, router) {
-  const url = context.url;
-  const matchRoute = matchRoutes(router, url);
-  const promises = matchRoute.map(({ route }) => {
-    const componentAsyncData = route.component.asyncData;
-    return componentAsyncData instanceof Function ? componentAsyncData(context, route) : null;
+
+async function asyncData(locals, router) {
+  const url = locals.url;
+  const matchRouteList = matchRoutes(router, url);
+  const promises = matchRouteList.map(matchRoute=> {
+    const componentAsyncData = matchRoute.route.component.asyncData;
+    return componentAsyncData instanceof Function ? componentAsyncData(locals, matchRoute) : null;
   });
   const list = await Promise.all(promises);
   return list.reduce((item, result) => {
@@ -24,7 +25,7 @@ function bootstrap(Entry) {
     ReactDOM[renderMethod](<Entry />, root);
     if (EASY_ENV_IS_DEV) {
       module.hot.accept(() => {
-        ReactDOM[renderMethod](<RootEntry />, root);
+        ReactDOM[renderMethod](<Entry />, root);
       });
     }
     return;

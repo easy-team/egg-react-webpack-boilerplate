@@ -1,5 +1,8 @@
+import { Route } from 'react-router-dom';
 import Home from './home';
 import Async from './async';
+import Example from './example';
+import Detail from './detail';
 import About from './about';
 const NotFound = () => {
   return (
@@ -20,16 +23,24 @@ const NotFound = () => {
 export default function createRouter() {
   return [
     {
-      path: '/',
-      component: Home
+      path: '/detail/:id',
+      component: Detail
     },
     {
       path: '/async',
       component: Async
     },
     {
+      path: '/example',
+      component: Example
+    },
+    {
       path: '/about',
-      component: Async
+      component: About
+    },
+    {
+      path: '/',
+      component: Home
     },
     {
       path: '*',
