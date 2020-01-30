@@ -1,7 +1,9 @@
 'use strict';
+const path = require('path');
 const shortid = require('shortid');
+const dbpath = path.resolve(__dirname, 'blog.json');
 module.exports = class DB {
-  constructor(name = 'blog.json') {
+  constructor(name = dbpath) {
     this.name = name;
   }
   getUniqueId() {
