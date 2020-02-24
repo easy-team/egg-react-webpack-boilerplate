@@ -63,6 +63,8 @@
 
 - Node 8 版本的 async 和 await 特性, Controller 采用 class 方式编写
 
+- 支持SSR, CSR, Asset, 自定义多种渲染模式
+
 
 ## 依赖
 
