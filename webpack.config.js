@@ -27,7 +27,6 @@ module.exports = {
         'react-dom': 'ReactCoreLib.ReactDOM'
       });
     }
-    console.log('11112');
     return webpackConfig;
   }
 
