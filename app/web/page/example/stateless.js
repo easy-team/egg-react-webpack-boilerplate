@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Layout from 'component/layout';
 
 export default (props) => {
-  return <Layout>
+  return <Layout {...props}>
     <div className="main">
       <div className="page-container page-component">
         <h1>{props.text}</h1>

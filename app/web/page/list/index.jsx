@@ -5,7 +5,7 @@ import './index.css'
 class Home extends Component {
   render() {
     const { list } = this.props;
-    return <Layout>
+    return <Layout {...this.props}>
       <Header></Header>
       <div className="easy-article-list">
         <ul>

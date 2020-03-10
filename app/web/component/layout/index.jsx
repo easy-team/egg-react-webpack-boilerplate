@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
+import { IntlProvider } from 'react-intl';
+ 
 import inlineTest from 'raw-loader!../inline.js';
+
 export default class Layout extends Component {
   
   render() {
+    const { locale, i18n } = this.props;
+    console.log('>>>locale', locale);
     const inlineCode = `
       function inlineCodeTest() {
         console.log('Egg React inline Code javascript');
@@ -25,9 +30,9 @@ export default class Layout extends Component {
           <script dangerouslySetInnerHTML={{__html: inlineTest }}></script>
           <script>inlineFileTest();inlineCodeTest();</script>
         </head>
-        <body><div id="app">{this.props.children}</div></body>
+        <body><div id="app"><IntlProvider locale={locale} messages={i18n}>{this.props.children}</IntlProvider></div></body>
       </html>;
     }
-    return this.props.children;
+    return <IntlProvider locale={locale} messages={i18n}>{this.props.children}</IntlProvider>
   }
 }

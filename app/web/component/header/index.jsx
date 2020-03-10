@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { FormattedMessage } from 'react-intl';
+
 import './index.css';
 export default class Header extends Component {
   
@@ -24,16 +26,16 @@ export default class Header extends Component {
           <div className="collapse easy-menu-collapse" className={ this.state.collapsed ? 'collapse easy-menu-collapse collapse in' : 'collapse easy-menu-collapse' } id="bs-example-easy-menu-collapse-1">
             <ul className="nav easy-menu-nav easy-menu-right">
               <li>
-                <a href="/">Home</a>
+                <a href="/"><FormattedMessage id='menu.home' /></a>
               </li>
               <li>
-                <a href="/intro">QuickStart</a>
+                <a href="/intro"><FormattedMessage id='menu.guide' /></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://yuque.com/easy-team"><FormattedMessage id='menu.doc' /></a>
               </li>
               <li>
                 <a target="_blank" href="https://github.com/easy-team">GitHub</a>
-              </li>
-              <li>
-                <a target="_blank" href="https://yuque.com/easy-team">Document</a>
               </li>
             </ul>
           </div>

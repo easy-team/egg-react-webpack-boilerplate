@@ -5,7 +5,7 @@ class NodeDataMode extends Component {
 
   render() {
     const { title, article } = this.props;
-    return <Layout>
+    return <Layout {...this.props}>
       <h1 className="easy-article-detail-title">{title}</h1>
       <h2 className="easy-article-detail-title">{article.title}</h2>
       <div className="easy-article-info">

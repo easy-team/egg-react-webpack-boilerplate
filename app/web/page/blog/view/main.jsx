@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Link, Switch } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { FormattedMessage } from 'react-intl';
 import { hot } from 'react-hot-loader/root'
 import { ARTICLE_LIST, ARTICLE_DETAIL } from '../store/constant';
 import Layout from '../../../component/layout'
@@ -24,23 +26,33 @@ class Main extends Component {
   }
 
   render() {
+    const { locale, i18n } = this.props;
     return <Layout {...this.props}>
-      <Header></Header>
-      <ul className="menu-tab">
-        <li onClick={this.tabClick.bind(this)}><Link to="/">Home</Link></li>
-        <li onClick={this.tabClick.bind(this)}><Link to="/async">Async</Link></li>
-        <li onClick={this.tabClick.bind(this)}><Link to="/example">Example</Link></li>
-        <li onClick={this.tabClick.bind(this)}><Link to="/about">About</Link></li>
-      </ul>
-      <Switch>
-        <Route type={ARTICLE_DETAIL} path="/detail/:id" component={Detail} />
-        <Route path="/example" component={Example}/>
-        <Route path="/async" component={Async}/>
-        <Route path="/about" component={About}/>
-        <Route type={ARTICLE_LIST} path="/" component={Home}/>
-      </Switch>
+        <Header></Header>
+        <ul className="menu-tab">
+          <li onClick={this.tabClick.bind(this)}><Link to="/"><FormattedMessage id='tab.list' /></Link></li>
+          <li onClick={this.tabClick.bind(this)}><Link to="/async"><FormattedMessage id='tab.async' /></Link></li>
+          <li onClick={this.tabClick.bind(this)}><Link to="/example"><FormattedMessage id='tab.example' /></Link></li>
+          <li onClick={this.tabClick.bind(this)}><Link to="/about"><FormattedMessage id='tab.about' /></Link></li>
+        </ul>
+        <Switch>
+          <Route type={ARTICLE_DETAIL} path="/detail/:id" component={Detail} />
+          <Route path="/example" component={Example}/>
+          <Route path="/async" component={Async}/>
+          <Route path="/about" component={About}/>
+          <Route type={ARTICLE_LIST} path="/" component={Home}/>
+        </Switch>
     </Layout>;
   }
 }
 
-export default EASY_ENV_IS_DEV ? hot(Main) : Main;
+
+const mapStateToProps = state => {
+  return {
+    locale: state.locale,
+    i18n: state.i18n
+  };
+};
+
+
+export default connect(mapStateToProps)(EASY_ENV_IS_DEV ? hot(Main) : Main);
