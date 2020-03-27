@@ -12,6 +12,14 @@ module.exports = app => {
         text: 'React Stateless Component Server Render'
       });
     }
+
+    async reactHook() {
+      const { ctx } = this;
+      await ctx.render('example/hook.js', {
+        text: 'React Hook Component Server Render'
+      });
+    }
+    
     
   };
 };

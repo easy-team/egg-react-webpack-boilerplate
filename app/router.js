@@ -7,6 +7,7 @@ module.exports = app => {
   router.get('/csr', controller.blog.index.csr);
   router.get('/node', controller.blog.index.node);
   router.get('/example/stateless', controller.example.index.statelessRender);
+  router.get('/example/hook', controller.example.index.reactHook);
   router.get('/example/async', controller.example.index.asyncComponentRender);
   router.get('/example/data/node', controller.example.data.nodeDataRender);
   router.get('/example/data/async', controller.example.data.asyncDataRender);
