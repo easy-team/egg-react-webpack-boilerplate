@@ -7,6 +7,12 @@ module.exports = app => {
       const article = await ctx.service.article.getArticle(1);
       await ctx.render('example/node.js', { title, article });
     }
+
+    async contextRender(ctx) {
+      const title = 'Node 直接获取渲染数据';
+      const article = await ctx.service.article.getArticle(1);
+      await ctx.render('example/context.js', { title, article });
+    }
     
     async asyncDataRender(ctx) {
       const title = '前端 React 代码 asyncData 获取渲染数据';
