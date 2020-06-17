@@ -13,8 +13,7 @@ module.exports = () => {
     ignoreDirs: ['app/web', 'public', 'config/manifest.json', 'app/lib/db/blog.json'] // 指定过滤的目录（包括子目录）
   };
 
-  exports.reactssr = {
-  };
+  exports.reactssr = {};
 
   exports.webpack = {
     browser: false,

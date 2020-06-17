@@ -2,7 +2,7 @@ module.exports = {
   env: {
     node: true,
     es6: true,
-    mocha: true,
+    mocha: true
   },
   parser: 'babel-eslint',
   extends: 'eslint:recommended',
@@ -10,8 +10,8 @@ module.exports = {
     sourceType: 'module',
     ecmaVersion: 8,
     ecmaFeatures: {
-      jsx: true,
-    },
+      jsx: true
+    }
   },
   rules: {
     indent: ['error', 2, { SwitchCase: 1 }],
@@ -27,7 +27,7 @@ module.exports = {
     'no-unused-expressions': 'off',
     'linebreak-style': 'off',
     'func-style': 'off',
-    'comma-dangle': ['error', 'never'],
+    'comma-dangle': ['error', 'never']
   },
   plugins: ['react'],
   globals: {
@@ -36,6 +36,6 @@ module.exports = {
     EASY_ENV_IS_PROD: true,
     EASY_ENV_IS_NODE: true,
     EASY_ENV_IS_BROWSER: true,
-    EASY_ENV_IS_DEV: true,
-  },
+    EASY_ENV_IS_DEV: true
+  }
 };

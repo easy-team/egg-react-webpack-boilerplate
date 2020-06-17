@@ -25,7 +25,7 @@ export default class Header extends Component {
             </div>
             <a className="easy-menu-brand" href="/">Egg + React</a>
           </div>
-          <div className="collapse easy-menu-collapse" className={ this.state.collapsed ? "collapse easy-menu-collapse collapse in" : "collapse easy-menu-collapse" } id="bs-example-easy-menu-collapse-1">
+          <div className="collapse easy-menu-collapse" className={ this.state.collapsed ? 'collapse easy-menu-collapse collapse in' : 'collapse easy-menu-collapse' } id="bs-example-easy-menu-collapse-1">
             <ul className="nav easy-menu-nav easy-menu-right">
               <li>
                 <a href="/">Home</a>

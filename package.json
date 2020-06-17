@@ -1,7 +1,7 @@
 {
-  "name": "egg-react-webpack-awesome-boilerplate",
+  "name": "egg-react-webpack-boilerplate",
   "version": "4.2.1",
-  "description": "基于 easywebpack-react 和 egg-view-react-ssr 插件服务端渲染工程骨架项目",
+  "description": "Egg React Server Side Render Examples",
   "scripts": {
     "clean": "easy clean all",
     "build": "easy build",
@@ -9,8 +9,8 @@
     "dev": "egg-bin dev",
     "start": "egg-scripts start --port 7001 --workers 4",
     "backend": "nohup egg-scripts start --port 7001 --workers 4 &",
-    "lint": "eslint .",
-    "fix": "eslint --fix .",
+    "lint": "eslint . --ext .js,jsx",
+    "fix": "eslint --fix . --ext .js,jsx",
     "ii": "npm install --registry https://registry.npm.taobao.org",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
@@ -20,7 +20,7 @@
     }
   },
   "lint-staged": {
-    "**/*.{js, vue}": [
+    "**/*.{js, jsx}": [
       "npm run lint",
       "git add"
     ]
@@ -58,6 +58,7 @@
     "egg-bin": "^4.5.0",
     "egg-webpack": "^4.4.1",
     "egg-webpack-react": "^3.0.0",
+    "eslint": "^7.2.0",
     "eslint-config-egg": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
     "husky": "^4.2.5",
