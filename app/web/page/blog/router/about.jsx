@@ -1,7 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import React, { Component } from 'react';
+import { hot } from 'react-hot-loader/root';
 
-export default class About extends Component {
+class About extends Component {
 
   render() {
     const styleTitle = {
@@ -18,3 +19,5 @@ export default class About extends Component {
     </div>;
   }
 }
+
+export default EASY_ENV_IS_DEV ? hot(About) : About;
