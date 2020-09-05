@@ -1,6 +1,6 @@
 
 const ip = require('ip');
-const easywebpack = require('@easy-team/easywebpack-react');
+const easywebpack = require('easywebpack-react');
 module.exports = () => {
   const exports = {};
 

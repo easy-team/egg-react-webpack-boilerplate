@@ -18,7 +18,9 @@ module.exports = {
   plugins:[
     { imagemini: false },
     {
-      copy: [{ from: 'app/web/asset/lib', to: 'lib' }] // 直接 Script 方式引入 React 包
+      copy: {
+        patterns: [{ from: 'app/web/asset/lib', to: 'lib' }]
+      } // 直接 Script 方式引入 React 包
     }
   ],
   customize(webpackConfig) {
