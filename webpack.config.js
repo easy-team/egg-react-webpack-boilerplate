@@ -1,7 +1,14 @@
 'use strict';
+const delay = async time => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(time);
+    }, time);
+  });
+};
 // https://yuque.com/easy-team/egg-react
 module.exports = {
-  devtool: 'source-map',
+  // devtool: 'source-map',
   entry: {
     blog: 'app/web/page/blog/index.js',
     blogx: 'app/web/page/blog/index.jsx',
@@ -16,22 +23,25 @@ module.exports = {
     'example/context': 'app/web/page/example/context.jsx'
   },
   plugins:[
-    { imagemini: false },
-    {
-      copy: {
-        patterns: [{ from: 'app/web/asset/lib', to: 'lib' }]
-      } // 直接 Script 方式引入 React 包
-    }
+    // {
+    //   copy: {
+    //     patterns: [{ from: 'app/web/asset/lib', to: 'lib' }]
+    //   } // 直接 Script 方式引入 React 包
+    // }
   ],
   customize(webpackConfig) {
     // Node Render 时不能 externals script lib
-    if (webpackConfig.target === 'web') {
-      webpackConfig.externals.push({ 
-        react: 'ReactCoreLib.React',
-        'react-dom': 'ReactCoreLib.ReactDOM'
-      });
-    }
+    // if (webpackConfig.target === 'web') {
+    //   webpackConfig.externals.push({ 
+    //     react: 'ReactCoreLib.React',
+    //     'react-dom': 'ReactCoreLib.ReactDOM'
+    //   });
+    // }
     return webpackConfig;
+  },
+  async done() {
+    console.log(Date.now());
+    const t = await delay(3000);
+    console.log(Date.now());
   }
-
 };
