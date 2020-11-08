@@ -1,0 +1,14 @@
+.menu-tab {
+  margin: 8px auto;
+  border-bottom: 1px solid #0a52a5;
+  height: 40px;
+}
+
+.menu-tab li {
+ height: 40px;
+ line-height: 40px;
+ vertical-align: middle;
+ float: left;
+ width: 25%;
+ text-align: center;
+}
