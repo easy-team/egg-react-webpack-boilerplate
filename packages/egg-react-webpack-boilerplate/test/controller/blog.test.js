@@ -3,9 +3,9 @@ const mm = require('egg-mock');
 const { 
   webpackReady, 
   assertText,
-  assertSSRAppNode,
-  assertCSRAppNode,
-  assertDevModeResource
+  assertSSR,
+  assertCSR,
+  assertDevResource
 } = require('../utils/helper');
 
 describe('test/controller/blog.test.js', () => {
@@ -29,8 +29,8 @@ describe('test/controller/blog.test.js', () => {
         .expect(res => {
           assertText(res, '<h1>Egg React 工程方案</h1>');
           assertText(res, '<a href="/detail/1">Egg React 服务端渲染(SSR)之快速开始</a>');
-          assertSSRAppNode(res);
-          assertDevModeResource(res, 'blog');
+          assertSSR(res);
+          assertDevResource(res, 'blog');
         });
     });
     it('should work when jsx ssr', async () => {
@@ -39,8 +39,8 @@ describe('test/controller/blog.test.js', () => {
         .get('/about')
         .expect(200)
         .expect((res) => {
-          assertSSRAppNode(res);
-          assertDevModeResource(res, 'blog');
+          assertSSR(res);
+          assertDevResource(res, 'blog');
         });
     });
     it('should work when ssr spa route about', async () => {
@@ -49,8 +49,8 @@ describe('test/controller/blog.test.js', () => {
         .get('/about')
         .expect(200)
         .expect((res) => {
-          assertSSRAppNode(res);
-          assertDevModeResource(res, 'blog');
+          assertSSR(res);
+          assertDevResource(res, 'blog');
         });
     });
     it('should work when csr', async () => {
@@ -59,8 +59,8 @@ describe('test/controller/blog.test.js', () => {
         .get('/csr')
         .expect(200)
         .expect((res) => {
-          assertCSRAppNode(res);
-          assertDevModeResource(res, 'blog');
+          assertCSR(res);
+          assertDevResource(res, 'blog');
         });
     });
   });

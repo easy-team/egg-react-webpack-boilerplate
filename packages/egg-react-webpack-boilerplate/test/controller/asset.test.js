@@ -2,8 +2,8 @@
 const mm = require('egg-mock');
 const { 
   webpackReady, 
-  assertCSRAppNode,
-  assertDevModeResource
+  assertCSR,
+  assertDevResource
 } = require('../utils/helper');
 
 describe('test/controller/asset.test.js', () => {
@@ -25,8 +25,8 @@ describe('test/controller/asset.test.js', () => {
         .get('/asset/simple')
         .expect(200)
         .expect(res => {
-          assertCSRAppNode(res);
-          assertDevModeResource(res, 'asset/simple');
+          assertCSR(res);
+          assertDevResource(res, 'common');
         });
     });
 
@@ -36,8 +36,8 @@ describe('test/controller/asset.test.js', () => {
         .get('/asset')
         .expect(200)
         .expect(res => {
-          assertCSRAppNode(res);
-          assertDevModeResource(res, 'asset/spa');
+          assertCSR(res);
+          assertDevResource(res, 'common');
         });
     });
   });

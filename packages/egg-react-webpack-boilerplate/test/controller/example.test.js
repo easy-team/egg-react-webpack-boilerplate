@@ -2,8 +2,8 @@
 const mm = require('egg-mock');
 const { 
   webpackReady, 
-  assertSSRAppNode,
-  assertDevModeJSResource,
+  assertSSR,
+  assertDevJSResource,
   assertText
 } = require('../utils/helper');
 
@@ -26,8 +26,8 @@ describe('test/controller/example.test.js', () => {
         .get('/example')
         .expect(200)
         .expect(res => {
-          assertSSRAppNode(res);
-          assertDevModeJSResource(res, 'example');
+          assertSSR(res);
+          assertDevJSResource(res, 'example');
         });
     });
     it('should work when example hook', async () => {
@@ -36,8 +36,8 @@ describe('test/controller/example.test.js', () => {
         .get('/example/hook')
         .expect(200)
         .expect(res => {
-          assertSSRAppNode(res);
-          assertDevModeJSResource(res, 'example/hook');
+          assertSSR(res);
+          assertDevJSResource(res, 'example/hook');
           assertText(res, 'React Hook Component Server Render');
         });
     });
@@ -47,8 +47,8 @@ describe('test/controller/example.test.js', () => {
         .get('/example/async')
         .expect(200)
         .expect(res => {
-          assertSSRAppNode(res);
-          assertDevModeJSResource(res, 'async');
+          assertSSR(res);
+          assertDevJSResource(res, 'async');
         });
     });
     it('should work when example/stateless', async () => {
@@ -57,8 +57,8 @@ describe('test/controller/example.test.js', () => {
         .get('/example/stateless')
         .expect(200)
         .expect(res => {
-          assertSSRAppNode(res);
-          assertDevModeJSResource(res, 'example/stateless');
+          assertSSR(res);
+          assertDevJSResource(res, 'example/stateless');
           assertText(res, '<h1>React Stateless Component Server Render</h1>');
         });
     });
@@ -68,8 +68,8 @@ describe('test/controller/example.test.js', () => {
         .get('/example/data/node')
         .expect(200)
         .expect(res => {
-          assertSSRAppNode(res);
-          assertDevModeJSResource(res, 'example/node');
+          assertSSR(res);
+          assertDevJSResource(res, 'example/node');
           assertText(res, 'Node 直接获取渲染数据')
         });
     });
@@ -79,8 +79,8 @@ describe('test/controller/example.test.js', () => {
         .get('/example/data/async')
         .expect(200)
         .expect(res => {
-          assertSSRAppNode(res);
-          assertDevModeJSResource(res, 'example/data');
+          assertSSR(res);
+          assertDevJSResource(res, 'example/data');
           assertText(res, '前端 React 代码 asyncData 获取渲染数据')
         });
     });

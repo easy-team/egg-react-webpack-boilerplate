@@ -9,5 +9,6 @@ module.exports = app => {
   router.get('/example/data/node', controller.example.data.nodeDataRender);
   router.get('/example/data/async', controller.example.data.asyncDataRender);
   router.get('/example/data/api/article', controller.example.data.article);
+  router.get('/example', controller.example.index.index);
   router.get('/', controller.example.index.index);
 };

@@ -13,33 +13,33 @@ exports.webpackReady = async (app) => {
 }
 
 exports.assertText = function (res, text) {
-  assert(res.text.indexOf(text) > -1);
+  assert(new RegExp(text).test(res.text));
 }
 
 exports.assertNotText = function (res, text) {
-  assert(res.text.indexOf(text) === -1);
+  assert(!new RegExp(text).test(res.text));
 }
 
-exports.assertSSRAppNode = function (res) {
+exports.assertSSR = function (res) {
   exports.assertNotText(res, '<div id="app"></div>');
 }
 
-exports.assertCSRAppNode = function (res) {
+exports.assertCSR = function (res) {
   exports.assertText(res, '<div id="app"></div>');
 }
 
-exports.assertDevModeCssResource = function (res, entry) {
-  exports.assertText(res, `<link rel="stylesheet" href="/public/css/${entry}.css">`);
+exports.assertDevCssResource = function (res, entry) {
+  exports.assertText(res, `<link( rel="stylesheet")? href="/public/css/${entry}.css"( rel="stylesheet")?>`);
 }
 
-exports.assertDevModeJSResource = function (res, entry) {
-  exports.assertText(res, '<script type="text/javascript" src="/public/js/runtime.js"></script>');
-  exports.assertText(res, '<script type="text/javascript" src="/public/js/common.js"></script>');
-  exports.assertText(res, `<script type="text/javascript" src="/public/js/${entry}.js"></script>`);
+exports.assertDevJSResource = function (res, entry) {
+  exports.assertText(res, '<script( type="text/javascript")? src="/public/js/runtime.js"( type="text/javascript")?></script>');
+  exports.assertText(res, '<script( type="text/javascript")? src="/public/js/common.js"( type="text/javascript")?></script>');
+  exports.assertText(res, `<script( type="text/javascript")? src="/public/js/${entry}.js"( type="text/javascript")?></script>`);
   exports.assertText(res, 'window.__INITIAL_STATE__');
 }
 
-exports.assertDevModeResource = function (res, entry) {
-  exports.assertDevModeCssResource(res, entry);
-  exports.assertDevModeJSResource(res, entry);
+exports.assertDevResource = function (res, entry) {
+  exports.assertDevCssResource(res, entry);
+  exports.assertDevJSResource(res, entry);
 }
