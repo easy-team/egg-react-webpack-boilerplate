@@ -1,9 +1,6 @@
 # egg-react-webpack-boilerplate
 
-基于 Egg + React + Webpack 服务端渲染 SSR (Server Side Render) 和 前端渲染 CSR (Client Side Render) 工程骨架项目。
-
-- 线上访问: http://49.233.172.37:7001
-- 文档请见: [Egg + React 工程解决方案](https://www.yuque.com/easy-team/egg-react)
+基于 Egg + React + Webpack 服务端渲染 SSR (Server Side Render) 和 前端渲染 CSR (Client Side Render) 工程骨架项目。文档请见: [Egg + React 工程解决方案](https://www.yuque.com/easy-team/egg-react) 。
 
 
 ## 截图
@@ -14,24 +11,22 @@
 ![egg-react-admin](https://github.com/easy-team/egg-react-webpack-boilerplate/blob/master/docs/images/easy-react-admin.jpg)
 
 
-## 版本
+### 骨架
 
 > 功能性需求或者Bug问题, 欢迎大家 PR 完善, 如果你需要了解更多信息，请加QQ群: 433207205(备注：Node.js).
 
-因该项目包含了多种实现, 提供多种例子实现，为防干扰, 特提供纯净版本分支用于实际项目开发, 请自行选用。
+因该项目包含了多种实现, 提供多种例子实现，为防干扰, 特提供纯净版本用于实际项目开发, 请自行选用。
 
-- Egg + React SSR多页面服务端渲染方案 [feature/green/multi](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/feature/green/multi)
-- Egg + React CSR 多页面前端渲染方案 [feature/green/html](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/feature/green/html)
-- Egg + React + React Router + Redux + React-Redux 单页面服务端渲染方案 [feature/green/spa](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/feature/green/spa)
-- Egg + AntD + React Router + Redux + React-Redux  单页面前端渲染asset方案 [feature/green/asset](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/feature/green/asset)
-- Egg + AntD + React Router + Redux + React-Redux  单页面服务端渲染方案 [antd](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/antd)
-- Egg + AntD + React Router + Redux + React-Redux  单页面管理后台前端渲染方案 [easy-admin](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/easy-admin)
-- Egg + AntD 按需配置和主题定制 [antd-theme](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/antd-theme) 和 [文档](https://www.yuque.com/easy-team/egg-react/antd)
-- Egg + React + TypeScript 项目请见[egg-react-typescript-boilerplate](https://github.com/easy-team/egg-react-typescript-boilerplate)
-- Egg + Rax SSR多页面服务端渲染方案 [rax](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/rax)
+- [egg-react-webpack-boilerplate](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/master/packages/egg-react-webpack-boilerplate) Egg + React 多种特性功能模板。
+- [egg-react-webpack-mpa-boilerplate](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/master/packages/egg-react-webpack-mpa-boilerplate)  Egg + React 多页渲染模板。
+- [egg-react-webpack-spa-boilerplate](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/master/packages/egg-react-webpack-spa-boilerplate) Egg + React + React-Router + React 单页面服务端渲染模板。
+- [egg-react-webpack-asset-boilerplate](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/master/packages/egg-react-webpack-asset-boilerplate) Egg + React 前端 asset 渲染方案。
+- [egg-react-webpack-html-boilerplate](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/master/packages/egg-react-webpack-html-boilerplate) Egg + React 静态 HTML 渲染方案。
+- [egg-react-typescript-boilerplate](https://github.com/easy-team/egg-react-typescript-boilerplate) Egg + React + TypeScript 项目。
+- Egg + Rax SSR 多页面服务端渲染方案 [Rax](https://github.com/easy-team/egg-react-webpack-boilerplate/tree/rax)
+- [res-awesome](https://github.com/easy-team/res-awesome) Egg + React 上层框架解决方案。
 
-
-可以通过 [easywebpack-cli](https://github.com/easy-team/easywebpack-cli) 命令行初始化对应类型项目。 
+以上项目，你可以通过 [easywebpack-cli](https://github.com/easy-team/easywebpack-cli) 初始化。
 
 ## 文档
 
@@ -57,25 +52,23 @@
 
 - 支持 css module , 且同时支持 css 和 css module 共存的情况
 
-- 支持 react-router, react-redux 服务端渲染(SSR)和前端渲染(CSR) 
+- 支持 react-router, react-redux 服务端渲染(SSR)和前端渲染(CSR)
 
 - 支持 Webpack dll 自动化构建, 与多进程编译结合，构建速度减少 2/3
 
 - Node 8 版本的 async 和 await 特性, Controller 采用 class 方式编写
 
-- 支持SSR, CSR, Asset, 自定义多种渲染模式
-
+- 支持 SSR, CSR, Asset, HTML 自定义多种渲染模式
 
 ## 依赖
 
-- [easywebpack](https://github.com/easy-team/easywebpack) ^4.x.x
-- [easywebpack-react](https://github.com/easy-team/easywebpack-react) ^4.x.x
-- [egg-view-react-ssr](https://github.com/easy-team/egg-view-react-ssr) ^2.1.0
-- [egg-webpack](https://github.com/easy-team/egg-webpack) ^4.x.x
+- [easywebpack](https://github.com/easy-team/easywebpack) ^5.0.0
+- [easywebpack-react](https://github.com/easy-team/easywebpack-react) ^5.0.0
+- [egg-view-react-ssr](https://github.com/easy-team/egg-view-react-ssr) ^5.0.0
+- [egg-webpack](https://github.com/easy-team/egg-webpack) ^5.0.0
 - [egg-webpack-react](https://github.com/easy-team/egg-webpack-react) ^2.0.0
 
 ![工程化](http://hubcarl.github.io/img/webpack/egg-webpack-react-ssr.png)
-
 
 ## 使用
 
@@ -106,7 +99,6 @@ npm run dev
 ![npm start启动](https://github.com/easy-team/egg-react-webpack-boilerplate/blob/master/docs/images/webpack.png)
 
 
-
 - 本地开发启动 Webpack 构建, 默认配置文件为项目根目录 `webpack.config.js` 文件。 SSR 需要配置两份 Webpack 配置，所以构建会同时启动两个 Webpack 构建服务。web 表示构建 JSBundle 给前端用，构建后文件目录 `public`, 默认端口 9000;  node 表示构建 JSBundle 给 Node 端渲染用，构建后文件目录 `app/view`, 默认端口 9001.
 
 - 本地构建是 Webpack 内存构建，文件不落地磁盘，所以 `app/view` 和 `public` 在本地开发时，是看不到文件的。 只有发布模式(npm run build)才能在这两个目录中看到构建后的内容。
@@ -120,13 +112,13 @@ npm run dev
 - 首先在本地或者ci构建好jsbundle文件
 
 ```bash
-npm run build 
+npm run build
 ```
 
 - 然后,启动应用
 
 ```bash
-npm start 
+npm start
 ```
 
 ### 配置说明
@@ -291,7 +283,6 @@ exports.client = function* (ctx) {
 app.get('/client', app.controller.home.home.client);
 ```
 
-
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -315,7 +306,6 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
-
 
 ## License
 
