@@ -1,0 +1,120 @@
+.smart-artiles {
+  margin: 0px;
+  padding-left: 150px;
+}
+
+.smart-artiles > li {
+  position: relative;
+  display: block;
+  border-bottom: 1px dashed #eee;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.smart-artiles > li .point {
+  position: absolute;
+  font-size: 36px;
+  left: -150px;
+  font-family: Georgia;
+  color: #aaa;
+  text-align: right;
+  width: 100px;
+
+}
+
+.smart-artiles > li .time {
+  margin-top: 10px;
+  color: #aaa;
+}
+
+.smart-artiles > li h2 {
+  font-size: 24px;
+}
+
+.smart-artiles > li .avatar {
+  position: absolute;
+  font-size: 36px;
+  left: -35px;
+}
+
+.smart-artiles > li .avatar img.avatar {
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+
+.smart-artiles > li .action {
+  visibility: hidden;;
+}
+
+.smart-artiles > li:hover .action {
+  visibility: visible;
+}
+
+.smart-artiles > li .actions {
+  padding: 0px;
+  padding-top: 10px;
+  margin: 0px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.smart-artiles > li:hover .actions a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.smart-artiles > li:hover .actions a:hover {
+  color: #18bc9c;
+}
+
+.smart-artiles > li .actions > li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.redux-nav{
+  margin-left: 40px;
+}
+
+.redux-nav li{
+  float:left;
+  background-color: #1CB94A;
+  color: white;
+}
+
+.redux-nav li a{
+  color: white;
+}
+
+.redux-nav-item{
+  margin-top: 40px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+
+.redux-nav-item h3{
+ text-align: center;
+ margin: 12px 0px;
+}
+
+.redux-btn-add{
+  background-color: #1CB94A;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.redux-btn-del{
+  background-color: #cd2a19;
+  color: white;
+  display: block;
+  width: 60px;
+  line-height: 30px;
+  height: 30px;
+  text-align: center;
+}

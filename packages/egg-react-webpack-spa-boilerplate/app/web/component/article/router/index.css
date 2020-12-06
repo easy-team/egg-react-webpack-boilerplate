@@ -1,0 +1,32 @@
+
+
+.admin .trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color .3s;
+}
+
+.admin .trigger:hover {
+  color: #1890ff;
+}
+
+.admin .logo {
+  height: 32px;
+  margin: 16px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.left-menu  a{
+  display: inline;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.left-menu-collapsed a{
+  display: none !important;
+}

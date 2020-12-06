@@ -1,0 +1,12 @@
+.easy-menu-custom,.easy-menu-menu-fluid {
+  background-color: #3c763d !important;
+  color: white !important;
+}
+
+.easy-menu-brand {
+  color: white !important;
+}
+
+.easy-menu-custom .nav li a {
+  color: #f3eaea !important;
+}
