@@ -7,7 +7,7 @@
 		"build": "easy build",
 		"debug": "egg-bin debug",
 		"dev": "egg-bin dev",
-		"test": "egg-bin test",
+		"test": "egg-bin test test/controller/blog.test.js",
 		"start": "egg-scripts start --port 7001 --workers 4",
 		"backend": "nohup egg-scripts start --port 7001 --workers 4 &",
 		"lint": "eslint . --ext .js,jsx",
