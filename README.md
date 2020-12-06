@@ -75,7 +75,7 @@
 #### 安装cli
 
 ```bash
-npm install @easy-team/easywebpack-cli -g
+npm install easywebpack-cli@5 -g
 ```
 
 #### 安装依赖
@@ -83,7 +83,6 @@ npm install @easy-team/easywebpack-cli -g
 ```bash
 npm install
 ```
-
 
 #### 本地开发
 
@@ -127,7 +126,7 @@ npm start
 
 ```js
 `config/config.local.js` 
-const easywebpack = require('@easy-team/easywebpack-react');
+const easywebpack = require('easywebpack-react');
 exports.webpack = {
   webpackConfigList: easywebpack.getWebpackConfig()
 };
