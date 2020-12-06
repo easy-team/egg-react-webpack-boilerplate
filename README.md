@@ -51,7 +51,7 @@ npm run dev
 或
 
 ```bash
-cd packages
+cd packages/egg-react-webpack-boilerplate
 npm install
 npm run dev
 ```
