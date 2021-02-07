@@ -29,7 +29,7 @@
   "dependencies": {
     "@ant-design/icons": "^4.0.0",
     "antd": "^4",
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "egg": "^2.1.0",
     "egg-cors": "^2.0.0",
     "egg-logger": "^2.4.1",
