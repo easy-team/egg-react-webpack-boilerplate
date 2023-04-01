@@ -11,6 +11,7 @@
   },
   "scripts": {
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "changelog:all": "lerna run changelog",
     "deps": "yarn --registry=https://registry.npm.taobao.org",
     "ii": "lerna run ii --scope egg-react-webpack-spa-boilerplate",
     "boot": "lerna run ii",
