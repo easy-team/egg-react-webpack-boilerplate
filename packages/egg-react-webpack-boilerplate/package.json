@@ -1,6 +1,6 @@
 {
 	"name": "egg-react-webpack-boilerplate",
-	"version": "5.0.0",
+	"version": "5.1.0",
 	"description": "Egg React Server Side Render Examples",
 	"scripts": {
 		"clean": "easy clean all",
@@ -12,7 +12,7 @@
 		"backend": "nohup egg-scripts start --port 7001 --workers 4 &",
 		"lint": "eslint . --ext .js,jsx",
 		"fix": "eslint --fix . --ext .js,jsx",
-		"ii": "yarn --registry https://registry.npm.taobao.org",
+		"ii": "yarn --registry https://registry.npmmirror.com",
 		"changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
 	},
 	"husky": {
@@ -44,6 +44,7 @@
 		"lowdb": "^1.0.0",
 		"mockjs": "^1.0.1-beta3",
 		"moment": "^2.17.1",
+		"querystring-es3": "^0.2.1",
 		"react": "^16.0.0",
 		"react-dom": "^16.0.0",
 		"react-loadable": "^5.5.0",

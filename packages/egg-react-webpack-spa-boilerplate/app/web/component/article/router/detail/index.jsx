@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import * as qs from 'querystring';
+import * as qs from 'querystring-es3';
 
 export default class Detail extends Component {
   render() {

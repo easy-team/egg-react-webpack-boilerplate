@@ -15,4 +15,3 @@ tmp/
 _site
 logs
 package-lock.json
-yarn.lock
