@@ -1,6 +1,6 @@
 {
   "name": "egg-react-webpack-boilerplate",
-  "version": "5.0.0",
+  "version": "5.1.0",
   "description": "Egg React Webpack SSR/CRS 工程实现",
   "dependencies": {
     "runscript": "^1.5.0"
