@@ -14,7 +14,7 @@
     "changelog:all": "lerna run changelog",
     "deps": "yarn --registry=https://registry.npm.taobao.org",
     "ii": "lerna run ii --scope egg-react-webpack-spa-boilerplate",
-    "boot": "lerna run ii",
+    "boot": "lerna bootstrap",
     "clean": "lerna clean",
     "changed": "lerna changed",
     "add": "lerna add --scope egg-react-webpack-boilerplate",

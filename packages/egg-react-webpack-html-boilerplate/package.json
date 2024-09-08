@@ -42,7 +42,7 @@
     "lodash": "^4.17.4",
     "lodash-id": "^0.14.0",
     "lowdb": "^1.0.0",
-    "mockjs": "^1.0.1-beta3",
+    "mockjs": "^1.1.0",
     "moment": "^2.17.1",
     "querystring-es3": "^0.2.1",
     "react": "^16.0.0",
